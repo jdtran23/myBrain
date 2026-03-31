@@ -18,6 +18,16 @@ applyTo: "**"
 - Contract-driven interfaces — JSON schemas, explicit role declarations, clear handoffs
 - Validate everything — independent verification at every agent boundary
 
+## Commit Gate (Mandatory)
+Code changes follow this pipeline before any `git commit`:
+1. **@porygon** (or equivalent) writes/modifies code
+2. **Tests pass** — run the test suite, all green
+3. **@absol reviews** — code review for bugs, security, standards
+4. **Fix findings** — address critical/warning items from review
+5. **Commit** — only after steps 1-4 complete
+
+Skipping step 3 is a process violation. "Tests pass" alone is NOT a sufficient exit gate.
+
 ## This Brain's Target Architecture
 We are building toward a **hierarchical + router hybrid**:
 - Agents as specialized personas (already in `.github/agents/`)

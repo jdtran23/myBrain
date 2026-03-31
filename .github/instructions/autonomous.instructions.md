@@ -9,3 +9,4 @@ applyTo: "**"
 3. **Fix what you break** — If a change breaks something, fix it before moving on
 4. **Show, don't tell** — Produce working code, not suggestions
 5. **Read before writing** — Always read existing code before modifying it
+6. **@absol before commit** — After ANY code changes, run @absol review BEFORE committing. This is a hard gate, not optional. No code reaches `git commit` without a review pass.
