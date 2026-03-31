@@ -53,28 +53,29 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 
 ---
 
-### Phase 3: Critical Fixes 🔧
+### Phase 3: Critical Fixes ✅ DONE
 > *Clean up the project foundation before building on it*
 
-- [ ] **Task 3.1:** Create `.gitignore`
+- [x] **Task 3.1:** Create `.gitignore`
   - Scope: Exclude `.venv/`, `data/*.db`, `.env`, `__pycache__/`, `*.pyc`, `outputs/*.json` (if generated), `.mypy_cache/`, `.pytest_cache/`
   - Verify: `git status` no longer shows ignored files; tracked files are unaffected
   - AI Validation: @porygon generates → @absol reviews for completeness against Python/.venv conventions
   - Dependencies: Phase 2 complete (so we know what gets generated)
 
-- [ ] **Task 3.2:** Audit and clean `requirements.txt` (GitHub: #6)
+- [x] **Task 3.2:** Audit and clean `requirements.txt` (GitHub: #6 ✅ closed)
   - Scope: Remove `beautifulsoup4`, `selenium`, `pandas` — confirm they are not imported anywhere in `src/` or `scripts/`
   - Verify: `grep -r "import beautifulsoup4\|import selenium\|import pandas\|from bs4\|from selenium\|from pandas" src/ scripts/` returns zero matches
   - AI Validation: @porygon removes deps → codebase grep confirms no imports → @absol reviews
   - Dependencies: Task 3.1
+  - **Also removed:** `schedule` (unused)
 
-- [ ] **Task 3.3:** Verify project still runs after dep cleanup
+- [x] **Task 3.3:** Verify project still runs after dep cleanup
   - Scope: Fresh `pip install -r requirements.txt` in clean venv, run `seed_data.py`, start API, hit key endpoints
   - Verify: All endpoints from Phase 2 still respond correctly, no `ModuleNotFoundError`
   - AI Validation: Run startup + basic endpoint check in terminal, compare output to Phase 2 baseline
   - Dependencies: Task 3.2
 
-**Phase 3 Exit Criteria:** Clean `.gitignore` in place, no unused deps, project still runs identically to Phase 2.
+**Phase 3 Exit Criteria:** ✅ Clean `.gitignore` in place, 4 unused deps removed, fresh venv verified, API endpoints confirmed working (2026-03-30).
 
 ---
 
@@ -207,7 +208,7 @@ Every AI-generated artifact must have verification steps defined BEFORE generati
 
 ## Acceptance Criteria
 - [x] Phase 2: Project runs locally on Joe's Windows machine
-- [ ] Phase 3: Clean `.gitignore`, no unused deps, project still runs
+- [x] Phase 3: Clean `.gitignore`, no unused deps, project still runs
 - [ ] Phase 4: pytest suite with ≥15 tests, all passing
 - [ ] Phase 5: N+1 fixed, JSON writes safe, Alembic decided
 - [ ] Phase 6: At least `pokemon-tcg-ops` skill extracted
