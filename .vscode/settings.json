@@ -2,5 +2,6 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "editor.formatOnSave": true,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "chat.extensionDevelopment.enabled": true
 }

@@ -61,6 +61,30 @@ When an agent's output fails validation:
 2. **Escalate** to a different agent if the first can't fix it (e.g., @uxie if @porygon lacks knowledge)
 3. **Escalate to human** if two retries fail or the issue is ambiguous
 
+## Commit Gate (MANDATORY — NO EXCEPTIONS)
+
+Every implementation task — whether a single file fix or a full phase — MUST complete this pipeline before you report done:
+
+```
+@porygon writes code
+       ↓
+  Build passes?  ── NO → fix, rebuild
+       ↓ YES
+  Tests pass?    ── NO → fix, retest
+       ↓ YES
+  @absol review  ── findings? → fix, rebuild, retest
+       ↓ CLEAN
+  Report done ✅
+```
+
+**Rules:**
+1. **Never skip @absol.** "Build passes + tests pass" is NOT a sufficient exit gate.
+2. **Fix all critical/warning findings** from @absol before reporting done. Info/suggestion items can be noted and deferred.
+3. **Re-verify build + tests** after applying @absol fixes.
+4. **Report the review summary** to the user: counts of findings by severity, what was fixed, what was deferred.
+
+**If you catch yourself about to say "Phase X complete" without having invoked @absol, STOP and run the review first.**
+
 ## Workflow Patterns
 
 ### Simple Task (1 agent)
@@ -68,16 +92,19 @@ When an agent's output fails validation:
 User request → classify → delegate to single agent → validate → return result
 ```
 
-### Standard Task (2 agents)
+### Implementation Task (code changes — ANY size)
 ```
-User request → @porygon (implement) → @absol (validate) → return result
+User request → @porygon (implement) → build + test
+            → @absol (review) → fix findings → re-verify
+            → return result
 ```
 
 ### Complex Task (full pipeline)
 ```
 User request → @metagross (plan) → @cresselia (validate plan)
             → @uxie (fill gaps) → @porygon (implement each task)
-            → @absol (review) → return result
+            → build + test → @absol (review) → fix → re-verify
+            → return result
 ```
 
 ### Research + Learn
@@ -87,7 +114,8 @@ User request → @uxie (investigate) → present findings
 ```
 
 ## State Tracking
-For multi-step workflows, maintain a running status:
+For multi-step workflows, maintain a running status.
+**Implementation phases MUST include build, test, and @absol steps:**
 ```
 WORKFLOW: [task name]
 STATUS:  [in progress / blocked / complete]
@@ -95,7 +123,10 @@ STATUS:  [in progress / blocked / complete]
   [1] ✅ @metagross — Plan created (Plans/001-plan-xxx.md)
   [2] ✅ @cresselia — Approved with changes
   [3] 🔄 @porygon — Implementing task 2 of 5
-  [4] ⬜ @absol — Waiting for code
+  [4] ⬜ Build + test — Verify compilation and tests
+  [5] ⬜ @absol — Code review (MANDATORY before done)
+  [6] ⬜ Fix findings — Address critical/warning items
+  [7] ⬜ Re-verify — Build + test after fixes
 ```
 
 ## What You DON'T Do
