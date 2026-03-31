@@ -22,34 +22,34 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 
 ---
 
-### Phase 2: First Demo Run 🧑‍💻 MANUAL (Joe)
+### Phase 2: First Demo Run ✅ DONE
 > *Validate the project runs locally on Windows before making any changes*
 
-- [ ] **Task 2.1:** Set up Python virtual environment
+- [x] **Task 2.1:** Set up Python virtual environment
   - Steps: `python -m venv .venv` → activate → `pip install -r requirements.txt`
   - Verify: `pip list` shows all deps installed, no errors during install
   - AI Validation: N/A — manual task
   - Dependencies: None
 
-- [ ] **Task 2.2:** Seed initial data
+- [x] **Task 2.2:** Seed initial data
   - Steps: `python scripts/seed_data.py`
   - Verify: `data/` directory contains populated SQLite database, no stack traces
   - AI Validation: N/A — manual task
   - Dependencies: Task 2.1
 
-- [ ] **Task 2.3:** Start API server and explore
+- [x] **Task 2.3:** Start API server and explore
   - Steps: `python scripts/run_api.py` → open `http://localhost:8000/docs`
   - Verify: Swagger UI loads, `/cards` endpoint returns seeded data, `/signals` returns computed signals
   - AI Validation: N/A — manual task
   - Dependencies: Task 2.2
 
-- [ ] **Task 2.4:** Run a fetch cycle
+- [x] **Task 2.4:** Run a fetch cycle
   - Steps: `python scripts/run_fetch.py`
   - Verify: Price data is fetched and stored, no API errors, signals recompute
   - AI Validation: N/A — manual task
   - Dependencies: Task 2.3
 
-**Phase 2 Exit Criteria:** Joe confirms project runs end-to-end on Windows. Any issues found become blockers for Phase 3.
+**Phase 2 Exit Criteria:** ✅ Joe confirmed project runs end-to-end on Windows (2026-03-30).
 
 ---
 
@@ -62,7 +62,7 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
   - AI Validation: @porygon generates → @absol reviews for completeness against Python/.venv conventions
   - Dependencies: Phase 2 complete (so we know what gets generated)
 
-- [ ] **Task 3.2:** Audit and clean `requirements.txt`
+- [ ] **Task 3.2:** Audit and clean `requirements.txt` (GitHub: #6)
   - Scope: Remove `beautifulsoup4`, `selenium`, `pandas` — confirm they are not imported anywhere in `src/` or `scripts/`
   - Verify: `grep -r "import beautifulsoup4\|import selenium\|import pandas\|from bs4\|from selenium\|from pandas" src/ scripts/` returns zero matches
   - AI Validation: @porygon removes deps → codebase grep confirms no imports → @absol reviews
@@ -81,7 +81,7 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 ### Phase 4: Test Foundation 🧪
 > *Establish automated testing to protect against regressions*
 
-- [ ] **Task 4.1:** Set up pytest infrastructure
+- [ ] **Task 4.1:** Set up pytest infrastructure (GitHub: #5)
   - Scope: Create `tests/` directory, `tests/__init__.py`, `tests/conftest.py` with shared fixtures (test DB, FastAPI TestClient), add `pytest` + `httpx` to `requirements.txt` (dev section or separate `requirements-dev.txt`)
   - Verify: `pytest --collect-only` discovers test directory with no errors
   - AI Validation: @porygon generates → run `pytest --collect-only` → must succeed with 0 errors
@@ -118,13 +118,13 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 ### Phase 5: Code Quality Improvements 🔬
 > *Fix known issues and improve reliability*
 
-- [ ] **Task 5.1:** Fix N+1 query in `get_cards()` API endpoint
+- [ ] **Task 5.1:** Fix N+1 query in `get_cards()` API endpoint (GitHub: #9)
   - Scope: Audit `src/api.py` and `src/db.py` for the cards listing query. Use SQLAlchemy eager loading (`joinedload` / `selectinload`) or a single query with joins to eliminate N+1.
   - Verify: Add a test that checks query count (or log query count before/after). Confirm API response is identical.
   - AI Validation: @porygon implements fix → @absol reviews SQL pattern → run API tests → response unchanged, query count reduced
   - Dependencies: Phase 4 complete (tests protect against regressions)
 
-- [ ] **Task 5.2:** Add file locking / atomic writes for JSON config files
+- [ ] **Task 5.2:** Add file locking / atomic writes for JSON config files (GitHub: #8)
   - Scope: `config/watchlist.json`, `config/alerts.json`, `config/signal_rules.json` — ensure concurrent reads/writes don't corrupt data. Use `tempfile` + `os.replace()` for atomic writes, or `filelock` library.
   - Verify: Write a stress test or concurrent access test. Confirm JSON files are never left in a partial-write state.
   - AI Validation: @porygon implements → @absol reviews for race conditions → test with simulated concurrent writes
@@ -206,7 +206,7 @@ Every AI-generated artifact must have verification steps defined BEFORE generati
 **Pattern enforced throughout:** Plan → Generate → Verify → Iterate. Never Plan → Generate → Done.
 
 ## Acceptance Criteria
-- [ ] Phase 2: Project runs locally on Joe's Windows machine
+- [x] Phase 2: Project runs locally on Joe's Windows machine
 - [ ] Phase 3: Clean `.gitignore`, no unused deps, project still runs
 - [ ] Phase 4: pytest suite with ≥15 tests, all passing
 - [ ] Phase 5: N+1 fixed, JSON writes safe, Alembic decided

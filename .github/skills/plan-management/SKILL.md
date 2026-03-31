@@ -53,6 +53,13 @@ Every AI-generated artifact must have verification steps defined BEFORE generati
 - Pattern: Plan → Review → Execute → Verify → Iterate
 - NEVER: Plan → Generate → Done
 
+## GitHub Issue Cross-Referencing
+- When a plan task maps to a GitHub Issue, add `(GitHub: #N)` after the task title
+- Create a `plan:NNN` label on the repo and tag all related issues
+- Issues without a `plan:` label are standalone backlog items
+- When completing a plan task, close the corresponding issue
+- Not every task needs an issue (e.g., manual/validation tasks) and not every issue needs a plan task (backlog items)
+
 ## Plan Numbering
 - Auto-increment: scan `Plans/` for highest NNN, use NNN+1
 - Format: `Plans/001-plan-[slug].md`
