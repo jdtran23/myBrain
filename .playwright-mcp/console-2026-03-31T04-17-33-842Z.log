@@ -1,2 +1,0 @@
-[    1524ms] [WARNING] WARN Infinite extent for field "sales_start": [Infinity, -Infinity] @ https://streamlit.io/_next/static/chunks/57.9ea87ee19e25dc0f.js:38
-[    1524ms] [WARNING] WARN Infinite extent for field "sales_end": [Infinity, -Infinity] @ https://streamlit.io/_next/static/chunks/57.9ea87ee19e25dc0f.js:38
