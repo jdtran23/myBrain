@@ -3,11 +3,11 @@ description: "Orchestrate a multi-agent workflow — decompose, delegate, valida
 ---
 # /orchestrate
 
-Use the @orchestrator agent to handle this task. The orchestrator will:
+Use the @mewtwo agent to handle this task. The orchestrator will:
 
 1. **Classify** the task type
 2. **Decompose** into subtasks if complex
-3. **Delegate** to the right specialist agents (@researcher, @coder, @reviewer, @planner, @plan-reviewer)
+3. **Delegate** to the right specialist agents (@uxie, @porygon, @absol, @metagross, @cresselia)
 4. **Validate** output at every handoff
 5. **Deliver** the final result
 

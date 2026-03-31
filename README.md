@@ -6,7 +6,7 @@ A self-learning, multi-agent AI workspace powered by GitHub Copilot custom instr
 
 1. Open this folder in VS Code: `code .`
 2. Ensure GitHub Copilot + Copilot Chat extensions are installed
-3. Select an agent (e.g., `@orchestrator`) and start working
+3. Select an agent (e.g., `@mewtwo`) and start working
 4. Use `/orchestrate` for multi-step tasks
 
 ## Architecture
@@ -14,12 +14,12 @@ A self-learning, multi-agent AI workspace powered by GitHub Copilot custom instr
 This brain uses a **Phase 3 Supervisor/Router hybrid** multi-agent orchestration pattern:
 
 ```
-🎯 @orchestrator (lead — decomposes, delegates, validates)
- ├── 📋 @planner        → creates structured plans
- │    └── 📝 @plan-reviewer → validates plans before execution
- ├── 🔍 @researcher     → investigates topics, synthesizes findings
- ├── 💻 @coder          → writes, refactors, debugs code
- └── 🔎 @reviewer       → reviews code for bugs & security
+🎯 @mewtwo (lead — decomposes, delegates, validates)
+ ├── 📋 @metagross      → creates structured plans
+ │    └── 📝 @cresselia → validates plans before execution
+ ├── 🔍 @uxie          → investigates topics, synthesizes findings
+ ├── 💻 @porygon       → writes, refactors, debugs code
+ └── 🔎 @absol         → reviews code for bugs & security
 ```
 
 ## How It Works

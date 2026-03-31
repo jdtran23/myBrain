@@ -4,7 +4,7 @@ applyTo: "**"
 ---
 # Global — Team Identity & Environment
 
-- **User:** jdtra
+- **User:** Joe (jdtra)
 - **OS:** Windows 11
 - **Shell:** PowerShell (pwsh)
 - **Workspace:** C:\Users\jdtra\projects\myBrain
