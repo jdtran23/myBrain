@@ -1,0 +1,427 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: svelte 5 runes stability 2025 production ready svelte 5 runes stability 2025 production ready
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "Sign in" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dsvelte%2B5%2Brunes%2Bstability%2B2025%2Bproduction%2Bready&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "AI Mode" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&aep=1&ntc=1&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ2J8OegQIExAE
+              - generic [ref=e81]: AI Mode
+          - listitem [ref=e82]:
+            - link "All" [disabled] [ref=e83]:
+              - generic [ref=e85]: All
+          - listitem [ref=e86]:
+            - link "Images" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&q=svelte+5+runes+stability+2025+production+ready&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQtKgLegQIGRAB
+              - generic [ref=e89]: Images
+          - listitem [ref=e90]:
+            - link "Videos" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&q=svelte+5+runes+stability+2025+production+ready&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQtKgLegQIGBAB
+              - generic [ref=e93]: Videos
+          - listitem [ref=e94]:
+            - link "Forums" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&q=svelte+5+runes+stability+2025+production+ready&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQs6gLegQIFxAB
+              - generic [ref=e97]: Forums
+          - listitem [ref=e98]:
+            - link "Shopping" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&q=svelte+5+runes+stability+2025+production+ready&ved=1t:220175&ictx=111
+              - generic [ref=e101]: Shopping
+          - listitem [ref=e102]:
+            - link "News" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&q=svelte+5+runes+stability+2025+production+ready&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BrpC2CeRVYjn-nx4-2axs2CgsRgbz5tVCUXuIVHMPnhRHo0WCV_xwoq-QDCqwCRtMJl1fibVPo3vjWIMqy1-j29YI2EtYwnrVGa72uDN2nRGVSwsph3dnqYP-yiQ6z_Ylh2zx-Lg&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ0pQJegQIFhAB
+              - generic [ref=e105]: News
+          - listitem [ref=e106]:
+            - button "More filters" [ref=e107] [cursor=pointer]:
+              - generic "More filters" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: More
+                  - img [ref=e112]
+        - button "Tools" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Tools
+            - img [ref=e120]
+    - heading "Search Results" [level=1] [ref=e122]
+    - generic [ref=e127]:
+      - generic [ref=e146]:
+        - heading "Thinking" [level=2] [ref=e150]:
+          - generic [ref=e151]: Thinking
+        - progressbar [ref=e152]
+      - main [ref=e154]:
+        - generic [ref=e158]:
+          - generic [ref=e161]:
+            - heading "Web results" [level=2] [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e166]:
+                - link "I've been championing Svelte for 3+ years, and runes are ... Reddit · r/sveltejs 140+ comments · 1 year ago" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/sveltejs/comments/1htup7k/ive_been_championing_svelte_for_3_years_and_runes/
+                  - heading "I've been championing Svelte for 3+ years, and runes are ..." [level=3] [ref=e169]
+                  - generic [ref=e174]:
+                    - generic [ref=e176]: Reddit · r/sveltejs
+                    - generic [ref=e178]: 140+ comments · 1 year ago
+                - button "About this result" [ref=e179] [cursor=pointer]:
+                  - img [ref=e182]
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - emphasis [ref=e187]: Runes
+                  - text: actually brings us back to almost pure JS and away from magic syntax sugar. My code feels so much cleaner and easier to manage with
+                  - emphasis [ref=e188]: runes
+                  - text: .
+                - link "Read more" [ref=e189] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/sveltejs/comments/1htup7k/ive_been_championing_svelte_for_3_years_and_runes/#:~:text=Runes%20actually%20brings%20us%20back,easier%20to%20manage%20with%20runes.
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - link "What version Svelte/SvelteKit for 2025 Production ..." [ref=e196] [cursor=pointer]:
+                    - /url: https://www.reddit.com/r/sveltejs/comments/1k31pix/what_version_sveltesveltekit_for_2025_production/
+                    - generic [ref=e197]:
+                      - text: What version
+                      - emphasis [ref=e198]: Svelte
+                      - text: /SvelteKit for
+                      - emphasis [ref=e199]: 2025 Production
+                      - text: ...
+                  - generic [ref=e201]: 13 posts
+                  - generic [ref=e203]: Apr 19, 2025
+                - generic [ref=e204]:
+                  - link "I'm so tired of people hating Svelte 5. You don't hate it ..." [ref=e207] [cursor=pointer]:
+                    - /url: https://www.reddit.com/r/sveltejs/comments/1hx7ksl/im_so_tired_of_people_hating_svelte_5_you_dont/
+                    - generic [ref=e208]:
+                      - text: I'm so tired of people hating
+                      - emphasis [ref=e209]: Svelte 5
+                      - text: . You don't hate it ...
+                  - generic [ref=e211]: 152 posts
+                  - generic [ref=e213]: Jan 9, 2025
+                - link "More results from www.reddit.com" [ref=e217] [cursor=pointer]:
+                  - /url: /search?q=svelte+5+runes+stability+2025+production+ready+site:www.reddit.com&sca_esv=e7687de8d1b3fbf8&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQrQIoAnoECCEQAw
+              - generic [ref=e219]:
+                - text: "Missing: ready ‎| Show results with:"
+                - link "ready" [ref=e220] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=svelte+5+runes+stability+2025+production+%22ready%22&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ5t4CegQIIxAB
+          - generic [ref=e224]:
+            - generic [ref=e227]:
+              - 'link "Svelte 5 2025 Review: Runes and Other Exciting New ... Scalable Path https://www.scalablepath.com › javascript › svelte-5-revi..." [ref=e229] [cursor=pointer]':
+                - /url: https://www.scalablepath.com/javascript/svelte-5-review
+                - 'heading "Svelte 5 2025 Review: Runes and Other Exciting New ..." [level=3] [ref=e230]'
+                - generic [ref=e235]:
+                  - generic [ref=e237]: Scalable Path
+                  - generic [ref=e239]: https://www.scalablepath.com › javascript › svelte-5-revi...
+              - button "About this result" [ref=e240] [cursor=pointer]:
+                - img [ref=e243]
+            - generic [ref=e246]:
+              - generic [ref=e247]: May 14, 2025 —
+              - generic [ref=e248]:
+                - text: Discover how
+                - emphasis [ref=e249]: Svelte 5's new Runes system
+                - text: ", enhanced SSR and revamped CLI make it faster and easier to build modern UIs."
+          - generic [ref=e253]:
+            - generic [ref=e256]:
+              - 'link "Svelte 5 Runes: Powering High-Performance Web Apps for ... Criztec Technologies https://criztec.com › svelte-5-runes-powering-high-perf..." [ref=e258] [cursor=pointer]':
+                - /url: https://criztec.com/svelte-5-runes-powering-high-performance-web-apps-for-uk-businesses-in-2025
+                - 'heading "Svelte 5 Runes: Powering High-Performance Web Apps for ..." [level=3] [ref=e259]'
+                - generic [ref=e264]:
+                  - generic [ref=e266]: Criztec Technologies
+                  - generic [ref=e268]: https://criztec.com › svelte-5-runes-powering-high-perf...
+              - button "About this result" [ref=e269] [cursor=pointer]:
+                - img [ref=e272]
+            - generic [ref=e275]:
+              - generic [ref=e276]: Dec 11, 2025 —
+              - generic [ref=e277]:
+                - text: "Q: Is Svelte 5 production-ready by late 2025? A: Yes, by Q4 2025,"
+                - emphasis [ref=e278]: Svelte 5 is considered mature and production-ready
+                - text: ", with widespread ..."
+              - link "Read more" [ref=e279] [cursor=pointer]:
+                - /url: https://criztec.com/svelte-5-runes-powering-high-performance-web-apps-for-uk-businesses-in-2025#:~:text=Q%3A%20Is%20Svelte%205%20production%2Dready,for%20new%20and%20existing%20projects.
+          - generic [ref=e283]:
+            - generic [ref=e286]:
+              - 'link "What''s new in Svelte: December 2025 Svelte https://svelte.dev › blog › whats-new-in-svelte-decembe..." [ref=e288] [cursor=pointer]':
+                - /url: https://svelte.dev/blog/whats-new-in-svelte-december-2025
+                - 'heading "What''s new in Svelte: December 2025" [level=3] [ref=e289]'
+                - generic [ref=e294]:
+                  - generic [ref=e296]: Svelte
+                  - generic [ref=e298]: https://svelte.dev › blog › whats-new-in-svelte-decembe...
+              - button "About this result" [ref=e299] [cursor=pointer]:
+                - img [ref=e302]
+            - generic [ref=e305]:
+              - generic [ref=e306]: Dec 1, 2025 —
+              - generic [ref=e307]:
+                - emphasis [ref=e308]: svelte
+                - text: "-socket is a WebSocket wrapper for"
+                - emphasis [ref=e309]: Svelte 5
+                - text: using
+                - emphasis [ref=e310]: runes
+                - text: ; @edgeone/
+                - emphasis [ref=e311]: sveltekit
+                - text: lets you deploy your
+                - emphasis [ref=e312]: SvelteKit
+                - text: app to Tencent Cloud EdgeOne ...
+              - link "Read more" [ref=e313] [cursor=pointer]:
+                - /url: https://svelte.dev/blog/whats-new-in-svelte-december-2025#:~:text=svelte%2Dsocket%20is%20a%20WebSocket%20wrapper,while%20maintaining%20excellent%20performance%20worldwide
+          - generic [ref=e317]:
+            - generic [ref=e320]:
+              - 'link "Svelte 5 Runes vs React Hooks: A Deep Dive Into Modern ... Medium · Mparundhathi 1 like · 4 months ago" [ref=e322] [cursor=pointer]':
+                - /url: https://medium.com/@mparundhathi/svelte-5-runes-vs-react-hooks-a-deep-dive-into-modern-reactivity-d866d9e701a9
+                - 'heading "Svelte 5 Runes vs React Hooks: A Deep Dive Into Modern ..." [level=3] [ref=e323]'
+                - generic [ref=e328]:
+                  - generic [ref=e330]: Medium · Mparundhathi
+                  - generic [ref=e332]: 1 like · 4 months ago
+              - button "About this result" [ref=e333] [cursor=pointer]:
+                - img [ref=e336]
+            - generic [ref=e339]:
+              - generic [ref=e340]:
+                - text: Searches for “
+                - emphasis [ref=e341]: Svelte
+                - text: vs React
+                - emphasis [ref=e342]: "2025"
+                - text: ” are up 60%. Performance benchmarks showing 2–3x faster startup times. Bundle sizes 15–30% smaller. But what ...
+              - link "Read more" [ref=e343] [cursor=pointer]:
+                - /url: https://medium.com/@mparundhathi/svelte-5-runes-vs-react-hooks-a-deep-dive-into-modern-reactivity-d866d9e701a9#:~:text=Searches%20for%20%E2%80%9CSvelte%20vs%20React,intrigued%20me%20was%20the%20why.
+          - generic [ref=e347]:
+            - generic [ref=e350]:
+              - link "Rethinking \"Rethinking Reactivity\" - Svelte 5 Introduces ... infoq.com https://www.infoq.com › news › 2023/10 › svelte-5-runes" [ref=e352] [cursor=pointer]:
+                - /url: https://www.infoq.com/news/2023/10/svelte-5-runes/
+                - heading "Rethinking \"Rethinking Reactivity\" - Svelte 5 Introduces ..." [level=3] [ref=e353]
+                - generic [ref=e358]:
+                  - generic [ref=e360]: infoq.com
+                  - generic [ref=e362]: https://www.infoq.com › news › 2023/10 › svelte-5-runes
+              - button "About this result" [ref=e363] [cursor=pointer]:
+                - img [ref=e366]
+            - generic [ref=e369]:
+              - generic [ref=e370]: Oct 2, 2023 —
+              - generic [ref=e371]:
+                - emphasis [ref=e372]: You can't use Svelte 5 in production yet
+                - text: . We're in the thick of it at the moment and can't tell you when it'll be ready to use in your apps.
+              - link "Read more" [ref=e373] [cursor=pointer]:
+                - /url: https://www.infoq.com/news/2023/10/svelte-5-runes/#:~:text=You%20can't%20use%20Svelte%205,to%20use%20in%20your%20apps.
+          - generic [ref=e377]:
+            - generic [ref=e380]:
+              - 'link "Svelte in 2025: The Compile-Time Rebel That''s Quietly ... DEV Community https://dev.to › svelte-in-2025-the-compile-time-rebel-t..." [ref=e382] [cursor=pointer]':
+                - /url: https://dev.to/krish_kakadiya_5f0eaf6342/svelte-in-2025-the-compile-time-rebel-thats-quietly-conquering-frontend-1n84
+                - 'heading "Svelte in 2025: The Compile-Time Rebel That''s Quietly ..." [level=3] [ref=e383]'
+                - generic [ref=e388]:
+                  - generic [ref=e390]: DEV Community
+                  - generic [ref=e392]: https://dev.to › svelte-in-2025-the-compile-time-rebel-t...
+              - button "About this result" [ref=e393] [cursor=pointer]:
+                - img [ref=e396]
+            - generic [ref=e399]:
+              - generic [ref=e400]: Nov 10, 2025 —
+              - generic [ref=e401]:
+                - text: Pair with
+                - emphasis [ref=e402]: Svelte 5's runes
+                - text: (
+                - emphasis [ref=e403]: 2025 stable
+                - text: ) for explicit
+                - emphasis [ref=e404]: reactivity
+                - text: signals let $state = $state(0); mimicking Solid.js fine-grained control.
+              - link "Read more" [ref=e405] [cursor=pointer]:
+                - /url: https://dev.to/krish_kakadiya_5f0eaf6342/svelte-in-2025-the-compile-time-rebel-thats-quietly-conquering-frontend-1n84#:~:text=Pair%20with%20Svelte%205's%20runes,%24state(0)%3B%20mimicking%20Solid.js%20fine%2Dgrained%20control.
+          - generic [ref=e409]:
+            - generic [ref=e412]:
+              - 'link "Svelte 5 in 2026: Runes-First Engineering for Developers Nitor Infotech https://www.nitorinfotech.com › blog › svelte-5-in-2026..." [ref=e414] [cursor=pointer]':
+                - /url: https://www.nitorinfotech.com/blog/svelte-5-in-2026-runes-first-engineering-for-developers/
+                - 'heading "Svelte 5 in 2026: Runes-First Engineering for Developers" [level=3] [ref=e415]'
+                - generic [ref=e420]:
+                  - generic [ref=e422]: Nitor Infotech
+                  - generic [ref=e424]: https://www.nitorinfotech.com › blog › svelte-5-in-2026...
+              - button "About this result" [ref=e425] [cursor=pointer]:
+                - img [ref=e428]
+            - generic [ref=e431]:
+              - generic [ref=e432]: Mar 9, 2026 —
+              - generic [ref=e433]:
+                - text: Full-Stack
+                - emphasis [ref=e434]: Ready
+                - text: ":"
+                - emphasis [ref=e435]: SvelteKit
+                - text: (the app framework built on top of
+                - emphasis [ref=e436]: Svelte
+                - text: ) gives you a
+                - emphasis [ref=e437]: production
+                - text: "-"
+                - emphasis [ref=e438]: ready
+                - text: setup for SSR (Server-Side Rendering) ...
+              - link "Read more" [ref=e439] [cursor=pointer]:
+                - /url: https://www.nitorinfotech.com/blog/svelte-5-in-2026-runes-first-engineering-for-developers/#:~:text=Full%2DStack%20Ready%3A%20SvelteKit%20(the%20app,right%20out%20of%20the%20box.
+          - generic [ref=e443]:
+            - generic [ref=e444]:
+              - heading "People also ask" [level=2] [ref=e445]
+              - button "About this result" [ref=e446] [cursor=pointer]:
+                - img [ref=e449]
+            - generic [ref=e451]:
+              - button "Is Svelte 5 production ready?" [ref=e457] [cursor=pointer]:
+                - generic [ref=e459]: Is Svelte 5 production ready?
+                - img [ref=e462]
+              - button "Is Svelte worth learning in 2025?" [ref=e471] [cursor=pointer]:
+                - generic [ref=e473]: Is Svelte worth learning in 2025?
+                - img [ref=e476]
+              - button "Is Svelte 5 stable?" [ref=e485] [cursor=pointer]:
+                - generic [ref=e487]: Is Svelte 5 stable?
+                - img [ref=e490]
+              - button "What are the drawbacks of SvelteKit?" [ref=e499] [cursor=pointer]:
+                - generic [ref=e501]: What are the drawbacks of SvelteKit?
+                - img [ref=e504]
+          - generic [ref=e509]:
+            - heading "Web results" [level=2] [ref=e510]
+            - generic [ref=e511]:
+              - generic [ref=e514]:
+                - link "First thoughts on Svelte 5's runes - Loopwerk loopwerk.io https://www.loopwerk.io › articles › 2025 › svelte-5-ru..." [ref=e516] [cursor=pointer]:
+                  - /url: https://www.loopwerk.io/articles/2025/svelte-5-runes/
+                  - heading "First thoughts on Svelte 5's runes - Loopwerk" [level=3] [ref=e517]
+                  - generic [ref=e522]:
+                    - generic [ref=e524]: loopwerk.io
+                    - generic [ref=e526]: https://www.loopwerk.io › articles › 2025 › svelte-5-ru...
+                - button "About this result" [ref=e527] [cursor=pointer]:
+                  - img [ref=e530]
+              - generic [ref=e533]:
+                - generic [ref=e534]: Jan 2, 2025 —
+                - generic [ref=e535]:
+                  - text: I'm very busy migrating a big
+                  - emphasis [ref=e536]: SvelteKit
+                  - text: project to
+                  - emphasis [ref=e537]: Svelte 5's
+                  - text: new
+                  - emphasis [ref=e538]: runes
+                  - text: syntax and I have to be honest... not a big fan of the increased number of lines.
+                - link "Read more" [ref=e539] [cursor=pointer]:
+                  - /url: https://www.loopwerk.io/articles/2025/svelte-5-runes/#:~:text=I'm%20very%20busy%20migrating%20a,it%20comes%20to%20the%20props.
+              - generic [ref=e541]: "Missing: stability ‎production ‎ready"
+          - generic [ref=e548]:
+            - generic [ref=e551]:
+              - link "Svelte 5 Complete Course ( 2025 ) YouTube · HuXn WebDev 13.6K+ views · 9 months ago" [ref=e553] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=I9OL8WaZ8cU
+                - heading "Svelte 5 Complete Course ( 2025 )" [level=3] [ref=e554]
+                - generic [ref=e559]:
+                  - generic [ref=e561]: YouTube · HuXn WebDev
+                  - generic [ref=e563]: 13.6K+ views · 9 months ago
+              - button "About this result" [ref=e564] [cursor=pointer]:
+                - img [ref=e567]
+            - generic [ref=e569]:
+              - button "Svelte 5 Complete Course ( 2025 ) by HuXn WebDev on YouTube. Play on Google. 39:00" [ref=e570] [cursor=pointer]:
+                - generic [ref=e572]:
+                  - img [ref=e578]
+                  - generic [ref=e581]:
+                    - generic [ref=e582]: 39:00
+                    - img [ref=e585]
+              - generic [ref=e588]: Svelte is a modern JavaScript framework (or more accurately, a compiler) for building user interfaces, particularly web apps.
+            - button "15 key moments in this video" [ref=e593] [cursor=pointer]:
+              - generic [ref=e602]:
+                - generic [ref=e605]: 15 key moments in this video
+                - img [ref=e607]
+        - generic [ref=e610]:
+          - generic [ref=e615]:
+            - heading "People also search for" [level=2] [ref=e617]
+            - generic [ref=e619]:
+              - generic [ref=e620]:
+                - link "Svelte 5 runes stability 2025 production ready reddit" [ref=e624] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+5+runes+stability+2025+production+ready+reddit&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgmEAE
+                  - generic [ref=e625]:
+                    - generic [ref=e630]: Svelte 5 runes stability 2025 production ready reddit
+                    - img [ref=e634]
+                - link "Svelte 5 runes stability 2025 production ready not working" [ref=e639] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+5+runes+stability+2025+production+ready+not+working&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAhAEAE
+                  - generic [ref=e640]:
+                    - generic [ref=e645]: Svelte 5 runes stability 2025 production ready not working
+                    - img [ref=e649]
+                - link "SvelteKit" [ref=e654] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=SvelteKit&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAg5EAE
+                  - generic [ref=e655]:
+                    - generic [ref=e660]: SvelteKit
+                    - img [ref=e664]
+                - link "Svelte runes" [ref=e669] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+runes&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgyEAE
+                  - generic [ref=e670]:
+                    - generic [ref=e675]: Svelte runes
+                    - img [ref=e679]
+              - generic [ref=e681]:
+                - link "Svelte runes typescript" [ref=e685] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+runes+typescript&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgxEAE
+                  - generic [ref=e686]:
+                    - generic [ref=e691]: Svelte runes typescript
+                    - img [ref=e695]
+                - link "Svelte 5 runes tutorial" [ref=e700] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+5+runes+tutorial&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgwEAE
+                  - generic [ref=e701]:
+                    - generic [ref=e706]: Svelte 5 runes tutorial
+                    - img [ref=e710]
+                - link "Svelte 5 docs" [ref=e715] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+5+docs&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgpEAE
+                  - generic [ref=e716]:
+                    - generic [ref=e721]: Svelte 5 docs
+                    - img [ref=e725]
+                - link "Svelte 5 examples" [ref=e730] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+5+examples&sa=X&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ1QJ6BAgoEAE
+                  - generic [ref=e731]:
+                    - generic [ref=e736]: Svelte 5 examples
+                    - img [ref=e740]
+          - navigation [ref=e742]:
+            - heading "Page Navigation" [level=1] [ref=e743]
+            - text: "1"
+            - link "Page 2" [ref=e746] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=10&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8tMDegQICRAE
+              - text: "2"
+            - link "Page 3" [ref=e748] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=20&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8tMDegQICRAG
+              - text: "3"
+            - link "Page 4" [ref=e750] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=30&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8tMDegQICRAI
+              - text: "4"
+            - link "Page 5" [ref=e752] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=40&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8tMDegQICRAK
+              - text: "5"
+            - link "Page 6" [ref=e754] [cursor=pointer]:
+              - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=50&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8tMDegQICRAM
+              - text: "6"
+            - heading "Next" [level=2] [ref=e756]:
+              - link "Next" [ref=e757] [cursor=pointer]:
+                - /url: /search?q=svelte+5+runes+stability+2025+production+ready&sca_esv=e7687de8d1b3fbf8&ei=QEvLaanjJLjh0PEPvo_PwQM&start=10&sa=N&sstk=Af77f_eLbon91j-UdocWLbyBDAF0lT_cV8v9UxZu47u15XEZRIEF81LraqMHv00eeQhYGUMib8syRB4mteTAKiWdiBwVlOQ8IEBORQ&ved=2ahUKEwipg4qopMmTAxW4MDQIHb7HMzgQ8NMDegQICRAO
+                - generic [ref=e759]: Next
+        - navigation
+    - contentinfo [ref=e760]:
+      - heading "Footer Links" [level=1] [ref=e761]
+      - generic [ref=e765]:
+        - generic [ref=e769]:
+          - button "Central District, Seattle, WA - From your IP address" [ref=e771] [cursor=pointer]:
+            - generic [ref=e772]: Central District, Seattle, WA
+            - generic [ref=e774]:
+              - text: "-"
+              - generic [ref=e775]: From your IP address
+          - text: "-"
+          - button "Update location" [ref=e777] [cursor=pointer]: Update location
+        - generic [ref=e780]:
+          - link "Help" [ref=e781] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+          - link "Send feedback" [ref=e782] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e783] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en&fg=1
+          - link "Terms" [ref=e784] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en&fg=1

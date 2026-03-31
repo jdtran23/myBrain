@@ -1,0 +1,556 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#_top"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e7]:
+          - link "Astro" [ref=e8] [cursor=pointer]:
+            - /url: https://astro.build/
+            - img [ref=e9]
+          - link "Docs" [ref=e12] [cursor=pointer]:
+            - /url: /en/getting-started/
+            - img [ref=e13]
+        - button "Search" [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]:
+            - img [ref=e19]
+            - generic [ref=e21]: Search
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - link "GitHub" [ref=e25] [cursor=pointer]:
+              - /url: https://github.com/withastro/astro
+              - generic [ref=e26]: GitHub
+              - img [ref=e27]
+            - link "Discord" [ref=e29] [cursor=pointer]:
+              - /url: https://astro.build/chat
+              - generic [ref=e30]: Discord
+              - img [ref=e31]
+          - generic [ref=e34]:
+            - generic [ref=e35]: Select theme
+            - img
+            - combobox "Select theme" [ref=e36] [cursor=pointer]:
+              - option "Dark"
+              - option "Light"
+              - option "Auto" [selected]
+            - img
+          - generic [ref=e38]:
+            - generic [ref=e39]: Select language
+            - img
+            - combobox "Select language" [ref=e40] [cursor=pointer]:
+              - option "English" [selected]
+              - option "Deutsch"
+              - option "Português do Brasil"
+              - option "Español"
+              - option "简体中文"
+              - option "正體中文"
+              - option "Français"
+              - option "हिन्दी"
+              - option "العربية"
+              - option "日本語"
+              - option "한국어"
+              - option "Polski"
+              - option "Русский"
+              - option "Italiano"
+            - img
+    - navigation "Main":
+      - generic [ref=e42]:
+        - generic [ref=e44]:
+          - tablist [ref=e45]:
+            - tab "Tutorial" [ref=e46] [cursor=pointer]:
+              - img [ref=e47]
+              - text: Tutorial
+            - tab "Guide" [selected] [ref=e50] [cursor=pointer]:
+              - img [ref=e51]
+              - text: Guide
+            - tab "Reference" [ref=e53] [cursor=pointer]:
+              - img [ref=e54]
+              - text: Reference
+            - tab "Ecosystem" [ref=e56] [cursor=pointer]:
+              - img [ref=e57]
+              - text: Ecosystem
+          - tabpanel "Guide" [ref=e60]:
+            - list [ref=e61]:
+              - listitem [ref=e62]:
+                - group [ref=e63]:
+                  - generic "Welcome, world!" [ref=e64] [cursor=pointer]:
+                    - generic [ref=e65]: Welcome, world!
+                    - img [ref=e66]
+                  - list [ref=e68]:
+                    - listitem [ref=e69]:
+                      - link "Why Astro?" [ref=e70] [cursor=pointer]:
+                        - /url: /en/concepts/why-astro/
+                    - listitem [ref=e71]:
+                      - link "Islands architecture" [ref=e72] [cursor=pointer]:
+                        - /url: /en/concepts/islands/
+                    - listitem [ref=e73]:
+                      - link "Courses" [ref=e74] [cursor=pointer]:
+                        - /url: /en/astro-courses/
+              - listitem [ref=e75]:
+                - group [ref=e76]:
+                  - generic "Start a new project" [ref=e77] [cursor=pointer]:
+                    - generic [ref=e78]: Start a new project
+                    - img [ref=e79]
+                  - list [ref=e81]:
+                    - listitem [ref=e82]:
+                      - link "Installation" [ref=e83] [cursor=pointer]:
+                        - /url: /en/install-and-setup/
+                    - listitem [ref=e84]:
+                      - link "Project structure" [ref=e85] [cursor=pointer]:
+                        - /url: /en/basics/project-structure/
+                    - listitem [ref=e86]:
+                      - link "Develop and build" [ref=e87] [cursor=pointer]:
+                        - /url: /en/develop-and-build/
+              - listitem [ref=e88]:
+                - group [ref=e89]:
+                  - generic "Configuration" [ref=e90] [cursor=pointer]:
+                    - generic [ref=e91]: Configuration
+                    - img [ref=e92]
+                  - list [ref=e94]:
+                    - listitem [ref=e95]:
+                      - link "Configuration overview" [ref=e96] [cursor=pointer]:
+                        - /url: /en/guides/configuring-astro/
+                    - listitem [ref=e97]:
+                      - link "Editor setup" [ref=e98] [cursor=pointer]:
+                        - /url: /en/editor-setup/
+                    - listitem [ref=e99]:
+                      - link "TypeScript" [ref=e100] [cursor=pointer]:
+                        - /url: /en/guides/typescript/
+                    - listitem [ref=e101]:
+                      - link "Environment variables" [ref=e102] [cursor=pointer]:
+                        - /url: /en/guides/environment-variables/
+                    - listitem [ref=e103]:
+                      - link "Working with integrations" [ref=e104] [cursor=pointer]:
+                        - /url: /en/guides/integrations/
+                    - listitem [ref=e105]:
+                      - link "Build with AI" [ref=e106] [cursor=pointer]:
+                        - /url: /en/guides/build-with-ai/
+                    - listitem [ref=e107]:
+                      - link "Dev toolbar" [ref=e108] [cursor=pointer]:
+                        - /url: /en/guides/dev-toolbar/
+              - listitem [ref=e109]:
+                - group [ref=e110]:
+                  - generic "Routing and navigation" [ref=e111] [cursor=pointer]:
+                    - generic [ref=e112]: Routing and navigation
+                    - img [ref=e113]
+                  - list [ref=e115]:
+                    - listitem [ref=e116]:
+                      - link "Pages" [ref=e117] [cursor=pointer]:
+                        - /url: /en/basics/astro-pages/
+                    - listitem [ref=e118]:
+                      - link "Routing" [ref=e119] [cursor=pointer]:
+                        - /url: /en/guides/routing/
+                    - listitem [ref=e120]:
+                      - link "Endpoints" [ref=e121] [cursor=pointer]:
+                        - /url: /en/guides/endpoints/
+                    - listitem [ref=e122]:
+                      - link "Middleware" [ref=e123] [cursor=pointer]:
+                        - /url: /en/guides/middleware/
+                    - listitem [ref=e124]:
+                      - link "Internationalization (i18n)" [ref=e125] [cursor=pointer]:
+                        - /url: /en/guides/internationalization/
+                    - listitem [ref=e126]:
+                      - link "Prefetch" [ref=e127] [cursor=pointer]:
+                        - /url: /en/guides/prefetch/
+                    - listitem [ref=e128]:
+                      - link "View transitions" [ref=e129] [cursor=pointer]:
+                        - /url: /en/guides/view-transitions/
+              - listitem [ref=e130]:
+                - group [ref=e131]:
+                  - generic "Build your UI" [ref=e132] [cursor=pointer]:
+                    - generic [ref=e133]: Build your UI
+                    - img [ref=e134]
+                  - list [ref=e136]:
+                    - listitem [ref=e137]:
+                      - link "Components" [ref=e138] [cursor=pointer]:
+                        - /url: /en/basics/astro-components/
+                    - listitem [ref=e139]:
+                      - link "Layouts" [ref=e140] [cursor=pointer]:
+                        - /url: /en/basics/layouts/
+                    - listitem [ref=e141]:
+                      - link "Styles and CSS" [ref=e142] [cursor=pointer]:
+                        - /url: /en/guides/styling/
+                    - listitem [ref=e143]:
+                      - link "Fonts" [ref=e144] [cursor=pointer]:
+                        - /url: /en/guides/fonts/
+                    - listitem [ref=e145]:
+                      - link "Syntax Highlighting" [ref=e146] [cursor=pointer]:
+                        - /url: /en/guides/syntax-highlighting/
+                    - listitem [ref=e147]:
+                      - link "Scripts and event handling" [ref=e148] [cursor=pointer]:
+                        - /url: /en/guides/client-side-scripts/
+                    - listitem [ref=e149]:
+                      - link "Front-end frameworks" [ref=e150] [cursor=pointer]:
+                        - /url: /en/guides/framework-components/
+              - listitem [ref=e151]:
+                - group [ref=e152]:
+                  - generic "Add content to your site" [ref=e153] [cursor=pointer]:
+                    - generic [ref=e154]: Add content to your site
+                    - img [ref=e155]
+                  - list [ref=e157]:
+                    - listitem [ref=e158]:
+                      - link "Markdown" [ref=e159] [cursor=pointer]:
+                        - /url: /en/guides/markdown-content/
+                    - listitem [ref=e160]:
+                      - link "Content collections" [ref=e161] [cursor=pointer]:
+                        - /url: /en/guides/content-collections/
+                    - listitem [ref=e162]:
+                      - link "Images" [ref=e163] [cursor=pointer]:
+                        - /url: /en/guides/images/
+                    - listitem [ref=e164]:
+                      - link "Data fetching" [ref=e165] [cursor=pointer]:
+                        - /url: /en/guides/data-fetching/
+                    - listitem [ref=e166]:
+                      - link "Astro DB" [ref=e167] [cursor=pointer]:
+                        - /url: /en/guides/astro-db/
+              - listitem [ref=e168]:
+                - group [ref=e169]:
+                  - generic "Server rendering" [ref=e170] [cursor=pointer]:
+                    - generic [ref=e171]: Server rendering
+                    - img [ref=e172]
+                  - list [ref=e174]:
+                    - listitem [ref=e175]:
+                      - link "On-demand rendering" [ref=e176] [cursor=pointer]:
+                        - /url: /en/guides/on-demand-rendering/
+                    - listitem [ref=e177]:
+                      - link "Server islands" [ref=e178] [cursor=pointer]:
+                        - /url: /en/guides/server-islands/
+                    - listitem [ref=e179]:
+                      - link "Actions" [ref=e180] [cursor=pointer]:
+                        - /url: /en/guides/actions/
+                    - listitem [ref=e181]:
+                      - link "Sessions" [ref=e182] [cursor=pointer]:
+                        - /url: /en/guides/sessions/
+              - listitem [ref=e183]:
+                - group [ref=e184]:
+                  - generic "Upgrade" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e186]: Upgrade
+                    - img [ref=e187]
+                  - list [ref=e189]:
+                    - listitem [ref=e190]:
+                      - link "Upgrade Astro" [ref=e191] [cursor=pointer]:
+                        - /url: /en/upgrade-astro/
+                    - listitem [ref=e192]:
+                      - group [ref=e193]:
+                        - generic "Major upgrade guides" [ref=e194] [cursor=pointer]:
+                          - generic [ref=e195]: Major upgrade guides
+                          - img [ref=e196]
+              - listitem [ref=e198]:
+                - link "Troubleshooting" [ref=e199] [cursor=pointer]:
+                  - /url: /en/guides/troubleshooting/
+              - listitem [ref=e200]:
+                - group [ref=e201]:
+                  - generic "How-to recipes" [ref=e202] [cursor=pointer]:
+                    - generic [ref=e203]: How-to recipes
+                    - img [ref=e204]
+              - listitem [ref=e206]:
+                - group [ref=e207]:
+                  - generic "Migrate to Astro" [ref=e208] [cursor=pointer]:
+                    - generic [ref=e209]: Migrate to Astro
+                    - img [ref=e210]
+              - listitem [ref=e212]:
+                - link "Contribute to Astro" [ref=e213] [cursor=pointer]:
+                  - /url: /en/contribute/
+        - generic [ref=e215]:
+          - heading "Sponsored by" [level=2] [ref=e216]
+          - link "Netlify" [ref=e217] [cursor=pointer]:
+            - /url: https://www.netlify.com/?utm_campaign=Astro-2024&utm_source=astro-referral
+            - img [ref=e218]
+          - link "Webflow" [ref=e221] [cursor=pointer]:
+            - /url: https://webflow.com/feature/cloud?utm_source=Astro&utm_medium=tech-partner&utm_campaign=fy26-astro&utm_content=fy26-docs
+            - img [ref=e222]
+          - link "Cloudflare" [ref=e225] [cursor=pointer]:
+            - /url: https://www.cloudflare.com/?utm_source=astro&utm_medium=astro&utm_campaign=astro
+            - img [ref=e226]
+          - link "Mux" [ref=e230] [cursor=pointer]:
+            - /url: https://www.mux.com/?utm_campaign=21819274-Astro&utm_source=astro
+            - img [ref=e231]
+          - link "Image Kit" [ref=e233] [cursor=pointer]:
+            - /url: https://imagekit.io/?utm_source=astro&utm_medium=astro&utm_campaign=astro
+            - img [ref=e234]
+    - generic [ref=e243]:
+      - complementary:
+        - navigation "On this page" [ref=e244]:
+          - group [ref=e245]:
+            - generic "On this page" [ref=e246]:
+              - generic [ref=e247] [cursor=pointer]:
+                - text: On this page
+                - img [ref=e248]
+      - main [ref=e251]:
+        - heading "Why Astro?" [level=1] [ref=e254]
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - paragraph [ref=e258]:
+              - strong [ref=e259]: Astro
+              - text: is the web framework for building
+              - strong [ref=e260]: content-driven websites
+              - text: like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new
+              - link "frontend architecture" [ref=e261] [cursor=pointer]:
+                - /url: /en/concepts/islands/
+              - text: to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.
+            - generic [ref=e262]:
+              - heading "Features" [level=2] [ref=e263]
+              - link "Section titled “Features”" [ref=e264] [cursor=pointer]:
+                - /url: "#features"
+                - img [ref=e266]
+                - generic [ref=e268]: Section titled “Features”
+            - paragraph [ref=e269]:
+              - strong [ref=e270]: Astro is an all-in-one web framework.
+              - text: It includes everything you need to create a website, built-in. There are also hundreds of different
+              - link "integrations" [ref=e271] [cursor=pointer]:
+                - /url: https://astro.build/integrations/
+              - text: and
+              - link "API hooks" [ref=e272] [cursor=pointer]:
+                - /url: /en/reference/integrations-reference/
+              - text: available to customize a project to your exact use case and needs.
+            - paragraph [ref=e273]: "Some highlights include:"
+            - list [ref=e274]:
+              - listitem [ref=e275]:
+                - strong [ref=e276]:
+                  - link "Islands" [ref=e277] [cursor=pointer]:
+                    - /url: /en/concepts/islands/
+                  - text: ":"
+                - text: A component-based web architecture optimized for content-driven websites.
+              - listitem [ref=e278]:
+                - strong [ref=e279]:
+                  - link "UI-agnostic" [ref=e280] [cursor=pointer]:
+                    - /url: /en/guides/framework-components/
+                  - text: ":"
+                - text: Supports React, Preact, Svelte, Vue, Solid, HTMX, web components, and more.
+              - listitem [ref=e281]:
+                - strong [ref=e282]:
+                  - link "Server-first" [ref=e283] [cursor=pointer]:
+                    - /url: /en/guides/on-demand-rendering/
+                  - text: ":"
+                - text: Moves expensive rendering off of your visitors’ devices.
+              - listitem [ref=e284]:
+                - strong [ref=e285]:
+                  - link "Zero JS, by default" [ref=e286] [cursor=pointer]:
+                    - /url: /en/basics/astro-components/
+                  - text: ":"
+                - text: Less client-side JavaScript to slow your site down.
+              - listitem [ref=e287]:
+                - strong [ref=e288]:
+                  - link "Content collections" [ref=e289] [cursor=pointer]:
+                    - /url: /en/guides/content-collections/
+                  - text: ":"
+                - text: Organize, validate, and provide TypeScript type-safety for your Markdown content.
+              - listitem [ref=e290]:
+                - strong [ref=e291]:
+                  - link "Customizable" [ref=e292] [cursor=pointer]:
+                    - /url: /en/guides/integrations/
+                  - text: ":"
+                - text: Partytown, MDX, and hundreds of integrations to choose from.
+            - generic [ref=e293]:
+              - heading "Design Principles" [level=2] [ref=e294]
+              - link "Section titled “Design Principles”" [ref=e295] [cursor=pointer]:
+                - /url: "#design-principles"
+                - img [ref=e297]
+                - generic [ref=e299]: Section titled “Design Principles”
+            - paragraph [ref=e300]: Here are five core design principles to help explain why we built Astro, the problems that it exists to solve, and why Astro may be the best choice for your project or team.
+            - paragraph [ref=e301]: Astro is…
+            - list [ref=e302]:
+              - listitem [ref=e303]:
+                - strong [ref=e304]:
+                  - link "Content-driven" [ref=e305] [cursor=pointer]:
+                    - /url: "#content-driven"
+                  - text: ":"
+                - text: Astro was designed to showcase your content.
+              - listitem [ref=e306]:
+                - strong [ref=e307]:
+                  - link "Server-first" [ref=e308] [cursor=pointer]:
+                    - /url: "#server-first"
+                  - text: ":"
+                - text: Websites run faster when they render HTML on the server.
+              - listitem [ref=e309]:
+                - strong [ref=e310]:
+                  - link "Fast by default" [ref=e311] [cursor=pointer]:
+                    - /url: "#fast-by-default"
+                  - text: ":"
+                - text: It should be impossible to build a slow website in Astro.
+              - listitem [ref=e312]:
+                - strong [ref=e313]:
+                  - link "Easy to use" [ref=e314] [cursor=pointer]:
+                    - /url: "#easy-to-use"
+                  - text: ":"
+                - text: You don’t need to be an expert to build something with Astro.
+              - listitem [ref=e315]:
+                - strong [ref=e316]:
+                  - link "Developer-focused" [ref=e317] [cursor=pointer]:
+                    - /url: "#developer-focused"
+                  - text: ":"
+                - text: You should have the resources you need to be successful.
+            - generic [ref=e318]:
+              - heading "Content-driven" [level=3] [ref=e319]
+              - link "Section titled “Content-driven”" [ref=e320] [cursor=pointer]:
+                - /url: "#content-driven"
+                - img [ref=e322]
+                - generic [ref=e324]: Section titled “Content-driven”
+            - paragraph [ref=e325]:
+              - strong [ref=e326]: Astro was designed for building content-rich websites.
+              - text: This includes marketing sites, publishing sites, documentation sites, blogs, portfolios, landing pages, community sites, and e-commerce sites. If you have content to show, it needs to reach your reader quickly.
+            - paragraph [ref=e327]:
+              - text: By contrast, most modern web frameworks were designed for building
+              - emphasis [ref=e328]: web applications
+              - text: ". These frameworks excel at building more complex, application-like experiences in the browser: logged-in admin dashboards, inboxes, social networks, todo lists, and even native-like applications like"
+              - link "Figma" [ref=e329] [cursor=pointer]:
+                - /url: https://figma.com/
+              - text: and
+              - link "Ping" [ref=e330] [cursor=pointer]:
+                - /url: https://ping.gg/
+              - text: . However with that complexity, they can struggle to provide great performance when delivering your content.
+            - paragraph [ref=e331]:
+              - text: Astro’s focus on content from its beginnings as a static site builder have allowed Astro to
+              - strong [ref=e332]: sensibly scale up to performant, powerful, dynamic web applications
+              - text: that still respect your content and your audience. Astro’s unique focus on content lets Astro make tradeoffs and deliver unmatched performance features that wouldn’t make sense for more application-focused web frameworks to implement.
+            - generic [ref=e333]:
+              - heading "Server-first" [level=3] [ref=e334]
+              - link "Section titled “Server-first”" [ref=e335] [cursor=pointer]:
+                - /url: "#server-first"
+                - img [ref=e337]
+                - generic [ref=e339]: Section titled “Server-first”
+            - paragraph [ref=e340]:
+              - strong [ref=e341]: Astro leverages server rendering over client-side rendering in the browser as much as possible.
+              - text: This is the same approach that traditional server-side frameworks -- PHP, WordPress, Laravel, Ruby on Rails, etc. -- have been using for decades. But you don’t need to learn a second server-side language to unlock it. With Astro, everything is still just HTML, CSS, and JavaScript (or TypeScript, if you prefer).
+            - paragraph [ref=e342]:
+              - text: This approach stands in contrast to other modern JavaScript web frameworks like Next.js, SvelteKit, Nuxt, Remix, and others. These frameworks were built for client-side rendering of your entire website and include server-side rendering mainly to address performance concerns. This approach has been dubbed the
+              - strong [ref=e343]: Single-Page App (SPA)
+              - text: ", in contrast with Astro’s"
+              - strong [ref=e344]: Multi-Page App (MPA)
+              - text: approach.
+            - paragraph [ref=e345]:
+              - text: The SPA model has its benefits. However, these come at the expense of additional complexity and performance tradeoffs. These tradeoffs harm page performance -- critical metrics like
+              - link "Time to Interactive (TTI)" [ref=e346] [cursor=pointer]:
+                - /url: https://web.dev/interactive/
+              - text: "-- which doesn’t make much sense for content-focused websites where first-load performance is essential."
+            - paragraph [ref=e347]: Astro’s server-first approach allows you to opt in to client-side rendering only if, and exactly as, necessary. You can choose to add UI framework components that run on the client. You can take advantage of Astro’s view transitions router for finer control over select page transitions and animations. Astro’s server-first rendering, either pre-rendered or on-demand, provides performant defaults that you can enhance and extend.
+            - generic [ref=e348]:
+              - heading "Fast by default" [level=3] [ref=e349]
+              - link "Section titled “Fast by default”" [ref=e350] [cursor=pointer]:
+                - /url: "#fast-by-default"
+                - img [ref=e352]
+                - generic [ref=e354]: Section titled “Fast by default”
+            - paragraph [ref=e355]:
+              - text: Good performance is always important, but it is
+              - emphasis [ref=e356]: especially
+              - text: "critical for websites whose success depends on displaying your content. It has been well-proven that poor performance loses you engagement, conversions, and money. For example:"
+            - list [ref=e357]:
+              - listitem [ref=e358]:
+                - text: Every 100ms faster → 1% more conversions (
+                - link "Mobify" [ref=e359] [cursor=pointer]:
+                  - /url: https://web.dev/why-speed-matters/
+                - text: ", earning +$380,000/yr)"
+              - listitem [ref=e360]:
+                - text: 50% faster → 12% more sales (
+                - link "AutoAnything" [ref=e361] [cursor=pointer]:
+                  - /url: https://www.digitalcommerce360.com/2010/08/19/web-accelerator-revs-conversion-and-sales-autoanything/
+                - text: )
+              - listitem [ref=e362]:
+                - text: 20% faster → 10% more conversions (
+                - link "Furniture Village" [ref=e363] [cursor=pointer]:
+                  - /url: https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/furniture-village-and-greenlight-slash-page-load-times-boosting-user-experience/
+                - text: )
+              - listitem [ref=e364]:
+                - text: 40% faster → 15% more sign-ups (
+                - link "Pinterest" [ref=e365] [cursor=pointer]:
+                  - /url: https://medium.com/pinterest-engineering/driving-user-growth-with-performance-improvements-cfc50dafadd7
+                - text: )
+              - listitem [ref=e366]:
+                - text: 850ms faster → 7% more conversions (
+                - link "COOK" [ref=e367] [cursor=pointer]:
+                  - /url: https://web.dev/why-speed-matters/
+                - text: )
+              - listitem [ref=e368]:
+                - text: Every 1 second slower → 10% fewer users (
+                - link "BBC" [ref=e369] [cursor=pointer]:
+                  - /url: https://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale
+                - text: )
+            - paragraph [ref=e370]: In many web frameworks, it is easy to build a website that looks great during development only to load painfully slow once deployed. JavaScript is often the culprit, since many phones and lower-powered devices rarely match the speed of a developer’s laptop.
+            - paragraph [ref=e371]:
+              - text: "Astro’s magic is in how it combines the two values explained above -- a content focus with a server-first architecture -- to make tradeoffs and deliver features that other frameworks cannot. The result is amazing web performance for every website, out of the box. Our goal:"
+              - strong [ref=e372]: It should be nearly impossible to build a slow website with Astro.
+            - paragraph [ref=e373]:
+              - text: An Astro website can
+              - link "load 40% faster with 90% less JavaScript" [ref=e374] [cursor=pointer]:
+                - /url: https://twitter.com/t3dotgg/status/1437195415439360003
+              - text: "than the same site built with the most popular React web framework. But don’t take our word for it: watch Astro’s performance leave Ryan Carniato (creator of Solid.js and Marko)"
+              - link "speechless" [ref=e375] [cursor=pointer]:
+                - /url: https://youtu.be/2ZEMb_H-LYE?t=8163
+              - text: .
+            - generic [ref=e376]:
+              - heading "Easy to use" [level=3] [ref=e377]
+              - link "Section titled “Easy to use”" [ref=e378] [cursor=pointer]:
+                - /url: "#easy-to-use"
+                - img [ref=e380]
+                - generic [ref=e382]: Section titled “Easy to use”
+            - paragraph [ref=e383]:
+              - strong [ref=e384]: Astro’s goal is to be accessible to every web developer.
+              - text: Astro was designed to feel familiar and approachable regardless of skill level or past experience with web development.
+            - paragraph [ref=e385]:
+              - text: The
+              - code [ref=e386]: .astro
+              - text: "UI language is a superset of HTML: any valid HTML is valid Astro templating syntax! So, if you can write HTML, you can write Astro components! But, it also combines some of our favorite features borrowed from other component languages like JSX expressions (React) and CSS scoping by default (Svelte and Vue). This closeness to HTML also makes it easier to use progressive enhancement and common accessibility patterns without any overhead."
+            - paragraph [ref=e387]: We then made sure that you could also use your favorite UI component languages that you already know, and even reuse components you might already have. React, Preact, Svelte, Vue, Solid, and others, including web components, are all supported for authoring UI components in an Astro project.
+            - paragraph [ref=e388]: Astro was designed to be less complex than other UI frameworks and languages. One big reason for this is that Astro was designed to render on the server, not in the browser. That means that you don’t need to worry about hooks (React), stale closures (also React), refs (Vue), observables (Svelte), atoms, selectors, reactions, or derivations. There is no reactivity on the server, so all of that complexity melts away.
+            - paragraph [ref=e389]:
+              - text: One of our favorite sayings is
+              - strong [ref=e390]: opt in to complexity.
+              - text: We designed Astro to remove as much “required complexity” as possible from the developer experience, especially as you onboard for the first time. You can build a “Hello World” example website in Astro with just HTML and CSS. Then, when you need to build something more powerful, you can incrementally reach for new features and APIs as you go.
+            - generic [ref=e391]:
+              - heading "Developer-focused" [level=3] [ref=e392]
+              - link "Section titled “Developer-focused”" [ref=e393] [cursor=pointer]:
+                - /url: "#developer-focused"
+                - img [ref=e395]
+                - generic [ref=e397]: Section titled “Developer-focused”
+            - paragraph [ref=e398]: We strongly believe that Astro is only a successful project if people love using it. Astro has everything you need to support you as you build with Astro.
+            - paragraph [ref=e399]: Astro invests in developer tools like a great CLI experience from the moment you open your terminal, an official VS Code extension for syntax highlighting, TypeScript and Intellisense, and documentation actively maintained by hundreds of community contributors and available in 14 languages.
+            - paragraph [ref=e400]:
+              - text: Our welcoming, respectful, inclusive community on Discord is ready to provide support, motivation, and encouragement. Open a
+              - code [ref=e401]: "#support"
+              - text: thread to get help with your project. Visit our dedicated
+              - code [ref=e402]: "#showcase"
+              - text: channel for sharing your Astro sites, blog posts, videos, and even work-in-progress for safe feedback and constructive criticism. Participate in regular live events such as our weekly community call, “Talking and Doc’ing,” and API/bug bashes.
+            - paragraph [ref=e403]: As an open-source project, we welcome contributions of all types and sizes from community members of all experience levels. You are invited to join in roadmap discussions to shape the future of Astro, and we hope you’ll contribute fixes and features to the core codebase, compiler, docs, language tools, websites, and other projects.
+          - complementary "Learn Astro with James Q Quick" [ref=e406]:
+            - img "Scrimba" [ref=e408]
+            - heading "Learn Astro with James Q Quick" [level=2] [ref=e409]:
+              - strong [ref=e410]: Learn Astro
+              - text: with James Q Quick
+            - paragraph [ref=e411]: Build your first site with 35 interactive Scrimba lessons
+            - link "Get 20% off" [ref=e412] [cursor=pointer]:
+              - /url: https://scrimba.com/intro-to-astro-c00ar0fi5u?via=astro
+          - generic [ref=e413]:
+            - generic [ref=e415]:
+              - link "Edit page" [ref=e416] [cursor=pointer]:
+                - /url: https://github.com/withastro/docs/edit/main/src/content/docs/en/concepts/why-astro.mdx
+                - img [ref=e417]
+                - text: Edit page
+              - link "Translate this page" [ref=e419] [cursor=pointer]:
+                - /url: https://contribute.docs.astro.build/guides/i18n/
+                - img [ref=e420]
+                - text: Translate this page
+            - generic [ref=e422]:
+              - link "Previous Unit 6 - Astro Islands" [ref=e423] [cursor=pointer]:
+                - /url: /en/tutorial/6-islands/
+                - img [ref=e424]
+                - generic [ref=e426]:
+                  - text: Previous
+                  - text: Unit 6 - Astro Islands
+              - link "Next Islands architecture" [ref=e427] [cursor=pointer]:
+                - /url: /en/concepts/islands/
+                - img [ref=e428]
+                - generic [ref=e430]:
+                  - text: Next
+                  - text: Islands architecture
+          - generic [ref=e431]:
+            - link "Contribute" [ref=e432] [cursor=pointer]:
+              - /url: /en/contribute/
+              - img [ref=e433]
+              - text: Contribute
+            - link "Community" [ref=e436] [cursor=pointer]:
+              - /url: https://astro.build/chat
+              - img [ref=e437]
+              - text: Community
+            - link "Sponsor" [ref=e439] [cursor=pointer]:
+              - /url: https://opencollective.com/astrodotbuild
+              - img [ref=e440]
+              - text: Sponsor

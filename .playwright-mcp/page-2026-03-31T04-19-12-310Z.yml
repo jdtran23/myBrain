@@ -1,0 +1,415 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: htmx fastapi jinja dashboard project limitations charts htmx fastapi jinja dashboard project limitations charts
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "Sign in" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dhtmx%2Bfastapi%2Bjinja%2Bdashboard%2Bproject%2Blimitations%2Bcharts&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "AI Mode" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&aep=1&ntc=1&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ2J8OegQIExAE
+              - generic [ref=e81]: AI Mode
+          - listitem [ref=e82]:
+            - link "All" [disabled] [ref=e83]:
+              - generic [ref=e85]: All
+          - listitem [ref=e86]:
+            - link "Images" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQtKgLegQIGRAB
+              - generic [ref=e89]: Images
+          - listitem [ref=e90]:
+            - link "Videos" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQtKgLegQIGBAB
+              - generic [ref=e93]: Videos
+          - listitem [ref=e94]:
+            - link "Forums" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQs6gLegQIFhAB
+              - generic [ref=e97]: Forums
+          - listitem [ref=e98]:
+            - link "Shopping" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&q=htmx+fastapi+jinja+dashboard+project+limitations+charts&ved=1t:220175&ictx=111
+              - generic [ref=e101]: Shopping
+          - listitem [ref=e102]:
+            - link "Short videos" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhWd5G3zo_UP1QuiWQbQdC0uEyj49Iy43Tk0qIMousFs65SKUlmLSf2tVZi7oM3I5JQfNhYdwWzq9bejlmxLE2kuAY1D9A&q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQs6gLegQIFRAB
+              - generic [ref=e105]: Short videos
+          - listitem [ref=e106]:
+            - button "More filters" [ref=e107] [cursor=pointer]:
+              - generic "More filters" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: More
+                  - img [ref=e112]
+        - button "Tools" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Tools
+            - img [ref=e120]
+    - heading "Search Results" [level=1] [ref=e122]
+    - generic [ref=e127]:
+      - generic [ref=e146]:
+        - heading "Thinking" [level=2] [ref=e150]:
+          - generic [ref=e151]: Thinking
+        - progressbar [ref=e152]
+      - main [ref=e154]:
+        - generic [ref=e158]:
+          - generic [ref=e161]:
+            - heading "Web results" [level=2] [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e166]:
+                - link "Building Real-Time Dashboards with FastAPI and HTMX Medium · Daniel Boadzie 830+ likes · 9 months ago" [ref=e168] [cursor=pointer]:
+                  - /url: https://medium.com/codex/building-real-time-dashboards-with-fastapi-and-htmx-01ea458673cb
+                  - heading "Building Real-Time Dashboards with FastAPI and HTMX" [level=3] [ref=e169]
+                  - generic [ref=e174]:
+                    - generic [ref=e176]: Medium · Daniel Boadzie
+                    - generic [ref=e178]: 830+ likes · 9 months ago
+                - button "About this result" [ref=e179] [cursor=pointer]:
+                  - img [ref=e182]
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - emphasis [ref=e187]: FastAPI streams data to browsers using SSE
+                  - text: (like a radio station broadcasting); HTMX listens for these updates and automatically updates the ...
+                - link "Read more" [ref=e188] [cursor=pointer]:
+                  - /url: https://medium.com/codex/building-real-time-dashboards-with-fastapi-and-htmx-01ea458673cb#:~:text=FastAPI%20streams%20data%20to%20browsers,the%20page%20(no%20JavaScript%20required)
+          - generic [ref=e192]:
+            - generic [ref=e195]:
+              - link "How to build real-time dashboards with FastAPI and HTMX LinkedIn · Daniel Boadzie 20+ reactions · 5 months ago" [ref=e197] [cursor=pointer]:
+                - /url: https://www.linkedin.com/posts/boadzie_ai-fastapi-htmx-activity-7381594522448769025-CyHn
+                - heading "How to build real-time dashboards with FastAPI and HTMX" [level=3] [ref=e198]
+                - generic [ref=e203]:
+                  - generic [ref=e205]: LinkedIn · Daniel Boadzie
+                  - generic [ref=e207]: 20+ reactions · 5 months ago
+              - button "About this result" [ref=e208] [cursor=pointer]:
+                - img [ref=e211]
+            - generic [ref=e215]:
+              - text: "Excited to share: My latest article on building real-time"
+              - emphasis [ref=e216]: dashboards
+              - text: just hit 10K views! In just 13 minutes, you'll learn how to create ...
+            - generic [ref=e218]: "Missing: jinja ‎limitations"
+          - generic [ref=e222]:
+            - generic [ref=e225]:
+              - link "HTMX a great framework that I'll never use again Reddit · r/htmx 100+ comments · 11 months ago" [ref=e227] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/htmx/comments/1k5bz3y/htmx_a_great_framework_that_ill_never_use_again/
+                - heading "HTMX a great framework that I'll never use again" [level=3] [ref=e228]
+                - generic [ref=e233]:
+                  - generic [ref=e235]: Reddit · r/htmx
+                  - generic [ref=e237]: 100+ comments · 11 months ago
+              - button "About this result" [ref=e238] [cursor=pointer]:
+                - img [ref=e241]
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - emphasis [ref=e246]: HTMX is bad for big projects
+                - text: . HTMX is great for small projects and so is jQuery so why use HTMX? Besides can you guarantee that your project would always be ...
+              - link "Read more" [ref=e247] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/htmx/comments/1k5bz3y/htmx_a_great_framework_that_ill_never_use_again/#:~:text=TLDR%3A%20HTMX%20is%20bad%20for,small%20enough%20to%20justify%20HTMX%3F
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - link "Luck with HTMX+FastAPI+Jinja2+Supabase? - Reddit" [ref=e254] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/htmx/comments/1el3s5n/luck_with_htmxfastapijinja2supabase/
+                  - generic [ref=e255]:
+                    - text: Luck with
+                    - emphasis [ref=e256]: HTMX
+                    - text: +
+                    - emphasis [ref=e257]: FastAPI
+                    - text: +
+                    - emphasis [ref=e258]: Jinja2
+                    - text: +Supabase? - Reddit
+                - generic [ref=e260]: 8 posts
+                - generic [ref=e262]: Aug 6, 2024
+              - generic [ref=e263]:
+                - link "How to handle this elegantly in htmx (fastAPI + Jinja2 ..." [ref=e266] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/htmx/comments/1i5yco6/how_to_handle_this_elegantly_in_htmx_fastapi/
+                  - generic [ref=e267]:
+                    - text: How to handle this elegantly in
+                    - emphasis [ref=e268]: htmx
+                    - text: (
+                    - emphasis [ref=e269]: fastAPI
+                    - text: +
+                    - emphasis [ref=e270]: Jinja2
+                    - text: ...
+                - generic [ref=e272]: 7 posts
+                - generic [ref=e274]: Jan 20, 2025
+              - link "More results from www.reddit.com" [ref=e278] [cursor=pointer]:
+                - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts+site:www.reddit.com&sca_esv=e7687de8d1b3fbf8&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQrQIoAnoECBoQAw
+            - generic [ref=e280]:
+              - text: "Missing: limitations ‎| Show results with:"
+              - link "limitations" [ref=e281] [cursor=pointer]:
+                - /url: /search?sca_esv=e7687de8d1b3fbf8&q=htmx+fastapi+jinja+dashboard+project+%22limitations%22+charts&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ5t4CegQIIRAB
+          - generic [ref=e285]:
+            - generic [ref=e288]:
+              - link "Building Real-Time Dashboards with FastAPI, HTMX & ... Medium · Daniel Boadzie 520+ likes · 7 months ago" [ref=e290] [cursor=pointer]:
+                - /url: https://medium.com/codex/building-real-time-dashboards-with-fastapi-htmx-plotly-python-the-pure-python-charts-edition-2c29e77da953
+                - heading "Building Real-Time Dashboards with FastAPI, HTMX & ..." [level=3] [ref=e291]
+                - generic [ref=e296]:
+                  - generic [ref=e298]: Medium · Daniel Boadzie
+                  - generic [ref=e300]: 520+ likes · 7 months ago
+              - button "About this result" [ref=e301] [cursor=pointer]:
+                - img [ref=e304]
+            - generic [ref=e308]:
+              - text: Building Real-Time
+              - emphasis [ref=e309]: Dashboards
+              - text: with
+              - emphasis [ref=e310]: FastAPI
+              - text: ","
+              - emphasis [ref=e311]: HTMX
+              - text: "& Plotly Python: The Pure Python"
+              - emphasis [ref=e312]: Charts
+              - text: Edition Welcome Back,
+              - emphasis [ref=e313]: Dashboard
+              - text: Builders!
+            - generic [ref=e315]: "Missing: jinja ‎limitations"
+          - generic [ref=e319]:
+            - generic [ref=e322]:
+              - link "Using HTMX with FastAPI TestDriven.io https://testdriven.io › blog › fastapi-htmx" [ref=e324] [cursor=pointer]:
+                - /url: https://testdriven.io/blog/fastapi-htmx/
+                - heading "Using HTMX with FastAPI" [level=3] [ref=e325]
+                - generic [ref=e330]:
+                  - generic [ref=e332]: TestDriven.io
+                  - generic [ref=e334]: https://testdriven.io › blog › fastapi-htmx
+              - button "About this result" [ref=e335] [cursor=pointer]:
+                - img [ref=e338]
+            - generic [ref=e341]:
+              - generic [ref=e342]: Jul 9, 2024 —
+              - generic [ref=e343]:
+                - text: This tutorial looks at how use
+                - emphasis [ref=e344]: HTMX
+                - text: with
+                - emphasis [ref=e345]: FastAPI
+                - text: by creating a simple todo web app and deploying it on Render.
+              - link "Read more" [ref=e346] [cursor=pointer]:
+                - /url: https://testdriven.io/blog/fastapi-htmx/#:~:text=This%20tutorial%20looks%20at%20how,and%20deploying%20it%20on%20Render.
+            - generic [ref=e348]: "Missing: dashboard ‎charts"
+          - generic [ref=e352]:
+            - generic [ref=e355]:
+              - link "Templates FastAPI https://fastapi.tiangolo.com › advanced › templates" [ref=e357] [cursor=pointer]:
+                - /url: https://fastapi.tiangolo.com/advanced/templates/
+                - heading "Templates" [level=3] [ref=e358]
+                - generic [ref=e363]:
+                  - generic [ref=e365]: FastAPI
+                  - generic [ref=e367]: https://fastapi.tiangolo.com › advanced › templates
+              - button "About this result" [ref=e368] [cursor=pointer]:
+                - img [ref=e371]
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - text: You can use any template engine you want with
+                - emphasis [ref=e376]: FastAPI
+                - text: . A common choice is
+                - emphasis [ref=e377]: Jinja2
+                - text: ", the same one used by Flask and other tools."
+              - link "Read more" [ref=e378] [cursor=pointer]:
+                - /url: https://fastapi.tiangolo.com/advanced/templates/#:~:text=You%20can%20use%20any%20template,by%20Flask%20and%20other%20tools.
+          - generic [ref=e382]:
+            - generic [ref=e385]:
+              - link "Making a simple dashboard with HTMX GitHub https://ggoggam.github.io › blog › dashboard" [ref=e387] [cursor=pointer]:
+                - /url: https://ggoggam.github.io/blog/dashboard
+                - heading "Making a simple dashboard with HTMX" [level=3] [ref=e388]
+                - generic [ref=e393]:
+                  - generic [ref=e395]: GitHub
+                  - generic [ref=e397]: https://ggoggam.github.io › blog › dashboard
+              - button "About this result" [ref=e398] [cursor=pointer]:
+                - img [ref=e401]
+            - generic [ref=e404]:
+              - generic [ref=e405]: Jun 20, 2024 —
+              - generic [ref=e406]:
+                - text: I took on a quick side
+                - emphasis [ref=e407]: project
+                - text: to build a
+                - emphasis [ref=e408]: dashboard
+                - text: for monitoring server statuses in my lab. There used to be a similar tool created by a former lab member.
+              - link "Read more" [ref=e409] [cursor=pointer]:
+                - /url: https://ggoggam.github.io/blog/dashboard#:~:text=As%20I%20was%20wrapping%20up,and%20was%20no%20longer%20maintained.
+          - generic [ref=e413]:
+            - generic [ref=e414]:
+              - heading "People also ask" [level=2] [ref=e415]
+              - button "About this result" [ref=e416] [cursor=pointer]:
+                - img [ref=e419]
+            - generic [ref=e421]:
+              - button "What are the limitations of FastAPI?" [ref=e427] [cursor=pointer]:
+                - generic [ref=e429]: What are the limitations of FastAPI?
+                - img [ref=e432]
+              - button "Is flask better than FastAPI for HTMX?" [ref=e441] [cursor=pointer]:
+                - generic [ref=e443]: Is flask better than FastAPI for HTMX?
+                - img [ref=e446]
+          - generic [ref=e451]:
+            - heading "Web results" [level=2] [ref=e452]
+            - generic [ref=e453]:
+              - generic [ref=e456]:
+                - link "Hyperflask – Full stack Flask and Htmx framework Hacker News https://news.ycombinator.com › item" [ref=e458] [cursor=pointer]:
+                  - /url: https://news.ycombinator.com/item?id=45604673
+                  - heading "Hyperflask – Full stack Flask and Htmx framework" [level=3] [ref=e459]
+                  - generic [ref=e464]:
+                    - generic [ref=e466]: Hacker News
+                    - generic [ref=e468]: https://news.ycombinator.com › item
+                - button "About this result" [ref=e469] [cursor=pointer]:
+                  - img [ref=e472]
+              - generic [ref=e475]:
+                - generic [ref=e476]:
+                  - text: I have an admin
+                  - emphasis [ref=e477]: dashboard
+                  - text: built with
+                  - emphasis [ref=e478]: FastAPI
+                  - text: and
+                  - emphasis [ref=e479]: HTMX
+                  - text: and SQLalchemy entirely LLM-based and it was pretty easy to build. Claude Code with a puppeteer MCP is ...
+                - link "Read more" [ref=e480] [cursor=pointer]:
+                  - /url: https://news.ycombinator.com/item?id=45604673#:~:text=I%20have%20an%20admin%20dashboard,an%20overall%20fairly%20response%20UI.
+          - generic [ref=e487]:
+            - generic [ref=e490]:
+              - link "Fullstack App with FastAPI and HTMX | Full Tutorial YouTube · BekBrace 9.8K+ views · 1 year ago" [ref=e492] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=sT3WSkMyCXA
+                - heading "Fullstack App with FastAPI and HTMX | Full Tutorial" [level=3] [ref=e493]
+                - generic [ref=e498]:
+                  - generic [ref=e500]: YouTube · BekBrace
+                  - generic [ref=e502]: 9.8K+ views · 1 year ago
+              - button "About this result" [ref=e503] [cursor=pointer]:
+                - img [ref=e506]
+            - generic [ref=e508]:
+              - button "Fullstack App with FastAPI and HTMX | Full Tutorial by BekBrace on YouTube. Play on Google. 59:09" [ref=e509] [cursor=pointer]:
+                - generic [ref=e511]:
+                  - img [ref=e517]
+                  - generic [ref=e520]:
+                    - generic [ref=e521]: 59:09
+                    - img [ref=e524]
+              - generic [ref=e527]: In today's video we're going to build a fully functional server render to-do application using HDMX and fast API.
+            - button "15 key moments in this video" [ref=e532] [cursor=pointer]:
+              - generic [ref=e541]:
+                - generic [ref=e544]: 15 key moments in this video
+                - img [ref=e546]
+            - generic [ref=e549]: "Missing: dashboard ‎limitations ‎charts"
+          - generic [ref=e553]:
+            - generic [ref=e556]:
+              - link "awesome-python-htmx/README.md at main · PyHAT-stack ... GitHub https://github.com › awesome-python-htmx › blob › RE..." [ref=e558] [cursor=pointer]:
+                - /url: https://github.com/PyHAT-stack/awesome-python-htmx/blob/main/README.md
+                - heading "awesome-python-htmx/README.md at main · PyHAT-stack ..." [level=3] [ref=e559]
+                - generic [ref=e564]:
+                  - generic [ref=e566]: GitHub
+                  - generic [ref=e568]: https://github.com › awesome-python-htmx › blob › RE...
+              - button "About this result" [ref=e569] [cursor=pointer]:
+                - img [ref=e572]
+            - generic [ref=e575]:
+              - generic [ref=e576]:
+                - text: "- Provides thorough documentation on building a site from the ground up with"
+                - emphasis [ref=e577]: FastAPI
+                - text: ","
+                - emphasis [ref=e578]: Jinja
+                - text: ","
+                - emphasis [ref=e579]: htmx
+                - text: ", and Tailwind. Rapid Prototyping with Flask,"
+                - emphasis [ref=e580]: htmx
+                - text: ", and ..."
+              - link "Read more" [ref=e581] [cursor=pointer]:
+                - /url: https://github.com/PyHAT-stack/awesome-python-htmx/blob/main/README.md#:~:text=%2D%20Provides%20thorough%20documentation%20on,Flask%2C%20htmx%2C%20and%20Tailwind%20CSS
+        - generic [ref=e583]:
+          - generic [ref=e588]:
+            - heading "People also search for" [level=2] [ref=e590]
+            - generic [ref=e592]:
+              - generic [ref=e593]:
+                - link "Htmx fastapi jinja dashboard project limitations charts github" [ref=e597] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Htmx+fastapi+jinja+dashboard+project+limitations+charts+github&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAgnEAE
+                  - generic [ref=e598]:
+                    - generic [ref=e603]: Htmx fastapi jinja dashboard project limitations charts github
+                    - img [ref=e607]
+                - link "Htmx fastapi jinja dashboard project limitations charts download" [ref=e612] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Htmx+fastapi+jinja+dashboard+project+limitations+charts+download&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAhDEAE
+                  - generic [ref=e613]:
+                    - generic [ref=e618]: Htmx fastapi jinja dashboard project limitations charts download
+                    - img [ref=e622]
+                - link "FastAPI + HTMX tutorial" [ref=e627] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=FastAPI+%2B+HTMX+tutorial&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAg_EAE
+                  - generic [ref=e628]:
+                    - generic [ref=e633]: FastAPI + HTMX tutorial
+                    - img [ref=e637]
+                - link "FastAPI dashboard Grafana" [ref=e642] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=FastAPI+dashboard+Grafana&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAg4EAE
+                  - generic [ref=e643]:
+                    - generic [ref=e648]: FastAPI dashboard Grafana
+                    - img [ref=e652]
+              - generic [ref=e654]:
+                - link "FastAPI, HTMX, Tailwind" [ref=e658] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=FastAPI,+HTMX,+Tailwind&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAgyEAE
+                  - generic [ref=e659]:
+                    - generic [ref=e664]: FastAPI, HTMX, Tailwind
+                    - img [ref=e668]
+                - link "Fastapi dashboard example" [ref=e673] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Fastapi+dashboard+example&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAgxEAE
+                  - generic [ref=e674]:
+                    - generic [ref=e679]: Fastapi dashboard example
+                    - img [ref=e683]
+                - link "FastHX" [ref=e688] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=FastHX&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAgvEAE
+                  - generic [ref=e689]:
+                    - generic [ref=e694]: FastHX
+                    - img [ref=e698]
+                - link "FastHTML and FastAPI" [ref=e703] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=FastHTML+and+FastAPI&sa=X&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ1QJ6BAgpEAE
+                  - generic [ref=e704]:
+                    - generic [ref=e709]: FastHTML and FastAPI
+                    - img [ref=e713]
+          - navigation [ref=e715]:
+            - heading "Page Navigation" [level=1] [ref=e716]
+            - text: "1"
+            - link "Page 2" [ref=e719] [cursor=pointer]:
+              - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&ei=PEvLaZ7WCaiq0PEPsJ_guAk&start=10&sa=N&sstk=Af77f_czeyPnt_Mz61D9pkyQkkRVVvgfSNIhVydbtw_vekV38Dj5g10WSNjIx-gajzDpQN8mS41kVY31MZnEkwAaOlUoOobAxpiKwg&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ8tMDegQICBAE
+              - text: "2"
+            - link "Page 3" [ref=e721] [cursor=pointer]:
+              - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&ei=PEvLaZ7WCaiq0PEPsJ_guAk&start=20&sa=N&sstk=Af77f_czeyPnt_Mz61D9pkyQkkRVVvgfSNIhVydbtw_vekV38Dj5g10WSNjIx-gajzDpQN8mS41kVY31MZnEkwAaOlUoOobAxpiKwg&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ8tMDegQICBAG
+              - text: "3"
+            - link "Page 4" [ref=e723] [cursor=pointer]:
+              - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&ei=PEvLaZ7WCaiq0PEPsJ_guAk&start=30&sa=N&sstk=Af77f_czeyPnt_Mz61D9pkyQkkRVVvgfSNIhVydbtw_vekV38Dj5g10WSNjIx-gajzDpQN8mS41kVY31MZnEkwAaOlUoOobAxpiKwg&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ8tMDegQICBAI
+              - text: "4"
+            - link "Page 5" [ref=e725] [cursor=pointer]:
+              - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&ei=PEvLaZ7WCaiq0PEPsJ_guAk&start=40&sa=N&sstk=Af77f_czeyPnt_Mz61D9pkyQkkRVVvgfSNIhVydbtw_vekV38Dj5g10WSNjIx-gajzDpQN8mS41kVY31MZnEkwAaOlUoOobAxpiKwg&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ8tMDegQICBAK
+              - text: "5"
+            - heading "Next" [level=2] [ref=e727]:
+              - link "Next" [ref=e728] [cursor=pointer]:
+                - /url: /search?q=htmx+fastapi+jinja+dashboard+project+limitations+charts&sca_esv=e7687de8d1b3fbf8&ei=PEvLaZ7WCaiq0PEPsJ_guAk&start=10&sa=N&sstk=Af77f_czeyPnt_Mz61D9pkyQkkRVVvgfSNIhVydbtw_vekV38Dj5g10WSNjIx-gajzDpQN8mS41kVY31MZnEkwAaOlUoOobAxpiKwg&ved=2ahUKEwie5PqlpMmTAxUoFTQIHbAPGJcQ8NMDegQICBAM
+                - generic [ref=e730]: Next
+        - navigation
+    - contentinfo [ref=e731]:
+      - heading "Footer Links" [level=1] [ref=e732]
+      - generic [ref=e736]:
+        - generic [ref=e740]:
+          - button "Central District, Seattle, WA - From your IP address" [ref=e742] [cursor=pointer]:
+            - generic [ref=e743]: Central District, Seattle, WA
+            - generic [ref=e745]:
+              - text: "-"
+              - generic [ref=e746]: From your IP address
+          - text: "-"
+          - button "Update location" [ref=e748] [cursor=pointer]: Update location
+        - generic [ref=e751]:
+          - link "Help" [ref=e752] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+          - link "Send feedback" [ref=e753] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e754] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en&fg=1
+          - link "Terms" [ref=e755] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en&fg=1

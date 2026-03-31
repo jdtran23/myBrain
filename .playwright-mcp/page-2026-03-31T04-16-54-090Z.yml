@@ -1,0 +1,1031 @@
+- generic [ref=e5]:
+  - link "Skip to content" [ref=e6] [cursor=pointer]:
+    - /url: "#page-main"
+  - generic [ref=e8]:
+    - banner [ref=e9]:
+      - generic [ref=e10]:
+        - heading "State of JavaScript 2024" [level=1] [ref=e11]
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /en-US/
+          - img [ref=e15]
+        - navigation [ref=e19]:
+          - link "Introduction" [ref=e20] [cursor=pointer]:
+            - /url: /en-US/
+            - generic [ref=e21]: Introduction
+          - link "T-shirt" [ref=e22] [cursor=pointer]:
+            - /url: /en-US/tshirt/
+            - generic [ref=e23]: T-shirt
+          - link "Demographics" [ref=e24] [cursor=pointer]:
+            - /url: /en-US/demographics/
+            - generic [ref=e25]: Demographics
+          - link "Features" [ref=e26] [cursor=pointer]:
+            - /url: /en-US/features/
+            - generic [ref=e27]: Features
+          - link "Libraries" [ref=e28] [cursor=pointer]:
+            - /url: /en-US/libraries/
+            - generic [ref=e29]: Libraries
+          - link "> Front-end Frameworks" [ref=e30] [cursor=pointer]:
+            - /url: /en-US/libraries/front-end-frameworks/
+            - generic [ref=e31]: "> Front-end Frameworks"
+          - generic [ref=e32]:
+            - link "Ratios Over Time" [ref=e34] [cursor=pointer]:
+              - /url: "#front_end_frameworks_ratios"
+            - link "Other Front-end Frameworks" [ref=e36] [cursor=pointer]:
+              - /url: "#front_end_frameworks_others"
+            - link "Used at Work" [ref=e38] [cursor=pointer]:
+              - /url: "#front_end_frameworks_work"
+            - link "Number of Items" [ref=e40] [cursor=pointer]:
+              - /url: "#front_end_frameworks_cardinalities"
+            - link "Happiness" [ref=e42] [cursor=pointer]:
+              - /url: "#front_end_frameworks_happiness"
+            - link "Pain Points" [ref=e44] [cursor=pointer]:
+              - /url: "#front_end_frameworks_pain_points"
+          - link "Meta-Frameworks" [ref=e45] [cursor=pointer]:
+            - /url: /en-US/libraries/meta-frameworks/
+            - generic [ref=e46]: Meta-Frameworks
+          - link "Testing" [ref=e47] [cursor=pointer]:
+            - /url: /en-US/libraries/testing/
+            - generic [ref=e48]: Testing
+          - link "Mobile & Desktop" [ref=e49] [cursor=pointer]:
+            - /url: /en-US/libraries/mobile_desktop/
+            - generic [ref=e50]: Mobile & Desktop
+          - link "Build Tools" [ref=e51] [cursor=pointer]:
+            - /url: /en-US/libraries/build_tools/
+            - generic [ref=e52]: Build Tools
+          - link "Monorepo Tools" [ref=e53] [cursor=pointer]:
+            - /url: /en-US/libraries/monorepo_tools/
+            - generic [ref=e54]: Monorepo Tools
+          - link "Other Tools" [ref=e55] [cursor=pointer]:
+            - /url: /en-US/other-tools/
+            - generic [ref=e56]: Other Tools
+          - link "Usage" [ref=e57] [cursor=pointer]:
+            - /url: /en-US/usage/
+            - generic [ref=e58]: Usage
+          - link "Resources" [ref=e59] [cursor=pointer]:
+            - /url: /en-US/resources/
+            - generic [ref=e60]: Resources
+          - link "Awards" [ref=e61] [cursor=pointer]:
+            - /url: /en-US/awards/
+            - generic [ref=e62]: Awards
+          - link "Conclusion" [ref=e63] [cursor=pointer]:
+            - /url: /en-US/conclusion/
+            - generic [ref=e64]: Conclusion
+          - link "Metadata" [ref=e65] [cursor=pointer]:
+            - /url: /en-US/metadata/
+            - generic [ref=e66]: Metadata
+          - link "About" [ref=e67] [cursor=pointer]:
+            - /url: /en-US/about/
+            - generic [ref=e68]: About
+        - generic [ref=e69]:
+          - link "Share on Twitter" [ref=e70] [cursor=pointer]:
+            - /url: https://twitter.com/intent/tweet/?url=undefined&text=Discover%20the%20State%20of%20JavaScript%202024%20results%20https%3A%2F%2F2024.stateofjs.com%2F
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - generic [ref=e74]: Share on Twitter
+          - link "Share on Facebook" [ref=e75] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2024.stateofjs.com%2F
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - generic [ref=e79]: Share on Facebook
+          - link "Share on LinkedIn" [ref=e80] [cursor=pointer]:
+            - /url: https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2F2024.stateofjs.com%2F&title=Discover the State of JavaScript 2024 results&summary=
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - generic [ref=e84]: Share on LinkedIn
+          - link "Share by email" [ref=e85] [cursor=pointer]:
+            - /url: mailto:?subject=State%20of%20JavaScript%202024%20Survey%20Results&body=Here%20are%20some%20interesting%20survey%20results%3A%20https%3A%2F%2F2024.stateofjs.com%2F
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e89]: Share by email
+    - generic [ref=e90]:
+      - generic [ref=e92]:
+        - link "« Libraries" [ref=e93] [cursor=pointer]:
+          - /url: /en-US/libraries/
+          - generic [ref=e95]: « Libraries
+        - button "English" [ref=e97] [cursor=pointer]:
+          - generic [ref=e98]: English
+          - img [ref=e99]
+        - link "Meta-Frameworks »" [ref=e101] [cursor=pointer]:
+          - /url: /en-US/libraries/meta-frameworks/
+          - generic [ref=e103]: Meta-Frameworks »
+      - generic [ref=e104]:
+        - heading "Front-end Frameworks" [level=2] [ref=e105]
+        - main [ref=e106]:
+          - generic [ref=e108]: Front-end frameworks and libraries
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - heading "Link to section Front-end Frameworks Ratios Over Time" [level=3] [ref=e113]:
+                - link "Link to section" [ref=e114] [cursor=pointer]:
+                  - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_ratios&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                  - img [ref=e115]
+                  - generic [ref=e121]: Link to section
+                - generic [ref=e123]: Front-end Frameworks Ratios Over Time
+              - paragraph [ref=e125]: Last year's big story was Vue overtaking Angular in raw usage among our respondents. Despite Angular's progress this year, Vue managed to keep its number two spot – as well a gain a whopping three spots in terms of retention percentage! Meanwhile, Svelte usage is increasing at a steady pace, while it continues to top the rankings in terms of overall positive opinions.
+            - generic [ref=e126]:
+              - generic [ref=e128]:
+                - tablist "tabs example" [ref=e129]:
+                  - tab "All Respondents" [selected] [ref=e131]
+                - button "Query Builder" [ref=e132] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e133]:
+                - generic [ref=e134]:
+                  - generic [ref=e135]:
+                    - generic [ref=e138]: React
+                    - generic [ref=e141]: Vue.js
+                    - generic [ref=e144]: Angular
+                    - generic [ref=e147]: Preact
+                    - generic [ref=e150]: Svelte
+                    - generic [ref=e153]: Alpine.js
+                    - generic [ref=e156]: Lit
+                    - generic [ref=e159]: Solid
+                    - generic [ref=e162]: Qwik
+                    - generic [ref=e165]: Stencil
+                    - generic [ref=e168]: HTMX
+                  - generic [ref=e170]:
+                    - generic [ref=e172]:
+                      - heading "Mode:" [level=4] [ref=e173]
+                      - generic [ref=e175]:
+                        - button "Value" [ref=e176] [cursor=pointer]:
+                          - generic [ref=e177]: Value
+                        - button "Rank" [ref=e178] [cursor=pointer]:
+                          - generic [ref=e179]: Rank
+                    - generic [ref=e181]:
+                      - heading "View:" [level=4] [ref=e182]
+                      - generic [ref=e184]:
+                        - button "Usage" [ref=e185] [cursor=pointer]:
+                          - img [ref=e187]
+                          - generic [ref=e192]: Usage
+                        - button "Awareness" [ref=e193] [cursor=pointer]:
+                          - img [ref=e195]
+                          - generic [ref=e198]: Awareness
+                        - button "Interest" [ref=e199] [cursor=pointer]:
+                          - img [ref=e201]
+                          - generic [ref=e204]: Interest
+                        - button "Satisfaction" [ref=e205] [cursor=pointer]:
+                          - img [ref=e207]
+                          - generic [ref=e209]: Satisfaction
+                        - button "Appreciation" [ref=e210] [cursor=pointer]:
+                          - img [ref=e212]
+                          - generic [ref=e214]: Appreciation
+                        - button "Positivity" [ref=e215] [cursor=pointer]:
+                          - img [ref=e217]
+                          - generic [ref=e219]: Positivity
+                  - generic [ref=e222]:
+                    - generic [ref=e223]:
+                      - img [ref=e225]
+                      - heading "Usage:" [level=4] [ref=e230]
+                      - generic [ref=e231]:
+                        - text: Proportion of respondents
+                        - strong [ref=e232]: having used
+                        - text: an item
+                    - generic [ref=e234]:
+                      - generic [ref=e244]:
+                        - generic [ref=e246]: 0%
+                        - generic [ref=e248]: 20%
+                        - generic [ref=e250]: 40%
+                        - generic [ref=e252]: 60%
+                        - generic [ref=e254]: 80%
+                        - generic [ref=e256]: 100%
+                      - generic [ref=e260]: "2016"
+                      - generic [ref=e264]: "2017"
+                      - generic [ref=e268]: "2018"
+                      - generic [ref=e272]: "2019"
+                      - generic [ref=e276]: "2020"
+                      - generic [ref=e280]: "2021"
+                      - generic [ref=e284]: "2022"
+                      - generic [ref=e288]: "2023"
+                      - generic [ref=e292]: "2024"
+                      - img [ref=e294]
+                      - generic [ref=e632]:
+                        - generic [ref=e634]: 0%
+                        - generic [ref=e636]: 20%
+                        - generic [ref=e638]: 40%
+                        - generic [ref=e640]: 60%
+                        - generic [ref=e642]: 80%
+                        - generic [ref=e644]: 100%
+                  - generic [ref=e646]:
+                    - button "Share Chart…" [ref=e647] [cursor=pointer]
+                    - button "Export Data…" [ref=e648] [cursor=pointer]
+          - generic [ref=e649]:
+            - generic [ref=e651]:
+              - heading "Link to section Other Front-end Frameworks" [level=3] [ref=e653]:
+                - link "Link to section" [ref=e654] [cursor=pointer]:
+                  - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_others&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                  - img [ref=e655]
+                  - generic [ref=e661]: Link to section
+                - generic [ref=e663]: Other Front-end Frameworks
+              - button "Comments for “Other Front-end Frameworks” 13" [ref=e666] [cursor=pointer]:
+                - generic [ref=e667]:
+                  - img [ref=e668]
+                  - generic [ref=e670]: Comments for “Other Front-end Frameworks”
+                - text: "13"
+            - generic [ref=e671]:
+              - generic [ref=e673]:
+                - tablist "tabs example" [ref=e674]:
+                  - tab "All Respondents" [selected] [ref=e676]
+                - button "Query Builder" [ref=e677] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e678]:
+                - generic [ref=e679]:
+                  - generic [ref=e683]:
+                    - generic [ref=e686]:
+                      - generic [ref=e687]: 0%
+                      - generic [ref=e688]: 20%
+                      - generic [ref=e689]: 40%
+                      - generic [ref=e690]: 60%
+                      - generic [ref=e691]: 80%
+                      - generic [ref=e692]: 100%
+                    - generic [ref=e693]:
+                      - generic [ref=e694]:
+                        - generic [ref=e695]: "1"
+                        - heading "Astro" [level=3] [ref=e696]:
+                          - button "Astro" [ref=e697] [cursor=pointer]:
+                            - img [ref=e699]
+                            - generic [ref=e703]: Astro
+                      - img "31%" [ref=e714]:
+                        - img [ref=e715]
+                        - img [ref=e718]
+                        - img [ref=e721]
+                      - generic [ref=e725]:
+                        - img [ref=e727]
+                        - text: "190"
+                    - generic [ref=e731]:
+                      - generic [ref=e732]:
+                        - generic [ref=e733]: "2"
+                        - heading "Ember" [level=3] [ref=e734]:
+                          - button "Ember" [ref=e735] [cursor=pointer]:
+                            - img [ref=e737]
+                            - generic [ref=e741]: Ember
+                      - img "10%" [ref=e752]:
+                        - img [ref=e753]
+                        - img [ref=e756]
+                        - img [ref=e759]
+                      - generic [ref=e763]:
+                        - img [ref=e765]
+                        - text: "62"
+                    - generic [ref=e769]:
+                      - generic [ref=e770]:
+                        - generic [ref=e771]: "3"
+                        - heading "Next.js" [level=3] [ref=e772]:
+                          - button "Next.js" [ref=e773] [cursor=pointer]:
+                            - img [ref=e775]
+                            - generic [ref=e779]: Next.js
+                      - generic [ref=e791]:
+                        - img [ref=e793]
+                        - text: "30"
+                    - generic [ref=e797]:
+                      - generic [ref=e798]:
+                        - generic [ref=e799]: "4"
+                        - heading "jQuery" [level=3] [ref=e800]:
+                          - button "jQuery" [ref=e801] [cursor=pointer]:
+                            - img [ref=e803]
+                            - generic [ref=e807]: jQuery
+                      - generic [ref=e819]:
+                        - img [ref=e821]
+                        - text: "27"
+                    - generic [ref=e825]:
+                      - generic [ref=e826]:
+                        - generic [ref=e827]: "5"
+                        - heading "Nuxt" [level=3] [ref=e828]:
+                          - button "Nuxt" [ref=e829] [cursor=pointer]:
+                            - img [ref=e831]
+                            - generic [ref=e835]: Nuxt
+                      - generic [ref=e847]:
+                        - img [ref=e849]
+                        - text: "27"
+                    - generic [ref=e853]:
+                      - generic [ref=e854]:
+                        - generic [ref=e855]: "6"
+                        - heading "Elm" [level=3] [ref=e856]:
+                          - button "Elm" [ref=e857] [cursor=pointer]:
+                            - img [ref=e859]
+                            - generic [ref=e863]: Elm
+                      - generic [ref=e875]:
+                        - img [ref=e877]
+                        - text: "24"
+                    - generic [ref=e881]:
+                      - generic [ref=e882]:
+                        - generic [ref=e883]: "7"
+                        - heading "Remix" [level=3] [ref=e884]:
+                          - button "Remix" [ref=e885] [cursor=pointer]:
+                            - img [ref=e887]
+                            - generic [ref=e891]: Remix
+                      - generic [ref=e903]:
+                        - img [ref=e905]
+                        - text: "16"
+                    - generic [ref=e909]:
+                      - generic [ref=e910]:
+                        - generic [ref=e911]: "8"
+                        - heading "Aurelia" [level=3] [ref=e912]:
+                          - button "Aurelia" [ref=e913] [cursor=pointer]:
+                            - img [ref=e915]
+                            - generic [ref=e919]: Aurelia
+                      - generic [ref=e931]:
+                        - img [ref=e933]
+                        - text: "14"
+                    - generic [ref=e937]:
+                      - generic [ref=e938]:
+                        - generic [ref=e939]: "9"
+                        - heading "Stimulus" [level=3] [ref=e940]:
+                          - button "Stimulus" [ref=e941] [cursor=pointer]:
+                            - img [ref=e943]
+                            - generic [ref=e947]: Stimulus
+                      - generic [ref=e959]:
+                        - img [ref=e961]
+                        - text: "13"
+                    - generic [ref=e965]:
+                      - generic [ref=e966]:
+                        - generic [ref=e967]: "10"
+                        - heading "Unpoly" [level=3] [ref=e968]:
+                          - button "Unpoly" [ref=e969] [cursor=pointer]:
+                            - img [ref=e971]
+                            - generic [ref=e975]: Unpoly
+                      - generic [ref=e987]:
+                        - img [ref=e989]
+                        - text: "13"
+                    - generic [ref=e993]:
+                      - generic [ref=e994]:
+                        - generic [ref=e995]: "11"
+                        - heading "Other Answers" [level=3] [ref=e996]:
+                          - generic [ref=e999]: Other Answers
+                      - img "55%" [ref=e1010]:
+                        - img [ref=e1011]
+                        - img [ref=e1014]
+                        - img [ref=e1017]
+                      - generic [ref=e1021]:
+                        - img [ref=e1023]
+                        - text: "344"
+                    - generic [ref=e1028]:
+                      - generic [ref=e1029]:
+                        - generic [ref=e1030]: 0%
+                        - generic [ref=e1031]: 20%
+                        - generic [ref=e1032]: 40%
+                        - generic [ref=e1033]: 60%
+                        - generic [ref=e1034]: 80%
+                        - generic [ref=e1035]: 100%
+                      - generic [ref=e1037]: "% of question respondents"
+                  - generic [ref=e1038]:
+                    - generic [ref=e1040]:
+                      - generic [ref=e1041]:
+                        - img [ref=e1043]
+                        - generic [ref=e1047]: "619"
+                      - generic [ref=e1048]:
+                        - img [ref=e1050]
+                        - generic [ref=e1055]: 4%
+                    - generic [ref=e1056]:
+                      - button "Share Chart…" [ref=e1057] [cursor=pointer]
+                      - button "Export Data…" [ref=e1058] [cursor=pointer]
+          - generic [ref=e1059]:
+            - generic [ref=e1060]:
+              - generic [ref=e1061]:
+                - heading "Link to section Used at Work" [level=3] [ref=e1063]:
+                  - link "Link to section" [ref=e1064] [cursor=pointer]:
+                    - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_work&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                    - img [ref=e1065]
+                    - generic [ref=e1071]: Link to section
+                  - generic [ref=e1073]: Used at Work
+                - button "Comments for “Used at Work” 13" [ref=e1076] [cursor=pointer]:
+                  - generic [ref=e1077]:
+                    - img [ref=e1078]
+                    - generic [ref=e1080]: Comments for “Used at Work”
+                  - text: "13"
+              - generic [ref=e1081]:
+                - paragraph [ref=e1082]: While there are no substantial income differences based on which frontend frameworks respondents used at work, company size tells a different story.
+                - paragraph [ref=e1083]: New challengers Alpine.js, Qwik, and Solid are being favored by small companies, while Web Components solutions Lit and Stencil are overwhelmingly used by large companies.
+            - generic [ref=e1084]:
+              - generic [ref=e1085]:
+                - img [ref=e1087]
+                - generic [ref=e1091]: Which of these tools do you use in a professional context?
+              - generic [ref=e1093]:
+                - generic [ref=e1094]: Multiple
+                - img [ref=e1096]
+            - generic [ref=e1100]:
+              - generic [ref=e1102]:
+                - tablist "tabs example" [ref=e1103]:
+                  - tab "All Respondents" [selected] [ref=e1105]
+                  - tab "vs. Yearly Income" [ref=e1107]
+                  - tab "vs. Years of Experience" [ref=e1109]
+                  - tab "vs. Company Size" [ref=e1111]
+                - button "Query Builder" [ref=e1112] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e1113]:
+                - generic [ref=e1114]:
+                  - generic [ref=e1118]:
+                    - generic [ref=e1121]:
+                      - generic [ref=e1122]: 0%
+                      - generic [ref=e1123]: 20%
+                      - generic [ref=e1124]: 40%
+                      - generic [ref=e1125]: 60%
+                      - generic [ref=e1126]: 80%
+                      - generic [ref=e1127]: 100%
+                    - generic [ref=e1128]:
+                      - generic [ref=e1129]:
+                        - generic [ref=e1130]: "1"
+                        - heading "React" [level=3] [ref=e1131]:
+                          - button "React" [ref=e1132] [cursor=pointer]:
+                            - img [ref=e1134]
+                            - generic [ref=e1138]: React
+                      - img "67%" [ref=e1149]:
+                        - img [ref=e1150]
+                        - img [ref=e1153]
+                        - img [ref=e1156]
+                      - generic [ref=e1160]:
+                        - img [ref=e1162]
+                        - text: 8,548
+                    - generic [ref=e1166]:
+                      - generic [ref=e1167]:
+                        - generic [ref=e1168]: "2"
+                        - heading "Vue.js" [level=3] [ref=e1169]:
+                          - button "Vue.js" [ref=e1170] [cursor=pointer]:
+                            - img [ref=e1172]
+                            - generic [ref=e1176]: Vue.js
+                      - img "31%" [ref=e1187]:
+                        - img [ref=e1188]
+                        - img [ref=e1191]
+                        - img [ref=e1194]
+                      - generic [ref=e1198]:
+                        - img [ref=e1200]
+                        - text: 3,976
+                    - generic [ref=e1204]:
+                      - generic [ref=e1205]:
+                        - generic [ref=e1206]: "3"
+                        - heading "Angular" [level=3] [ref=e1207]:
+                          - button "Angular" [ref=e1208] [cursor=pointer]:
+                            - img [ref=e1210]
+                            - generic [ref=e1214]: Angular
+                      - img "28%" [ref=e1225]:
+                        - img [ref=e1226]
+                        - img [ref=e1229]
+                        - img [ref=e1232]
+                      - generic [ref=e1236]:
+                        - img [ref=e1238]
+                        - text: 3,642
+                    - generic [ref=e1242]:
+                      - generic [ref=e1243]:
+                        - generic [ref=e1244]: "4"
+                        - heading "Svelte" [level=3] [ref=e1245]:
+                          - button "Svelte" [ref=e1246] [cursor=pointer]:
+                            - img [ref=e1248]
+                            - generic [ref=e1252]: Svelte
+                      - img "11%" [ref=e1263]:
+                        - img [ref=e1264]
+                        - img [ref=e1267]
+                        - img [ref=e1270]
+                      - generic [ref=e1274]:
+                        - img [ref=e1276]
+                        - text: 1,409
+                    - generic [ref=e1280]:
+                      - generic [ref=e1281]:
+                        - generic [ref=e1282]: "5"
+                        - heading "Lit" [level=3] [ref=e1283]:
+                          - button "Lit" [ref=e1284] [cursor=pointer]:
+                            - img [ref=e1286]
+                            - generic [ref=e1290]: Lit
+                      - generic [ref=e1302]:
+                        - img [ref=e1304]
+                        - text: "557"
+                    - generic [ref=e1308]:
+                      - generic [ref=e1309]:
+                        - generic [ref=e1310]: "6"
+                        - heading "Preact" [level=3] [ref=e1311]:
+                          - button "Preact" [ref=e1312] [cursor=pointer]:
+                            - img [ref=e1314]
+                            - generic [ref=e1318]: Preact
+                      - generic [ref=e1330]:
+                        - img [ref=e1332]
+                        - text: "490"
+                    - generic [ref=e1336]:
+                      - generic [ref=e1337]:
+                        - generic [ref=e1338]: "7"
+                        - heading "Alpine.js" [level=3] [ref=e1339]:
+                          - button "Alpine.js" [ref=e1340] [cursor=pointer]:
+                            - img [ref=e1342]
+                            - generic [ref=e1346]: Alpine.js
+                      - generic [ref=e1358]:
+                        - img [ref=e1360]
+                        - text: "389"
+                    - generic [ref=e1364]:
+                      - generic [ref=e1365]:
+                        - generic [ref=e1366]: "8"
+                        - heading "Solid" [level=3] [ref=e1367]:
+                          - button "Solid" [ref=e1368] [cursor=pointer]:
+                            - img [ref=e1370]
+                            - generic [ref=e1374]: Solid
+                      - generic [ref=e1386]:
+                        - img [ref=e1388]
+                        - text: "345"
+                    - generic [ref=e1392]:
+                      - generic [ref=e1393]:
+                        - generic [ref=e1394]: "9"
+                        - heading "HTMX" [level=3] [ref=e1395]:
+                          - button "HTMX" [ref=e1396] [cursor=pointer]:
+                            - img [ref=e1398]
+                            - generic [ref=e1402]: HTMX
+                      - generic [ref=e1414]:
+                        - img [ref=e1416]
+                        - text: "316"
+                    - generic [ref=e1420]:
+                      - generic [ref=e1421]:
+                        - generic [ref=e1422]: "10"
+                        - heading "Stencil" [level=3] [ref=e1423]:
+                          - button "Stencil" [ref=e1424] [cursor=pointer]:
+                            - img [ref=e1426]
+                            - generic [ref=e1430]: Stencil
+                      - generic [ref=e1442]:
+                        - img [ref=e1444]
+                        - text: "235"
+                    - generic [ref=e1448]:
+                      - generic [ref=e1449]:
+                        - generic [ref=e1450]: "11"
+                        - heading "Qwik" [level=3] [ref=e1451]:
+                          - button "Qwik" [ref=e1452] [cursor=pointer]:
+                            - img [ref=e1454]
+                            - generic [ref=e1458]: Qwik
+                      - generic [ref=e1470]:
+                        - img [ref=e1472]
+                        - text: "130"
+                    - generic [ref=e1476]:
+                      - generic [ref=e1477]:
+                        - generic [ref=e1478]: "12"
+                        - heading "🚫 None" [level=3] [ref=e1479]:
+                          - generic [ref=e1482]: 🚫 None
+                      - generic [ref=e1494]:
+                        - img [ref=e1496]
+                        - text: "457"
+                    - generic [ref=e1501]:
+                      - generic [ref=e1502]:
+                        - generic [ref=e1503]: 0%
+                        - generic [ref=e1504]: 20%
+                        - generic [ref=e1505]: 40%
+                        - generic [ref=e1506]: 60%
+                        - generic [ref=e1507]: 80%
+                        - generic [ref=e1508]: 100%
+                      - generic [ref=e1510]: "% of question respondents"
+                  - generic [ref=e1511]:
+                    - generic [ref=e1513]:
+                      - generic [ref=e1514]:
+                        - img [ref=e1516]
+                        - generic [ref=e1520]: 12,802
+                      - generic [ref=e1521]:
+                        - img [ref=e1523]
+                        - generic [ref=e1528]: 91%
+                    - generic [ref=e1529]:
+                      - button "Share Chart…" [ref=e1530] [cursor=pointer]
+                      - button "Export Data…" [ref=e1531] [cursor=pointer]
+          - generic [ref=e1535]:
+            - generic [ref=e1536]:
+              - generic [ref=e1537]:
+                - 'heading "My 2024 Pick: Cassidy Williams" [level=3] [ref=e1538]':
+                  - generic [ref=e1539]: "My 2024 Pick:"
+                  - link "Cassidy Williams" [ref=e1540] [cursor=pointer]:
+                    - /url: https://cassidoo.co/
+                - generic [ref=e1542]: Cassidy's been writing on her blog since 2009, has an incredibly unique style and so many cool, niche interests (I'm proud to own her StackOverflow copy/paste keyboard!). She puts out a great newsletter every week, makes the best developer memes, and does it all while being a new mom, which is beyond impressive.
+              - generic [ref=e1543]: We asked members of the JavaScript community to share their “pick of the year”
+            - generic [ref=e1544]:
+              - link "Tania Rascia" [ref=e1547] [cursor=pointer]:
+                - /url: https://twitter.com/taniarascia
+              - generic [ref=e1548]:
+                - heading "Tania Rascia" [level=4] [ref=e1549]:
+                  - link "Tania Rascia" [ref=e1550] [cursor=pointer]:
+                    - /url: https://www.taniarascia.com/
+                - generic [ref=e1552]: Self-taught principal engineer, accomplished tech blogger, and professionally trained chef
+          - generic [ref=e1553]:
+            - generic [ref=e1554]:
+              - heading "Link to section Number of Items" [level=3] [ref=e1557]:
+                - link "Link to section" [ref=e1558] [cursor=pointer]:
+                  - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_cardinalities&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                  - img [ref=e1559]
+                  - generic [ref=e1565]: Link to section
+                - generic [ref=e1567]: Number of Items
+              - paragraph [ref=e1569]: How many items in this category respondents have used.
+            - generic [ref=e1570]:
+              - generic [ref=e1572]:
+                - tablist "tabs example" [ref=e1573]:
+                  - tab "All Respondents" [selected] [ref=e1575]
+                - button "Query Builder" [ref=e1576] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e1577]:
+                - generic [ref=e1578]:
+                  - generic [ref=e1582]:
+                    - generic [ref=e1585]:
+                      - generic [ref=e1586]: 0%
+                      - generic [ref=e1587]: 5%
+                      - generic [ref=e1588]: 11%
+                      - generic [ref=e1589]: 16%
+                      - generic [ref=e1590]: 22%
+                      - generic [ref=e1591]: 27%
+                    - 'button "Average: 2.5" [ref=e1593]':
+                      - generic [ref=e1594]:
+                        - text: "Average:"
+                        - strong [ref=e1595]: "2.5"
+                    - generic [ref=e1596]:
+                      - heading "0" [level=3] [ref=e1598]:
+                        - generic [ref=e1601]: "0"
+                      - img "8%" [ref=e1612]:
+                        - img [ref=e1613]
+                        - img [ref=e1616]
+                      - generic [ref=e1620]:
+                        - img [ref=e1622]
+                        - text: 1,108
+                    - generic [ref=e1626]:
+                      - heading "1" [level=3] [ref=e1628]:
+                        - generic [ref=e1631]: "1"
+                      - img "21%" [ref=e1642]:
+                        - img [ref=e1643]
+                        - img [ref=e1646]
+                        - img [ref=e1649]
+                      - generic [ref=e1653]:
+                        - img [ref=e1655]
+                        - text: 2,904
+                    - generic [ref=e1659]:
+                      - heading "2" [level=3] [ref=e1661]:
+                        - generic [ref=e1664]: "2"
+                      - img "27%" [ref=e1675]:
+                        - img [ref=e1676]
+                        - img [ref=e1679]
+                        - img [ref=e1682]
+                      - generic [ref=e1686]:
+                        - img [ref=e1688]
+                        - text: 3,827
+                    - generic [ref=e1692]:
+                      - heading "3" [level=3] [ref=e1694]:
+                        - generic [ref=e1697]: "3"
+                      - img "22%" [ref=e1708]:
+                        - img [ref=e1709]
+                        - img [ref=e1712]
+                        - img [ref=e1715]
+                      - generic [ref=e1719]:
+                        - img [ref=e1721]
+                        - text: 3,070
+                    - generic [ref=e1725]:
+                      - heading "4" [level=3] [ref=e1727]:
+                        - generic [ref=e1730]: "4"
+                      - img "12%" [ref=e1741]:
+                        - img [ref=e1742]
+                        - img [ref=e1745]
+                        - img [ref=e1748]
+                      - generic [ref=e1752]:
+                        - img [ref=e1754]
+                        - text: 1,653
+                    - generic [ref=e1758]:
+                      - heading "5" [level=3] [ref=e1760]:
+                        - generic [ref=e1763]: "5"
+                      - img "6%" [ref=e1774]:
+                        - img [ref=e1775]
+                        - img [ref=e1778]
+                      - generic [ref=e1782]:
+                        - img [ref=e1784]
+                        - text: "796"
+                    - generic [ref=e1788]:
+                      - heading "6" [level=3] [ref=e1790]:
+                        - generic [ref=e1793]: "6"
+                      - generic [ref=e1805]:
+                        - img [ref=e1807]
+                        - text: "342"
+                    - generic [ref=e1811]:
+                      - heading "7" [level=3] [ref=e1813]:
+                        - generic [ref=e1816]: "7"
+                      - generic [ref=e1828]:
+                        - img [ref=e1830]
+                        - text: "182"
+                    - generic [ref=e1834]:
+                      - heading "8" [level=3] [ref=e1836]:
+                        - generic [ref=e1839]: "8"
+                      - generic [ref=e1851]:
+                        - img [ref=e1853]
+                        - text: "66"
+                    - generic [ref=e1857]:
+                      - heading "9" [level=3] [ref=e1859]:
+                        - generic [ref=e1862]: "9"
+                      - generic [ref=e1874]:
+                        - img [ref=e1876]
+                        - text: "37"
+                    - generic [ref=e1880]:
+                      - heading "10" [level=3] [ref=e1882]:
+                        - generic [ref=e1885]: "10"
+                      - generic [ref=e1897]:
+                        - img [ref=e1899]
+                        - text: "16"
+                    - generic [ref=e1903]:
+                      - heading "11" [level=3] [ref=e1905]:
+                        - generic [ref=e1908]: "11"
+                      - generic [ref=e1920]:
+                        - img [ref=e1922]
+                        - text: "14"
+                    - generic [ref=e1927]:
+                      - generic [ref=e1928]:
+                        - generic [ref=e1929]: 0%
+                        - generic [ref=e1930]: 5%
+                        - generic [ref=e1931]: 11%
+                        - generic [ref=e1932]: 16%
+                        - generic [ref=e1933]: 22%
+                        - generic [ref=e1934]: 27%
+                      - generic [ref=e1936]: "% of survey respondents"
+                  - generic [ref=e1937]:
+                    - generic [ref=e1940]:
+                      - img [ref=e1942]
+                      - generic [ref=e1945]: "2.5"
+                    - generic [ref=e1946]:
+                      - button "Share Chart…" [ref=e1947] [cursor=pointer]
+                      - button "Export Data…" [ref=e1948] [cursor=pointer]
+          - generic [ref=e1949]:
+            - generic [ref=e1951]:
+              - heading "Link to section Front-end Frameworks Happiness" [level=3] [ref=e1953]:
+                - link "Link to section" [ref=e1954] [cursor=pointer]:
+                  - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_happiness&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                  - img [ref=e1955]
+                  - generic [ref=e1961]: Link to section
+                - generic [ref=e1963]: Front-end Frameworks Happiness
+              - button "Comments for “Front-end Frameworks Happiness” 75" [ref=e1966] [cursor=pointer]:
+                - generic [ref=e1967]:
+                  - img [ref=e1968]
+                  - generic [ref=e1970]: Comments for “Front-end Frameworks Happiness”
+                - text: "75"
+            - generic [ref=e1972]:
+              - img [ref=e1974]
+              - generic [ref=e1978]: On a scale of 0 (very unhappy) to 4 (very happy), how happy are you with the current state of front-end frameworks?
+            - generic [ref=e1979]:
+              - generic [ref=e1981]:
+                - tablist "tabs example" [ref=e1982]:
+                  - tab "All Respondents" [selected] [ref=e1984]
+                - button "Query Builder" [ref=e1985] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e1986]:
+                - generic [ref=e1987]:
+                  - generic [ref=e1992]:
+                    - generic [ref=e2001]:
+                      - generic [ref=e2003]: "1"
+                      - generic [ref=e2005]: "2"
+                      - generic [ref=e2007]: "3"
+                      - generic [ref=e2009]: "4"
+                      - generic [ref=e2011]: "5"
+                    - generic [ref=e2015]: "2016"
+                    - generic [ref=e2019]: "2017"
+                    - generic [ref=e2023]: "2018"
+                    - generic [ref=e2027]: "2019"
+                    - generic [ref=e2031]: "2020"
+                    - generic [ref=e2035]: "2021"
+                    - generic [ref=e2039]: "2022"
+                    - generic [ref=e2043]: "2023"
+                    - generic [ref=e2047]: "2024"
+                    - img [ref=e2049]
+                    - generic [ref=e2098]:
+                      - generic [ref=e2100]: "1"
+                      - generic [ref=e2102]: "2"
+                      - generic [ref=e2104]: "3"
+                      - generic [ref=e2106]: "4"
+                      - generic [ref=e2108]: "5"
+                    - generic [ref=e2110]: Average
+                  - generic [ref=e2111]:
+                    - generic [ref=e2113]:
+                      - generic [ref=e2114]:
+                        - img [ref=e2116]
+                        - generic [ref=e2120]: 12,964
+                      - generic [ref=e2121]:
+                        - img [ref=e2123]
+                        - generic [ref=e2128]: 93%
+                      - generic [ref=e2129]:
+                        - img [ref=e2131]
+                        - generic [ref=e2134]: "3.8"
+                      - generic [ref=e2135]:
+                        - img [ref=e2137]
+                        - generic [ref=e2141]: "4"
+                    - generic [ref=e2142]:
+                      - button "Share Chart…" [ref=e2143] [cursor=pointer]
+                      - button "Export Data…" [ref=e2144] [cursor=pointer]
+          - generic [ref=e2145]:
+            - generic [ref=e2146]:
+              - generic [ref=e2147]:
+                - heading "Link to section Front-end Frameworks Pain Points" [level=3] [ref=e2149]:
+                  - link "Link to section" [ref=e2150] [cursor=pointer]:
+                    - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_pain_points&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                    - img [ref=e2151]
+                    - generic [ref=e2157]: Link to section
+                  - generic [ref=e2159]: Front-end Frameworks Pain Points
+                - button "Comments for “Front-end Frameworks Pain Points” 7" [ref=e2162] [cursor=pointer]:
+                  - generic [ref=e2163]:
+                    - img [ref=e2164]
+                    - generic [ref=e2166]: Comments for “Front-end Frameworks Pain Points”
+                  - text: "7"
+              - generic [ref=e2167]:
+                - paragraph [ref=e2168]: As the incumbent, React has to bear the cross of being the target of most complaints.
+                - paragraph [ref=e2169]: Excessive complexity, choice overload, poor performance, and breaking changes were also commonly cited as major pain points.
+            - generic [ref=e2170]:
+              - generic [ref=e2171]:
+                - img [ref=e2173]
+                - generic [ref=e2177]: What pain points have you encountered when using front-end frameworks?
+              - generic [ref=e2178]:
+                - generic [ref=e2179]:
+                  - generic [ref=e2180]: Freeform
+                  - img [ref=e2182]
+                - generic [ref=e2185]:
+                  - generic [ref=e2186]: Multiple
+                  - img [ref=e2188]
+            - generic [ref=e2192]:
+              - generic [ref=e2194]:
+                - tablist "tabs example" [ref=e2195]:
+                  - tab "All Respondents" [selected] [ref=e2197]
+                - button "Query Builder" [ref=e2198] [cursor=pointer]
+              - tabpanel "All Respondents" [ref=e2199]:
+                - generic [ref=e2200]:
+                  - generic [ref=e2204]:
+                    - generic [ref=e2207]:
+                      - generic [ref=e2208]: 0%
+                      - generic [ref=e2209]: 20%
+                      - generic [ref=e2210]: 40%
+                      - generic [ref=e2211]: 60%
+                      - generic [ref=e2212]: 80%
+                      - generic [ref=e2213]: 100%
+                    - generic [ref=e2214]:
+                      - generic [ref=e2215]:
+                        - generic [ref=e2216]: "1"
+                        - heading "React issues" [level=3] [ref=e2217]:
+                          - generic [ref=e2220]: React issues
+                      - img "14%" [ref=e2231]:
+                        - img [ref=e2232]
+                        - img [ref=e2235]
+                        - img [ref=e2238]
+                      - button "Answers matching “React issues” 522" [ref=e2243] [cursor=pointer]:
+                        - generic [ref=e2244]:
+                          - generic [ref=e2245]:
+                            - img [ref=e2246]
+                            - generic [ref=e2248]: Answers matching “React issues”
+                          - text: "522"
+                    - generic [ref=e2249]:
+                      - generic [ref=e2250]:
+                        - generic [ref=e2251]: "2"
+                        - heading "Excessive complexity" [level=3] [ref=e2252]:
+                          - generic [ref=e2255]: Excessive complexity
+                      - img "10%" [ref=e2266]:
+                        - img [ref=e2267]
+                        - img [ref=e2270]
+                        - img [ref=e2273]
+                      - button "Answers matching “Excessive complexity” 382" [ref=e2278] [cursor=pointer]:
+                        - generic [ref=e2279]:
+                          - generic [ref=e2280]:
+                            - img [ref=e2281]
+                            - generic [ref=e2283]: Answers matching “Excessive complexity”
+                          - text: "382"
+                    - generic [ref=e2284]:
+                      - generic [ref=e2285]:
+                        - generic [ref=e2286]: "3"
+                        - heading "Performance" [level=3] [ref=e2287]:
+                          - generic [ref=e2290]: Performance
+                      - button "Answers matching “Performance” 265" [ref=e2303] [cursor=pointer]:
+                        - generic [ref=e2304]:
+                          - generic [ref=e2305]:
+                            - img [ref=e2306]
+                            - generic [ref=e2308]: Answers matching “Performance”
+                          - text: "265"
+                    - generic [ref=e2309]:
+                      - generic [ref=e2310]:
+                        - generic [ref=e2311]: "4"
+                        - heading "Choice overload" [level=3] [ref=e2312]:
+                          - generic [ref=e2315]: Choice overload
+                      - button "Answers matching “Choice overload” 264" [ref=e2328] [cursor=pointer]:
+                        - generic [ref=e2329]:
+                          - generic [ref=e2330]:
+                            - img [ref=e2331]
+                            - generic [ref=e2333]: Answers matching “Choice overload”
+                          - text: "264"
+                    - generic [ref=e2334]:
+                      - generic [ref=e2335]:
+                        - generic [ref=e2336]: "5"
+                        - heading "Breaking changes" [level=3] [ref=e2337]:
+                          - generic [ref=e2340]: Breaking changes
+                      - button "Answers matching “Breaking changes” 264" [ref=e2353] [cursor=pointer]:
+                        - generic [ref=e2354]:
+                          - generic [ref=e2355]:
+                            - img [ref=e2356]
+                            - generic [ref=e2358]: Answers matching “Breaking changes”
+                          - text: "264"
+                    - generic [ref=e2359]:
+                      - generic [ref=e2360]:
+                        - generic [ref=e2361]: "6"
+                        - heading "State management" [level=3] [ref=e2362]:
+                          - generic [ref=e2365]: State management
+                      - button "Answers matching “State management” 232" [ref=e2378] [cursor=pointer]:
+                        - generic [ref=e2379]:
+                          - generic [ref=e2380]:
+                            - img [ref=e2381]
+                            - generic [ref=e2383]: Answers matching “State management”
+                          - text: "232"
+                    - generic [ref=e2384]:
+                      - generic [ref=e2385]:
+                        - generic [ref=e2386]: "7"
+                        - heading "Speed of change" [level=3] [ref=e2387]:
+                          - generic [ref=e2390]: Speed of change
+                      - button "Answers matching “Speed of change” 200" [ref=e2403] [cursor=pointer]:
+                        - generic [ref=e2404]:
+                          - generic [ref=e2405]:
+                            - img [ref=e2406]
+                            - generic [ref=e2408]: Answers matching “Speed of change”
+                          - text: "200"
+                    - generic [ref=e2409]:
+                      - generic [ref=e2410]:
+                        - generic [ref=e2411]: "8"
+                        - heading "Dependencies" [level=3] [ref=e2412]:
+                          - generic [ref=e2415]: Dependencies
+                      - button "Answers matching “Dependencies” 132" [ref=e2428] [cursor=pointer]:
+                        - generic [ref=e2429]:
+                          - generic [ref=e2430]:
+                            - img [ref=e2431]
+                            - generic [ref=e2433]: Answers matching “Dependencies”
+                          - text: "132"
+                    - generic [ref=e2434]:
+                      - generic [ref=e2435]:
+                        - generic [ref=e2436]: "9"
+                        - heading "SSR" [level=3] [ref=e2437]:
+                          - generic [ref=e2440]: SSR
+                      - button "Answers matching “SSR” 130" [ref=e2453] [cursor=pointer]:
+                        - generic [ref=e2454]:
+                          - generic [ref=e2455]:
+                            - img [ref=e2456]
+                            - generic [ref=e2458]: Answers matching “SSR”
+                          - text: "130"
+                    - generic [ref=e2459]:
+                      - generic [ref=e2460]:
+                        - generic [ref=e2461]: "10"
+                        - heading "Angular issues" [level=3] [ref=e2462]:
+                          - generic [ref=e2465]: Angular issues
+                      - button "Answers matching “Angular issues” 129" [ref=e2478] [cursor=pointer]:
+                        - generic [ref=e2479]:
+                          - generic [ref=e2480]:
+                            - img [ref=e2481]
+                            - generic [ref=e2483]: Answers matching “Angular issues”
+                          - text: "129"
+                    - button "Show All (11 hidden)" [ref=e2485] [cursor=pointer]:
+                      - generic [ref=e2486]: Show All (11 hidden)
+                    - generic [ref=e2488]:
+                      - generic [ref=e2489]:
+                        - generic [ref=e2490]: 0%
+                        - generic [ref=e2491]: 20%
+                        - generic [ref=e2492]: 40%
+                        - generic [ref=e2493]: 60%
+                        - generic [ref=e2494]: 80%
+                        - generic [ref=e2495]: 100%
+                      - generic [ref=e2497]: "% of question respondents"
+                  - generic [ref=e2498]:
+                    - generic [ref=e2500]:
+                      - generic [ref=e2501]:
+                        - img [ref=e2503]
+                        - generic [ref=e2507]: 3,832
+                      - generic [ref=e2508]:
+                        - img [ref=e2510]
+                        - generic [ref=e2515]: 27%
+                    - generic [ref=e2516]:
+                      - button "Share Chart…" [ref=e2517] [cursor=pointer]
+                      - button "Export Data…" [ref=e2518] [cursor=pointer]
+          - generic [ref=e2519]:
+            - heading "Link to section Recommended Resources" [level=3] [ref=e2523]:
+              - link "Link to section" [ref=e2524] [cursor=pointer]:
+                - /url: https://share.devographics.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=front_end_frameworks_resources&params=&sectionId=libraries&subSectionId=front_end_frameworks
+                - img [ref=e2525]
+                - generic [ref=e2531]: Link to section
+              - generic [ref=e2533]: Recommended Resources
+            - generic [ref=e2535]:
+              - generic [ref=e2536]:
+                - generic [ref=e2537]:
+                  - generic [ref=e2538]:
+                    - link "Vue's Reactivity System" [ref=e2539] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=RHTP_NZcnl0?utm_source=js2024&utm_medium=sponsor&utm_campaign=front_end_frameworks_resources&utm_content=textlink
+                      - img "Vue's Reactivity System" [ref=e2540]
+                    - generic [ref=e2541]: Alexander Lichter
+                  - generic [ref=e2542]:
+                    - heading "Vue's Reactivity System" [level=4] [ref=e2543]:
+                      - link "Vue's Reactivity System" [ref=e2544] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=RHTP_NZcnl0?utm_source=js2024&utm_medium=sponsor&utm_campaign=front_end_frameworks_resources&utm_content=textlink
+                    - generic [ref=e2545]: Vue's reactivity system got faster again, and hopefully other framework reactivity systems will apply similar perf improvements.
+                - generic [ref=e2546]:
+                  - generic [ref=e2547]:
+                    - 'link "Master the Full-Stack: RedwoodJS Step-by-Step Guide" [ref=e2548] [cursor=pointer]':
+                      - /url: https://www.youtube.com/watch?v=Xr92RcUMngc?utm_source=js2024&utm_medium=sponsor&utm_campaign=front_end_frameworks_resources&utm_content=textlink
+                      - 'img "Master the Full-Stack: RedwoodJS Step-by-Step Guide" [ref=e2549]'
+                    - generic [ref=e2550]: Amy Dutton
+                    - generic [ref=e2551]: Redwood
+                  - generic [ref=e2552]:
+                    - 'heading "Master the Full-Stack: RedwoodJS Step-by-Step Guide" [level=4] [ref=e2553]':
+                      - 'link "Master the Full-Stack: RedwoodJS Step-by-Step Guide" [ref=e2554] [cursor=pointer]':
+                        - /url: https://www.youtube.com/watch?v=Xr92RcUMngc?utm_source=js2024&utm_medium=sponsor&utm_campaign=front_end_frameworks_resources&utm_content=textlink
+                    - generic [ref=e2555]: This is introducing a multi-part YouTube series where we’ll build a Hacker News clone. This project will be built on RedwoodJS, a full-stack React framework. We’ll cover React, GraphQL, Apollo, Storybook, Prisma, TypeScript, and Jest.
+              - generic [ref=e2556]:
+                - text: Sponsored content from our partners.
+                - link "Learn more." [ref=e2557] [cursor=pointer]:
+                  - /url: /en-US/support/
+        - contentinfo [ref=e2558]:
+          - generic [ref=e2559]:
+            - 'link "« Previous: Libraries" [ref=e2560] [cursor=pointer]':
+              - /url: /en-US/libraries/
+              - text: «
+              - generic [ref=e2561]: "Previous:"
+              - text: Libraries
+            - 'link "Next: Meta-Frameworks »" [ref=e2562] [cursor=pointer]':
+              - /url: /en-US/libraries/meta-frameworks/
+              - generic [ref=e2563]: "Next:"
+              - text: Meta-Frameworks »
+          - generic [ref=e2564]:
+            - generic [ref=e2565]:
+              - text: Questions? Found a bug?
+              - link "Leave an issue" [ref=e2566] [cursor=pointer]:
+                - /url: https://github.com/Devographics/Monorepo/issues
+              - text: .
+            - generic [ref=e2567]:
+              - text: Join us on
+              - link "Discord" [ref=e2568] [cursor=pointer]:
+                - /url: https://discord.gg/zRDb35jfrt
+              - text: .

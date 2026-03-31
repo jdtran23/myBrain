@@ -1,0 +1,477 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - button "Open Menu" [ref=e6] [cursor=pointer]:
+          - img [ref=e7]
+        - link "TanStack" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e10]: TanStack
+        - button
+      - link "Table v8 v8" [ref=e13] [cursor=pointer]:
+        - /url: /table
+        - generic [ref=e14]: Table
+        - generic [ref=e15]: v8
+        - text: v8
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - link "Follow TanStack Table on GitHub" [ref=e19] [cursor=pointer]:
+          - /url: https://github.com/tanstack/table
+          - img [ref=e20]
+        - link "Follow TanStack on X.com" [ref=e22] [cursor=pointer]:
+          - /url: https://x.com/tan_stack
+          - img [ref=e23]
+        - link "Follow TanStack on Besky" [ref=e26] [cursor=pointer]:
+          - /url: https://bsky.app/profile/tanstack.com
+          - img [ref=e27]
+        - link "Follow TanStack on Instagram" [ref=e29] [cursor=pointer]:
+          - /url: https://instagram.com/tan_stack
+          - img [ref=e30]
+        - link "Subscribe to TanStack on YouTube" [ref=e32] [cursor=pointer]:
+          - /url: https://youtube.com/@tan_stack
+          - img [ref=e33]
+        - link "Join TanStack Discord" [ref=e35] [cursor=pointer]:
+          - /url: https://tlinz.com/discord
+          - img [ref=e36]
+      - button "Search... K" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+        - generic [ref=e43]: Search...
+        - generic [ref=e44]:
+          - img [ref=e45]
+          - text: K
+      - button "Auto" [ref=e47] [cursor=pointer]:
+        - img [ref=e48]
+        - generic [ref=e52]: Auto
+      - link "Log In" [ref=e54] [cursor=pointer]:
+        - /url: /login
+        - img [ref=e55]
+        - generic [ref=e58]: Log In
+  - generic [ref=e59]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - link "Start RC" [ref=e66] [cursor=pointer]:
+          - /url: /start/latest
+          - generic [ref=e68]: Start
+          - generic [ref=e69]: RC
+        - link "Router" [ref=e71] [cursor=pointer]:
+          - /url: /router/latest
+          - generic [ref=e73]: Router
+        - link "Query" [ref=e75] [cursor=pointer]:
+          - /url: /query/latest
+          - generic [ref=e77]: Query
+        - link "Table" [ref=e79] [cursor=pointer]:
+          - /url: /table/latest
+          - generic [ref=e81]: Table
+        - link "DB beta" [ref=e83] [cursor=pointer]:
+          - /url: /db/latest
+          - generic [ref=e85]: DB
+          - generic [ref=e86]: beta
+        - link "AI alpha" [ref=e88] [cursor=pointer]:
+          - /url: /ai/latest
+          - generic [ref=e90]: AI
+          - generic [ref=e91]: alpha
+        - link "Form new" [ref=e93] [cursor=pointer]:
+          - /url: /form/latest
+          - generic [ref=e95]: Form
+          - generic [ref=e96]: new
+        - link "Virtual" [ref=e98] [cursor=pointer]:
+          - /url: /virtual/latest
+          - generic [ref=e100]: Virtual
+        - link "Pacer beta" [ref=e102] [cursor=pointer]:
+          - /url: /pacer/latest
+          - generic [ref=e104]: Pacer
+          - generic [ref=e105]: beta
+        - link "Hotkeys alpha" [ref=e107] [cursor=pointer]:
+          - /url: /hotkeys/latest
+          - generic [ref=e109]: Hotkeys
+          - generic [ref=e110]: alpha
+        - link "Store alpha" [ref=e112] [cursor=pointer]:
+          - /url: /store/latest
+          - generic [ref=e114]: Store
+          - generic [ref=e115]: alpha
+        - link "Devtools alpha" [ref=e117] [cursor=pointer]:
+          - /url: /devtools/latest
+          - generic [ref=e119]: Devtools
+          - generic [ref=e120]: alpha
+        - link "CLI alpha" [ref=e122] [cursor=pointer]:
+          - /url: /cli/latest
+          - generic [ref=e124]: CLI
+          - generic [ref=e125]: alpha
+        - link "Intent alpha" [ref=e127] [cursor=pointer]:
+          - /url: /intent/latest
+          - generic [ref=e129]: Intent
+          - generic [ref=e130]: alpha
+        - link "More Libraries" [ref=e131] [cursor=pointer]:
+          - /url: /libraries
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - generic [ref=e135]: More Libraries
+      - generic [ref=e138]:
+        - link "Builder Alpha" [ref=e139] [cursor=pointer]:
+          - /url: /builder
+          - generic [ref=e140]:
+            - img [ref=e141]
+            - generic [ref=e145]:
+              - generic [ref=e146]: Builder
+              - generic [ref=e147]: Alpha
+        - link "Blog" [ref=e148] [cursor=pointer]:
+          - /url: /blog
+          - generic [ref=e149]:
+            - img [ref=e150]
+            - generic [ref=e154]: Blog
+        - link "Maintainers" [ref=e155] [cursor=pointer]:
+          - /url: /maintainers
+          - generic [ref=e156]:
+            - img [ref=e157]
+            - generic [ref=e160]: Maintainers
+        - link "Partners" [ref=e161] [cursor=pointer]:
+          - /url: /partners
+          - generic [ref=e162]:
+            - img [ref=e163]
+            - generic [ref=e168]: Partners
+        - link "Showcase" [ref=e169] [cursor=pointer]:
+          - /url: /showcase
+          - generic [ref=e170]:
+            - img [ref=e171]
+            - generic [ref=e174]: Showcase
+        - link "Learn NEW" [ref=e175] [cursor=pointer]:
+          - /url: /learn
+          - generic [ref=e176]:
+            - img [ref=e177]
+            - generic [ref=e179]:
+              - generic [ref=e180]: Learn
+              - generic [ref=e181]: NEW
+        - link "Stats" [ref=e182] [cursor=pointer]:
+          - /url: /stats/npm
+          - generic [ref=e183]:
+            - img [ref=e184]
+            - generic [ref=e187]: Stats
+        - link "YouTube" [ref=e188] [cursor=pointer]:
+          - /url: https://youtube.com/@tan_stack
+          - generic [ref=e189]:
+            - img [ref=e190]
+            - generic [ref=e192]: YouTube
+        - link "Discord" [ref=e193] [cursor=pointer]:
+          - /url: https://tlinz.com/discord
+          - generic [ref=e194]:
+            - img [ref=e195]
+            - generic [ref=e197]: Discord
+        - link "Merch" [ref=e198] [cursor=pointer]:
+          - /url: /merch
+          - generic [ref=e199]:
+            - img [ref=e200]
+            - generic [ref=e202]: Merch
+        - link "Support" [ref=e203] [cursor=pointer]:
+          - /url: /support
+          - generic [ref=e204]:
+            - img [ref=e205]
+            - generic [ref=e208]: Support
+        - link "GitHub" [ref=e209] [cursor=pointer]:
+          - /url: https://github.com/tanstack
+          - generic [ref=e210]:
+            - img [ref=e211]
+            - generic [ref=e213]: GitHub
+        - link "Ethos" [ref=e214] [cursor=pointer]:
+          - /url: /ethos
+          - generic [ref=e215]:
+            - img [ref=e216]
+            - generic [ref=e219]: Ethos
+        - link "Tenets" [ref=e220] [cursor=pointer]:
+          - /url: /tenets
+          - generic [ref=e221]:
+            - img [ref=e222]
+            - generic [ref=e224]: Tenets
+        - link "Brand Guide" [ref=e225] [cursor=pointer]:
+          - /url: /brand-guide
+          - generic [ref=e226]:
+            - img [ref=e227]
+            - generic [ref=e231]: Brand Guide
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - heading "TanStack Table" [level=1] [ref=e235]:
+          - generic [ref=e236]: TanStack
+          - generic [ref=e237]: Table
+        - heading "Headless UI for building powerful tables & datagrids" [level=2] [ref=e238]
+        - paragraph [ref=e239]: Supercharge your tables or build a datagrid from scratch for TS/JS, React, Vue, Solid, Svelte, Qwik, Angular, and Lit while retaining 100% control over markup and styles.
+        - link "Get Started" [ref=e240] [cursor=pointer]:
+          - /url: /table/latest/docs
+      - generic [ref=e243]:
+        - link "0 NPM Downloads" [ref=e244] [cursor=pointer]:
+          - /url: https://www.npmjs.com/org/tanstack
+          - img [ref=e245]
+          - generic [ref=e248]:
+            - generic [ref=e252]: "0"
+            - generic [ref=e253]: NPM Downloads
+        - link "0 Stars on GitHub" [ref=e254] [cursor=pointer]:
+          - /url: https://github.com/tanstack/table
+          - img [ref=e255]
+          - generic [ref=e257]:
+            - generic [ref=e261]: "0"
+            - generic [ref=e262]: Stars on GitHub
+        - generic [ref=e263]:
+          - img [ref=e264]
+          - generic [ref=e269]:
+            - generic [ref=e273]: "0"
+            - generic [ref=e274]: Contributors on GitHub
+        - generic [ref=e275]:
+          - img [ref=e276]
+          - generic [ref=e279]:
+            - generic [ref=e283]: "0"
+            - generic [ref=e284]: Dependents on GitHub
+      - generic [ref=e285]:
+        - generic [ref=e286]: Just a quick look...
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - button "React" [ref=e289] [cursor=pointer]:
+              - generic [ref=e290]: React
+            - button "Vue" [ref=e291] [cursor=pointer]:
+              - generic [ref=e292]: Vue
+            - button "Angular" [ref=e293] [cursor=pointer]:
+              - generic [ref=e294]: Angular
+            - button "Solid" [ref=e295] [cursor=pointer]:
+              - generic [ref=e296]: Solid
+            - button "Lit" [ref=e297] [cursor=pointer]:
+              - generic [ref=e298]: Lit
+            - button "Svelte" [ref=e299] [cursor=pointer]:
+              - generic [ref=e300]: Svelte
+            - button "Qwik" [ref=e301] [cursor=pointer]:
+              - generic [ref=e302]: Qwik
+            - button "Vanilla" [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]: Vanilla
+          - code [ref=e307]: "import { useReactTable, getCoreRowModel, flexRender } from '@tanstack/react-table' const data = [{ id: 1, name: 'Ada' }] const columns = [{ accessorKey: 'name', header: 'Name' }] export default function SimpleTable() { const table = useReactTable({ data, columns, getCoreRowModel: getCoreRowModel() }) return ( <table> <thead> {table.getHeaderGroups().map((hg) => ( <tr key={hg.id}> {hg.headers.map((header) => ( <th key={header.id}> {flexRender(header.column.columnDef.header, header.getContext())} </th> ))} </tr> ))} </thead> <tbody> {table.getRowModel().rows.map((row) => ( <tr key={row.id}> {row.getVisibleCells().map((cell) => ( <td key={cell.id}> {flexRender(cell.column.columnDef.cell, cell.getContext())} </td> ))} </tr> ))} </tbody> </table> ) }"
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - img [ref=e312]
+          - generic [ref=e316]:
+            - heading "Designed for zero design" [level=3] [ref=e317]
+            - generic [ref=e319]: What good is a powerful table if that super hip designer you just hired can't work their UI magic on it? TanStack Table is headless by design, which means 100% control down to the very smallest HTML tag, component, class and style. Pixel Perfection? Go for it!
+        - generic [ref=e320]:
+          - img [ref=e322]
+          - generic [ref=e324]:
+            - heading "Big Power, Small Package" [level=3] [ref=e325]
+            - generic [ref=e327]: Don't be fooled by the small bundle size. TanStack Table is a workhorse. It's built to materialize, filter, sort, group, aggregate, paginate and display massive data sets using a very small API surface. Wire up your new or existing tables and watch your users become instantly more productive.
+        - generic [ref=e328]:
+          - img [ref=e330]
+          - generic [ref=e332]:
+            - heading "Extensible" [level=3] [ref=e333]
+            - generic [ref=e335]: TanStack table ships with excellent defaults to get you off the ground as fast as possible, but nothing is stopping you from customizing and overriding literally everything to your liking. Feeling tenacious enough to build your own Sheets/Excel/AirTable clone? Be our guest 😉
+      - generic [ref=e336]:
+        - generic [ref=e337]:
+          - heading "Loved by Developers" [level=3] [ref=e338]
+          - paragraph [ref=e339]: See what teams are saying
+        - generic [ref=e341]:
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - img [ref=e344]
+              - img [ref=e346]
+              - img [ref=e348]
+              - img [ref=e350]
+              - img [ref=e352]
+            - paragraph [ref=e354]: "\"Introducing Table and Data Table components. Powered by TanStack Table. With Pagination, Row Selection, Sorting, Filters, Row Actions and Keyboard Navigation.\""
+            - generic [ref=e355]:
+              - generic [ref=e356]: shadcn
+              - generic [ref=e357]: "@shadcn · Vercel"
+          - generic [ref=e358]:
+            - generic [ref=e359]:
+              - img [ref=e360]
+              - img [ref=e362]
+              - img [ref=e364]
+              - img [ref=e366]
+              - img [ref=e368]
+            - paragraph [ref=e370]: "\"I made a version using React Aria Components with arrow key navigation, multi selection, screen reader announcements, and more. Works great with TanStack Table too!\""
+            - generic [ref=e371]:
+              - generic [ref=e372]: Devon Govett
+              - generic [ref=e373]: "@devongovett · Adobe"
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - img [ref=e376]
+              - img [ref=e378]
+              - img [ref=e380]
+              - img [ref=e382]
+              - img [ref=e384]
+            - paragraph [ref=e386]: "\"TanStack Table is the perfect choice if you need a lightweight, unopinionated, and fully customizable solution. It gives you the power and leaves the presentation up to you.\""
+            - generic [ref=e387]:
+              - generic [ref=e388]: Developer Review
+              - generic [ref=e389]: Community ·
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - img [ref=e392]
+              - img [ref=e394]
+              - img [ref=e396]
+              - img [ref=e398]
+              - img [ref=e400]
+            - paragraph [ref=e402]: "\"Linear-style table filters using shadcn and TanStack Table. Open source. You'll be able to use this as an add-on to the Data Table component.\""
+            - generic [ref=e403]:
+              - generic [ref=e404]: Kian Bazza
+              - generic [ref=e405]: "@kianbazza · Developer"
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - img [ref=e408]
+              - img [ref=e410]
+              - img [ref=e412]
+              - img [ref=e414]
+              - img [ref=e416]
+            - paragraph [ref=e418]: "\"Introducing Table and Data Table components. Powered by TanStack Table. With Pagination, Row Selection, Sorting, Filters, Row Actions and Keyboard Navigation.\""
+            - generic [ref=e419]:
+              - generic [ref=e420]: shadcn
+              - generic [ref=e421]: "@shadcn · Vercel"
+          - generic [ref=e422]:
+            - generic [ref=e423]:
+              - img [ref=e424]
+              - img [ref=e426]
+              - img [ref=e428]
+              - img [ref=e430]
+              - img [ref=e432]
+            - paragraph [ref=e434]: "\"I made a version using React Aria Components with arrow key navigation, multi selection, screen reader announcements, and more. Works great with TanStack Table too!\""
+            - generic [ref=e435]:
+              - generic [ref=e436]: Devon Govett
+              - generic [ref=e437]: "@devongovett · Adobe"
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - img [ref=e440]
+              - img [ref=e442]
+              - img [ref=e444]
+              - img [ref=e446]
+              - img [ref=e448]
+            - paragraph [ref=e450]: "\"TanStack Table is the perfect choice if you need a lightweight, unopinionated, and fully customizable solution. It gives you the power and leaves the presentation up to you.\""
+            - generic [ref=e451]:
+              - generic [ref=e452]: Developer Review
+              - generic [ref=e453]: Community ·
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - img [ref=e456]
+              - img [ref=e458]
+              - img [ref=e460]
+              - img [ref=e462]
+              - img [ref=e464]
+            - paragraph [ref=e466]: "\"Linear-style table filters using shadcn and TanStack Table. Open source. You'll be able to use this as an add-on to the Data Table component.\""
+            - generic [ref=e467]:
+              - generic [ref=e468]: Kian Bazza
+              - generic [ref=e469]: "@kianbazza · Developer"
+      - generic [ref=e470]:
+        - heading "Framework Agnostic & Feature Rich" [level=3] [ref=e472]
+        - generic [ref=e473]:
+          - generic [ref=e474]:
+            - img [ref=e475]
+            - text: Lightweight (10 - 15kb)
+          - generic [ref=e478]:
+            - img [ref=e479]
+            - text: Tree-Shaking
+          - generic [ref=e482]:
+            - img [ref=e483]
+            - text: Headless
+          - generic [ref=e486]:
+            - img [ref=e487]
+            - text: Cell Formatters
+          - generic [ref=e490]:
+            - img [ref=e491]
+            - text: Auto-managed internal state
+          - generic [ref=e494]:
+            - img [ref=e495]
+            - text: Opt-in fully controlled state
+          - generic [ref=e498]:
+            - img [ref=e499]
+            - text: Sorting
+          - generic [ref=e502]:
+            - img [ref=e503]
+            - text: Multi Sort
+          - generic [ref=e506]:
+            - img [ref=e507]
+            - text: Global Filters
+          - generic [ref=e510]:
+            - img [ref=e511]
+            - text: Columns Filters
+          - generic [ref=e514]:
+            - img [ref=e515]
+            - text: Pagination
+          - generic [ref=e518]:
+            - img [ref=e519]
+            - text: Row Grouping
+          - generic [ref=e522]:
+            - img [ref=e523]
+            - text: Aggregation
+          - generic [ref=e526]:
+            - img [ref=e527]
+            - text: Row Selection
+          - generic [ref=e530]:
+            - img [ref=e531]
+            - text: Row Expansion
+          - generic [ref=e534]:
+            - img [ref=e535]
+            - text: Column Ordering
+          - generic [ref=e538]:
+            - img [ref=e539]
+            - text: Column Visibility
+          - generic [ref=e542]:
+            - img [ref=e543]
+            - text: Column Resizing
+          - generic [ref=e546]:
+            - img [ref=e547]
+            - text: Virtualizable
+          - generic [ref=e550]:
+            - img [ref=e551]
+            - text: Server-side/external Data
+          - generic [ref=e554]:
+            - img [ref=e555]
+            - text: Nested/Grouped Headers
+          - generic [ref=e558]:
+            - img [ref=e559]
+            - text: Footers
+      - generic [ref=e563]:
+        - heading "Take it for a spin!" [level=3] [ref=e564]
+        - paragraph [ref=e565]: With some basic styles, some table markup and few columns, you're already well on your way to creating a drop-dead powerful table.
+      - generic [ref=e567]:
+        - generic [ref=e568]:
+          - button "React" [ref=e569] [cursor=pointer]:
+            - generic [ref=e570]: React
+          - button "Vue" [ref=e571] [cursor=pointer]:
+            - generic [ref=e572]: Vue
+          - button "Angular" [ref=e573] [cursor=pointer]:
+            - generic [ref=e574]: Angular
+          - button "Solid" [ref=e575] [cursor=pointer]:
+            - generic [ref=e576]: Solid
+          - button "Lit" [ref=e577] [cursor=pointer]:
+            - generic [ref=e578]: Lit
+          - button "Svelte" [ref=e579] [cursor=pointer]:
+            - generic [ref=e580]: Svelte
+          - button "Qwik" [ref=e581] [cursor=pointer]:
+            - generic [ref=e582]: Qwik
+          - button "Vanilla" [ref=e583] [cursor=pointer]:
+            - generic [ref=e584]: Vanilla
+        - iframe [ref=e585]
+      - generic [ref=e613]:
+        - heading "Sponsors" [level=3] [ref=e614]
+        - link "Become a Sponsor" [ref=e666] [cursor=pointer]:
+          - /url: https://github.com/sponsors/tannerlinsley
+          - text: Become a Sponsor
+          - img [ref=e667]
+      - generic [ref=e669]:
+        - generic [ref=e670]: Wow, you've come a long way!
+        - generic [ref=e671]: Only one thing left to do...
+        - link "Get Started!" [ref=e673] [cursor=pointer]:
+          - /url: /table/latest/docs
+      - generic [ref=e674]:
+        - generic [ref=e675]:
+          - link "Blog" [ref=e677] [cursor=pointer]:
+            - /url: /blog
+          - link "@Tan_Stack on X.com" [ref=e679] [cursor=pointer]:
+            - /url: https://x.com/tan_stack
+          - link "@TannerLinsley on X.com" [ref=e681] [cursor=pointer]:
+            - /url: https://twitter.com/tannerlinsley
+          - link "GitHub" [ref=e683] [cursor=pointer]:
+            - /url: https://github.com/tanstack
+          - link "YouTube" [ref=e685] [cursor=pointer]:
+            - /url: https://youtube.com/@tan_stack
+          - link "Nozzle.io - Keyword Rank Tracker" [ref=e687] [cursor=pointer]:
+            - /url: https://nozzle.io
+          - link "Ethos" [ref=e689] [cursor=pointer]:
+            - /url: /ethos
+          - link "Tenets" [ref=e691] [cursor=pointer]:
+            - /url: /tenets
+          - link "Privacy Policy" [ref=e693] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms of Service" [ref=e695] [cursor=pointer]:
+            - /url: /terms
+        - generic [ref=e696]: © 2026 TanStack LLC
+  - region "Notifications (F8)":
+    - list

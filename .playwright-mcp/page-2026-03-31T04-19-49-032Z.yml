@@ -1,0 +1,260 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e7]:
+        - link "shadcn-svelte" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img
+          - generic [ref=e9]: shadcn-svelte
+        - navigation [ref=e10]:
+          - link "Docs" [ref=e11] [cursor=pointer]:
+            - /url: /docs/installation
+          - link "Components" [ref=e12] [cursor=pointer]:
+            - /url: /docs/components
+          - link "Blocks" [ref=e13] [cursor=pointer]:
+            - /url: /blocks
+          - link "Charts" [ref=e14] [cursor=pointer]:
+            - /url: /charts/area
+          - link "Colors" [ref=e15] [cursor=pointer]:
+            - /url: /colors
+          - link "Create" [ref=e16] [cursor=pointer]:
+            - /url: /create
+        - generic [ref=e17]:
+          - button "Search documentation... ⌘ K" [ref=e19]:
+            - generic [ref=e20]: Search documentation...
+            - generic [ref=e22]:
+              - generic: ⌘
+              - generic: K
+          - separator [ref=e23]
+          - link "8.0k" [ref=e24] [cursor=pointer]:
+            - /url: https://github.com/huntabyte/shadcn-svelte
+            - img
+            - generic [ref=e25]: 8.0k
+          - separator [ref=e26]
+          - button [ref=e27]:
+            - img
+          - link "New Project" [ref=e28] [cursor=pointer]:
+            - /url: /create
+            - img
+            - text: New Project
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e33]:
+          - 'link "New New Components: Field, Input Group, Item and more" [ref=e34] [cursor=pointer]':
+            - /url: /docs/changelog
+            - generic "New" [ref=e35]
+            - text: "New Components: Field, Input Group, Item and more"
+            - img
+          - heading "The Foundation for your Design System" [level=1] [ref=e36]
+          - paragraph [ref=e37]: A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.
+          - generic [ref=e38]:
+            - link "Get Started" [ref=e39] [cursor=pointer]:
+              - /url: /docs/installation
+            - link "View Components" [ref=e40] [cursor=pointer]:
+              - /url: /docs/components
+        - generic [ref=e42]:
+          - generic [ref=e47]:
+            - link "Examples" [ref=e48] [cursor=pointer]:
+              - /url: /
+            - link "Dashboard" [ref=e49] [cursor=pointer]:
+              - /url: /examples/dashboard
+            - link "Tasks" [ref=e50] [cursor=pointer]:
+              - /url: /examples/tasks
+            - link "Playground" [ref=e51] [cursor=pointer]:
+              - /url: /examples/playground
+            - link "Authentication" [ref=e52] [cursor=pointer]:
+              - /url: /examples/authentication
+          - generic [ref=e53]:
+            - generic [ref=e54]: Theme
+            - button "Theme" [ref=e55]:
+              - generic [ref=e56]: "Theme:"
+              - generic [ref=e57]: Neutral
+              - img
+        - generic [ref=e61]:
+          - generic [ref=e66]:
+            - group "Payment Method" [ref=e67]:
+              - generic [ref=e68]: Payment Method
+              - paragraph [ref=e69]: All transactions are secure and encrypted
+              - generic [ref=e70]:
+                - group [ref=e71]:
+                  - generic [ref=e72]: Name on Card
+                  - textbox "Name on Card" [ref=e73]:
+                    - /placeholder: John Doe
+                - generic [ref=e74]:
+                  - group [ref=e75]:
+                    - generic [ref=e76]: Card Number
+                    - textbox "Card Number" [ref=e77]:
+                      - /placeholder: 1234 5678 9012 3456
+                    - paragraph [ref=e78]: Enter your 16-digit number.
+                  - group [ref=e79]:
+                    - generic [ref=e80]: CVV
+                    - textbox "CVV" [ref=e81]:
+                      - /placeholder: "123"
+                - generic [ref=e82]:
+                  - group [ref=e83]:
+                    - generic [ref=e84]: Month
+                    - button "Month" [ref=e85]:
+                      - generic [ref=e86]: MM
+                      - img
+                  - group [ref=e87]:
+                    - generic [ref=e88]: Year
+                    - button "Year" [ref=e89]:
+                      - generic [ref=e90]: YYYY
+                      - img
+            - separator [ref=e92]
+            - group "Billing Address" [ref=e93]:
+              - generic [ref=e94]: Billing Address
+              - paragraph [ref=e95]: The billing address associated with your payment method
+              - group [ref=e97]:
+                - checkbox "Same as shipping address" [checked] [ref=e98]:
+                  - img [ref=e100]
+                - generic [ref=e102]: Same as shipping address
+            - separator [ref=e104]
+            - group [ref=e105]:
+              - group [ref=e107]:
+                - generic [ref=e108]: Comments
+                - textbox "Comments" [ref=e109]:
+                  - /placeholder: Add any additional comments
+            - group [ref=e110]:
+              - button "Submit" [ref=e111]
+              - button "Cancel" [ref=e112]
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e117]:
+                  - generic [ref=e119]: CN
+                  - generic [ref=e121]: LR
+                  - generic [ref=e123]: ER
+                - generic [ref=e124]: No Team Members
+                - generic [ref=e125]: Invite your team to collaborate on this project.
+              - button "Invite Members" [ref=e127]:
+                - img
+                - text: Invite Members
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - status "Loading"
+                - text: Syncing
+              - generic [ref=e130]:
+                - status "Loading"
+                - text: Updating
+              - generic [ref=e131]:
+                - status "Loading"
+                - text: Loading
+            - group [ref=e132]:
+              - group [ref=e133]:
+                - button [ref=e134]:
+                  - img
+              - group [ref=e135]:
+                - group [ref=e136]:
+                  - textbox "Send a message..." [ref=e137]
+                  - group [ref=e138]:
+                    - button [ref=e139]:
+                      - img
+            - group [ref=e141]:
+              - generic [ref=e142]: Price Range
+              - paragraph [ref=e143]: Set your budget range ($200 - 800).
+              - generic "Price Range" [ref=e144]:
+                - slider [ref=e147]
+                - slider [ref=e148]
+            - generic [ref=e149]:
+              - group [ref=e150]:
+                - textbox "Search..." [ref=e151]
+                - group [ref=e152]:
+                  - img [ref=e153]
+                - group [ref=e156]: 12 results
+              - group [ref=e157]:
+                - textbox "example.com" [ref=e158]
+                - group [ref=e159]:
+                  - generic [ref=e160]: https://
+                - group [ref=e161]:
+                  - button [ref=e162]:
+                    - img
+              - group [ref=e163]:
+                - textbox "Ask, Search or Chat..." [ref=e164]
+                - group [ref=e165]:
+                  - button [ref=e166]:
+                    - img
+                  - button "Auto" [ref=e167]
+                  - generic [ref=e168]: 52% used
+                  - separator [ref=e169]
+                  - button "Send" [disabled]:
+                    - img
+                    - generic: Send
+              - group [ref=e170]:
+                - textbox "@shadcn" [ref=e171]
+                - group [ref=e172]:
+                  - img [ref=e174]
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: Input Secure
+              - group [ref=e179]:
+                - textbox "Input Secure" [ref=e180]
+                - group [ref=e181]:
+                  - button "Info" [ref=e182]:
+                    - img
+                - group [ref=e183]: https://
+                - group [ref=e184]:
+                  - button "Favorite" [ref=e185]:
+                    - img
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - generic [ref=e189]: Two-factor authentication
+                  - paragraph [ref=e190]: Verify via email or phone number.
+                - button "Enable" [ref=e192]
+              - link "Your profile has been verified." [ref=e193] [cursor=pointer]:
+                - /url: "#/"
+                - generic [ref=e194]:
+                  - img
+                - generic [ref=e196]: Your profile has been verified.
+                - img [ref=e198]
+            - generic [ref=e200]:
+              - separator [ref=e201]
+              - generic [ref=e202]: Appearance Settings
+            - group [ref=e203]:
+              - generic [ref=e204]:
+                - group "Compute Environment" [ref=e205]:
+                  - generic [ref=e206]: Compute Environment
+                  - paragraph [ref=e207]: Select the compute environment for your cluster.
+                  - radiogroup [ref=e208]:
+                    - group [ref=e210]:
+                      - generic [ref=e211]:
+                        - generic [ref=e212]: Kubernetes
+                        - paragraph [ref=e213]: Run GPU workloads on a K8s configured cluster. This is the default.
+                      - radio "Kubernetes" [checked] [ref=e214]:
+                        - img [ref=e216]
+                    - group [ref=e219]:
+                      - generic [ref=e220]:
+                        - generic [ref=e221]: Virtual Machine
+                        - paragraph [ref=e222]: Access a VM configured cluster to run workloads. (Coming soon)
+                      - radio "Virtual Machine" [ref=e223]
+                - separator [ref=e226]
+                - group [ref=e227]:
+                  - generic [ref=e228]:
+                    - generic [ref=e229]: Number of GPUs
+                    - paragraph [ref=e230]: You can add more later.
+                  - group [ref=e231]:
+                    - textbox "Number of GPUs" [ref=e232]: "8"
+                    - button "Decrement" [ref=e233]:
+                      - img
+                    - button "Increment" [ref=e234]:
+                      - img
+                - separator [ref=e236]
+                - group [ref=e237]:
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: Wallpaper Tinting
+                    - paragraph [ref=e240]: Allow the wallpaper to be tinted.
+                  - switch "Wallpaper Tinting" [checked] [ref=e241]
+    - contentinfo [ref=e242]:
+      - generic [ref=e245]:
+        - text: Built by
+        - link "shadcn" [ref=e246] [cursor=pointer]:
+          - /url: https://x.com/shadcn
+        - text: . Ported to Svelte by
+        - link "Huntabyte" [ref=e247] [cursor=pointer]:
+          - /url: https://x.com/huntabyte
+        - text: "&"
+        - link "CokaKoala" [ref=e248] [cursor=pointer]:
+          - /url: https://github.com/adriangonz97
+        - text: .

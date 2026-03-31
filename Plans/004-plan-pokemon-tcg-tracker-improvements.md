@@ -79,40 +79,29 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 
 ---
 
-### Phase 4: Test Foundation 🧪
+### Phase 4: Test Foundation ✅ DONE
 > *Establish automated testing to protect against regressions*
 
-- [ ] **Task 4.1:** Set up pytest infrastructure (GitHub: #5)
-  - Scope: Create `tests/` directory, `tests/__init__.py`, `tests/conftest.py` with shared fixtures (test DB, FastAPI TestClient), add `pytest` + `httpx` to `requirements.txt` (dev section or separate `requirements-dev.txt`)
-  - Verify: `pytest --collect-only` discovers test directory with no errors
-  - AI Validation: @porygon generates → run `pytest --collect-only` → must succeed with 0 errors
-  - Dependencies: Phase 3 complete
+- [x] **Task 4.1:** Set up pytest infrastructure (GitHub: #5 ✅ closed)
+  - Created `tests/__init__.py`, `tests/conftest.py` with test DB override, TestClient fixture, sample data fixtures
+  - Added `pytest>=8.0.0` to requirements.txt
+  - DB override via `TCG_TRACKER_DB_OVERRIDE` env var in src/db.py
 
-- [ ] **Task 4.2:** Write API endpoint tests
-  - Scope: Test all endpoints in `src/api.py` using FastAPI `TestClient` — `GET /cards`, `GET /cards/{id}`, `GET /signals`, `GET /trends`, `POST` endpoints if any. Test both success and error paths (404, invalid input).
-  - Verify: `pytest tests/test_api.py -v` — all tests pass, covers happy path + error cases
-  - AI Validation: @porygon writes tests → run pytest → all green → @absol reviews test quality (are edge cases covered? are assertions meaningful?)
-  - Dependencies: Task 4.1
+- [x] **Task 4.2:** Write API endpoint tests (21 tests)
+  - `tests/test_api.py`: health check, cards CRUD, trends, prices, watchlist, signal rules, alerts
+  - Covers happy paths + 404s + validation errors
 
-- [ ] **Task 4.3:** Write signal engine unit tests
-  - Scope: Test `compute_signal()` in `src/signals.py` — rule matching, priority resolution, edge cases (no data, conflicting rules, override signals). Test against `config/signal_rules.json` structure.
-  - Verify: `pytest tests/test_signals.py -v` — all pass, covers rule priority, threshold boundaries, override behavior
-  - AI Validation: @porygon writes tests → run pytest → all green → @absol reviews for logic coverage (boundary conditions, empty inputs, rule conflicts)
-  - Dependencies: Task 4.1
+- [x] **Task 4.3:** Write signal engine unit tests (8 tests)
+  - `tests/test_signals.py`: buy_dip, sell_opportunity, hold_accumulate, below_direct_low, priority resolution, contributing factors, no-data hold, nonexistent card
 
-- [ ] **Task 4.4:** Write trends computation unit tests
-  - Scope: Test trend calculation in `src/trends.py` — price direction, percentage changes, time window handling, insufficient data scenarios
-  - Verify: `pytest tests/test_trends.py -v` — all pass
-  - AI Validation: @porygon writes tests → run pytest → all green → @absol reviews for mathematical correctness
-  - Dependencies: Task 4.1
+- [x] **Task 4.4:** Write trends computation unit tests (6 tests)
+  - `tests/test_trends.py`: stable, rising, declining trends, no-data scenario, price extraction priority (market > mid > low)
 
-- [ ] **Task 4.5:** Full test suite validation
-  - Scope: Run complete test suite, ensure no flaky tests, generate coverage report
-  - Verify: `pytest --tb=short -q` — all tests pass on first run. Run twice to confirm no flakiness.
-  - AI Validation: Two consecutive clean runs, no warnings about unclosed resources or DB locks
-  - Dependencies: Tasks 4.2, 4.3, 4.4
+- [x] **Task 4.5:** Full test suite validation
+  - 35 tests total (≥ 15 requirement met)
+  - Two consecutive clean runs: 35/35 passed, 2.15s, no flakiness
 
-**Phase 4 Exit Criteria:** `pytest` runs cleanly with tests for API, signals, and trends. All pass. Test count ≥ 15.
+**Phase 4 Exit Criteria:** ✅ pytest runs cleanly with 35 tests across API, signals, and trends. All pass. Two consecutive clean runs confirmed (2026-03-30).
 
 ---
 
@@ -209,7 +198,7 @@ Every AI-generated artifact must have verification steps defined BEFORE generati
 ## Acceptance Criteria
 - [x] Phase 2: Project runs locally on Joe's Windows machine
 - [x] Phase 3: Clean `.gitignore`, no unused deps, project still runs
-- [ ] Phase 4: pytest suite with ≥15 tests, all passing
+- [x] Phase 4: pytest suite with 35 tests, all passing
 - [ ] Phase 5: N+1 fixed, JSON writes safe, Alembic decided
 - [ ] Phase 6: At least `pokemon-tcg-ops` skill extracted
 - [ ] Phase 7: v2 plan created and @cresselia approved

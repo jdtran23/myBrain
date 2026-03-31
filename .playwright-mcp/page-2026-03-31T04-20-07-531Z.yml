@@ -1,0 +1,399 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: vue 3 dashboard component library 2025 vuetify primevue element plus vue 3 dashboard component library 2025 vuetify primevue element plus
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "Sign in" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dvue%2B3%2Bdashboard%2Bcomponent%2Blibrary%2B2025%2Bvuetify%2Bprimevue%2Belement%2Bplus&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "AI Mode" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&aep=1&ntc=1&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ2J8OegQIERAE
+              - generic [ref=e81]: AI Mode
+          - listitem [ref=e82]:
+            - link "All" [disabled] [ref=e83]:
+              - generic [ref=e85]: All
+          - listitem [ref=e86]:
+            - link "Shopping" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&ved=1t:220175&ictx=111
+              - generic [ref=e89]: Shopping
+          - listitem [ref=e90]:
+            - link "Images" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQtKgLegQIFhAB
+              - generic [ref=e93]: Images
+          - listitem [ref=e94]:
+            - link "Forums" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQs6gLegQIFRAB
+              - generic [ref=e97]: Forums
+          - listitem [ref=e98]:
+            - link "Short videos" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQs6gLegQIFBAB
+              - generic [ref=e101]: Short videos
+          - listitem [ref=e102]:
+            - link "Videos" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mMGVXS0bCMe2eDZOQ2MOTwnVhtn0IjvHwoZNslEQ70XxGRHq-q9xQhWpVixDaSlKP-XSGR6z3kG22Sg-f4TxgtC83lIn7U5vK4vgDRLcz6eNVWa61dg8kk85PJfZ0OWSxTUIX65HrTQz3YM2bS2qcq3Z_hNtGux-lxMMp7Wkg592NEmCCA&q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQtKgLegQIExAB
+              - generic [ref=e105]: Videos
+          - listitem [ref=e106]:
+            - button "More filters" [ref=e107] [cursor=pointer]:
+              - generic "More filters" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: More
+                  - img [ref=e112]
+        - button "Tools" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Tools
+            - img [ref=e120]
+    - heading "Search Results" [level=1] [ref=e122]
+    - generic [ref=e127]:
+      - generic [ref=e146]:
+        - heading "Thinking" [level=2] [ref=e150]:
+          - generic [ref=e151]: Thinking
+        - progressbar [ref=e152]
+      - main [ref=e154]:
+        - generic [ref=e158]:
+          - generic [ref=e161]:
+            - heading "Web results" [level=2] [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e166]:
+                - link "PrimeVue - Vue UI Component Library PrimeVue https://primevue.org" [ref=e168] [cursor=pointer]:
+                  - /url: https://primevue.org/
+                  - heading "PrimeVue - Vue UI Component Library" [level=3] [ref=e169]
+                  - generic [ref=e174]:
+                    - generic [ref=e176]: PrimeVue
+                    - generic [ref=e178]: https://primevue.org
+                - button "About this result" [ref=e179] [cursor=pointer]:
+                  - img [ref=e182]
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - text: The Next-Gen UI Suite for Vue.js. Enhance your web applications with
+                  - emphasis [ref=e187]: PrimeVue's comprehensive suite of customizable, feature-rich UI components
+                  - text: .
+                - link "Read more" [ref=e188] [cursor=pointer]:
+                  - /url: https://primevue.org/#:~:text=The%20Next%2DGen%20UI%20Suite%20for,of%20customizable%2C%20feature%2Drich%20UI%20components.
+              - generic [ref=e190]: "Missing: 2025 ‎vuetify"
+          - generic [ref=e194]:
+            - generic [ref=e197]:
+              - 'link "Looking for Component Library recommendations : r/vuejs Reddit · r/vuejs 40+ comments · 9 months ago" [ref=e199] [cursor=pointer]':
+                - /url: https://www.reddit.com/r/vuejs/comments/1llcslt/looking_for_component_library_recommendations/
+                - 'heading "Looking for Component Library recommendations : r/vuejs" [level=3] [ref=e200]'
+                - generic [ref=e205]:
+                  - generic [ref=e207]: Reddit · r/vuejs
+                  - generic [ref=e209]: 40+ comments · 9 months ago
+              - button "About this result" [ref=e210] [cursor=pointer]:
+                - img [ref=e213]
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - text: Of the ones you mentioned,
+                - emphasis [ref=e218]: Vuetify and Element Plus
+                - text: are two of the most popular and well-maintained options, with great community support.
+              - link "Read more" [ref=e219] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/vuejs/comments/1llcslt/looking_for_component_library_recommendations/#:~:text=Of%20the%20ones%20you%20mentioned%2C,options%2C%20with%20great%20community%20support.
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - link "Which vue3 component framework has the most ... - Reddit" [ref=e226] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/vuejs/comments/1273i2h/which_vue3_component_framework_has_the_most/
+                  - generic [ref=e227]:
+                    - text: Which
+                    - emphasis [ref=e228]: vue3 component
+                    - text: framework has the most ... - Reddit
+                - generic [ref=e230]: 33 posts
+                - generic [ref=e232]: Mar 31, 2023
+              - generic [ref=e233]:
+                - link "Which UI component library to choose (PrimeVue ..." [ref=e236] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/vuejs/comments/1s1p4az/which_ui_component_library_to_choose_primevue/
+                  - generic [ref=e237]:
+                    - text: Which UI
+                    - emphasis [ref=e238]: component library
+                    - text: to choose (
+                    - emphasis [ref=e239]: PrimeVue
+                    - text: ...
+                - generic [ref=e241]: 41 posts
+                - generic [ref=e243]: Mar 23, 2026
+              - link "More results from www.reddit.com" [ref=e247] [cursor=pointer]:
+                - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus+site:www.reddit.com&sca_esv=e7687de8d1b3fbf8&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQrQIoAnoECB8QAw
+          - generic [ref=e251]:
+            - generic [ref=e254]:
+              - link "11+ Best Vue Components Libraries for 2026 TailGrids https://tailgrids.com › blog › best-vue-component-libraries" [ref=e256] [cursor=pointer]:
+                - /url: https://tailgrids.com/blog/best-vue-component-libraries
+                - heading "11+ Best Vue Components Libraries for 2026" [level=3] [ref=e257]
+                - generic [ref=e262]:
+                  - generic [ref=e264]: TailGrids
+                  - generic [ref=e266]: https://tailgrids.com › blog › best-vue-component-libraries
+              - button "About this result" [ref=e267] [cursor=pointer]:
+                - img [ref=e270]
+            - generic [ref=e273]:
+              - generic [ref=e274]: Feb 8, 2026 —
+              - generic [ref=e275]:
+                - emphasis [ref=e276]: Explore the 11+ best Vue UI component libraries for 2026
+                - text: . Discover our handpicked list and choose the right UI library for your projects!
+          - generic [ref=e280]:
+            - generic [ref=e283]:
+              - link "14 Standout Vue 3 UI Libraries (officially curated, TS-first ... Medium · Shantelzwahlenzl 6 months ago" [ref=e285] [cursor=pointer]:
+                - /url: https://medium.com/@shantelzwahlenzl5237/14-standout-vue-3-ui-libraries-officially-curated-ts-first-actively-maintained-4279133dc9ca
+                - heading "14 Standout Vue 3 UI Libraries (officially curated, TS-first ..." [level=3] [ref=e286]
+                - generic [ref=e291]:
+                  - generic [ref=e293]: Medium · Shantelzwahlenzl
+                  - generic [ref=e295]: 6 months ago
+              - button "About this result" [ref=e296] [cursor=pointer]:
+                - img [ref=e299]
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - emphasis [ref=e304]: PrimeVue
+                - text: ". Highlights: Styled / Unstyled modes, 30+ themes with a visual theme builder, 80+ rich"
+                - emphasis [ref=e305]: components
+                - text: ". Best for: BPM/ERP and ..."
+              - link "Read more" [ref=e306] [cursor=pointer]:
+                - /url: https://medium.com/@shantelzwahlenzl5237/14-standout-vue-3-ui-libraries-officially-curated-ts-first-actively-maintained-4279133dc9ca#:~:text=PrimeVue,BPM%2FERP%20and%20data%2Ddense%20back%2Doffice%20apps.
+          - generic [ref=e310]:
+            - generic [ref=e313]:
+              - link "Top Vue Component Libraries in 2026 UI Bakery https://uibakery.io › blog › top-vue-component-libraries" [ref=e315] [cursor=pointer]:
+                - /url: https://uibakery.io/blog/top-vue-component-libraries
+                - heading "Top Vue Component Libraries in 2026" [level=3] [ref=e316]
+                - generic [ref=e321]:
+                  - generic [ref=e323]: UI Bakery
+                  - generic [ref=e325]: https://uibakery.io › blog › top-vue-component-libraries
+              - button "About this result" [ref=e326] [cursor=pointer]:
+                - img [ref=e329]
+            - generic [ref=e332]:
+              - generic [ref=e333]: Mar 23, 2025 —
+              - generic [ref=e334]:
+                - text: Top Vue Component Libraries in 2026 ·
+                - emphasis [ref=e335]: Vuetify
+                - text: · Quasar Framework · PrimeVue · Element Plus · Naive UI · BootstrapVue · Ant Design Vue · Vant.
+              - link "Read more" [ref=e336] [cursor=pointer]:
+                - /url: https://uibakery.io/blog/top-vue-component-libraries#:~:text=Top%20Vue%20Component%20Libraries%20in,2026&text=Vuetify&text=Quasar%20Framework&text=PrimeVue&text=Element%20Plus&text=Naive%20UI&text=BootstrapVue&text=Ant%20Design%20Vue&text=Vant
+          - generic [ref=e340]:
+            - generic [ref=e343]:
+              - 'link "Element Plus: A Vue 3 UI Framework Element Plus https://element-plus.org" [ref=e345] [cursor=pointer]':
+                - /url: https://element-plus.org/
+                - 'heading "Element Plus: A Vue 3 UI Framework" [level=3] [ref=e346]'
+                - generic [ref=e351]:
+                  - generic [ref=e353]: Element Plus
+                  - generic [ref=e355]: https://element-plus.org
+              - button "About this result" [ref=e356] [cursor=pointer]:
+                - img [ref=e359]
+            - generic [ref=e362]:
+              - generic [ref=e363]:
+                - text: Element Plus.
+                - emphasis [ref=e364]: A Vue 3 based component library
+                - text: for designers and developers ... Released under the MIT License. Made with ❤️ by Element Plus.
+              - link "Read more" [ref=e365] [cursor=pointer]:
+                - /url: https://element-plus.org/#:~:text=Element%20Plus,library%20for%20designers%20and%20developers&text=Released%20under%20the%20MIT%20License.,with%20%E2%9D%A4%EF%B8%8F%20by%20Element%20Plus
+            - generic [ref=e367]: "Missing: 2025 ‎vuetify ‎primevue"
+          - generic [ref=e371]:
+            - generic [ref=e374]:
+              - link "Top 10 Vue Component Libraries for Headless CMS Strapi https://strapi.io › blog › vue-component-libraries" [ref=e376] [cursor=pointer]:
+                - /url: https://strapi.io/blog/vue-component-libraries
+                - heading "Top 10 Vue Component Libraries for Headless CMS" [level=3] [ref=e377]
+                - generic [ref=e382]:
+                  - generic [ref=e384]: Strapi
+                  - generic [ref=e386]: https://strapi.io › blog › vue-component-libraries
+              - button "About this result" [ref=e387] [cursor=pointer]:
+                - img [ref=e390]
+            - generic [ref=e393]:
+              - generic [ref=e394]: Feb 19, 2025 —
+              - generic [ref=e395]:
+                - emphasis [ref=e396]: Element Plus is a Vue 3 UI library
+                - text: known for its professional and clear design. Fully compatible with Vue 3, it enhances performance and ...
+              - link "Read more" [ref=e397] [cursor=pointer]:
+                - /url: https://strapi.io/blog/vue-component-libraries#:~:text=Element%20Plus%20is%20a%20Vue,it%20enhances%20performance%20and%20usability.
+          - generic [ref=e401]:
+            - generic [ref=e404]:
+              - link "The Best React and Vue UI Libraries of 2025 - Can Akyuz canakyuz.dev https://www.canakyuz.dev › blog › the-best-react-and-v..." [ref=e406] [cursor=pointer]:
+                - /url: https://www.canakyuz.dev/blog/the-best-react-and-vue-ui-libraries-of-2025-an-in-depth-review
+                - heading "The Best React and Vue UI Libraries of 2025 - Can Akyuz" [level=3] [ref=e407]
+                - generic [ref=e412]:
+                  - generic [ref=e414]: canakyuz.dev
+                  - generic [ref=e416]: https://www.canakyuz.dev › blog › the-best-react-and-v...
+              - button "About this result" [ref=e417] [cursor=pointer]:
+                - img [ref=e420]
+            - generic [ref=e423]:
+              - generic [ref=e424]: Feb 11, 2025 —
+              - generic [ref=e425]:
+                - emphasis [ref=e426]: "Vuetify: Planning performance improvements"
+                - text: ". PrimeVue: Introducing new data visualization components. Element Plus: Focusing on ..."
+              - link "Read more" [ref=e427] [cursor=pointer]:
+                - /url: https://www.canakyuz.dev/blog/the-best-react-and-vue-ui-libraries-of-2025-an-in-depth-review#:~:text=Vuetify%3A%20Planning%20performance%20improvements.,on%20internationalization%20and%20performance%20enhancements.
+          - generic [ref=e431]:
+            - generic [ref=e434]:
+              - link "⚡️ 6 Vue.js UI Libraries (Vue 3) That Are Trending in 2024 🔥 Hackernoon https://hackernoon.com › 6-vuejs-ui-libraries-vue-3-tha..." [ref=e436] [cursor=pointer]:
+                - /url: https://hackernoon.com/6-vuejs-ui-libraries-vue-3-that-are-trending-in-2024?source=rss
+                - heading "⚡️ 6 Vue.js UI Libraries (Vue 3) That Are Trending in 2024 🔥" [level=3] [ref=e437]
+                - generic [ref=e442]:
+                  - generic [ref=e444]: Hackernoon
+                  - generic [ref=e446]: https://hackernoon.com › 6-vuejs-ui-libraries-vue-3-tha...
+              - button "About this result" [ref=e447] [cursor=pointer]:
+                - img [ref=e450]
+            - generic [ref=e453]:
+              - generic [ref=e454]: Nov 13, 2024 —
+              - generic [ref=e455]:
+                - text: Discover the top 6 Vue.js UI libraries of 2024 for Vue 3 apps.
+                - emphasis [ref=e456]: Explore Vuetify, Quasar, Element Plus
+                - text: ", and more for efficient, modern frontend ..."
+            - list [ref=e458]:
+              - listitem [ref=e459]:
+                - link "1. Vuetify" [ref=e460] [cursor=pointer]:
+                  - /url: https://hackernoon.com/6-vuejs-ui-libraries-vue-3-that-are-trending-in-2024?source=rss#:~:text=1.%20Vuetify
+                  - generic [ref=e463]: 1. Vuetify
+              - listitem [ref=e464]:
+                - link "3. Primevue" [ref=e465] [cursor=pointer]:
+                  - /url: https://hackernoon.com/6-vuejs-ui-libraries-vue-3-that-are-trending-in-2024?source=rss#:~:text=3.%20PrimeVue
+                  - generic [ref=e468]: 3. Primevue
+              - listitem [ref=e469]:
+                - link "2. Ant Design Vue" [ref=e470] [cursor=pointer]:
+                  - /url: https://hackernoon.com/6-vuejs-ui-libraries-vue-3-that-are-trending-in-2024?source=rss#:~:text=2.%20Ant%20Design%20Vue
+                  - generic [ref=e473]: 2. Ant Design Vue
+          - generic [ref=e477]:
+            - generic [ref=e480]:
+              - 'link "Vue 3 UI Libraries: 6 Most Popular Picks for 2025 vue-pdf-viewer.dev https://blog.vue-pdf-viewer.dev › vue-3-ui-libraries-6-..." [ref=e482] [cursor=pointer]':
+                - /url: https://blog.vue-pdf-viewer.dev/vue-3-ui-libraries-6-most-popular-picks-for-2025
+                - 'heading "Vue 3 UI Libraries: 6 Most Popular Picks for 2025" [level=3] [ref=e483]'
+                - generic [ref=e488]:
+                  - generic [ref=e490]: vue-pdf-viewer.dev
+                  - generic [ref=e492]: https://blog.vue-pdf-viewer.dev › vue-3-ui-libraries-6-...
+              - button "About this result" [ref=e493] [cursor=pointer]:
+                - img [ref=e496]
+            - generic [ref=e499]:
+              - generic [ref=e500]: May 27, 2025 —
+              - generic [ref=e501]:
+                - emphasis [ref=e502]: Explore the top 6 popular Vue 3 UI libraries for 2025
+                - text: ", featuring tools like Vuetify and Quasar to elevate your Vue.js projects."
+            - list [ref=e504]:
+              - listitem [ref=e505]:
+                - 'link "🌟 Vue 3 Ui Libraries: 6..." [ref=e506] [cursor=pointer]':
+                  - /url: https://blog.vue-pdf-viewer.dev/vue-3-ui-libraries-6-most-popular-picks-for-2025#:~:text=%F0%9F%8C%9F%20Vue%203%20UI%20Libraries%3A%206%20Most%20Popular%20Picks%20for%202025%20%F0%9F%9A%80,-Best%20Vue.%20js%20UI
+                  - generic [ref=e509]: "🌟 Vue 3 Ui Libraries: 6..."
+              - listitem [ref=e510]:
+                - 'link "Vue Pdf Viewer: Flexible And..." [ref=e511] [cursor=pointer]':
+                  - /url: https://blog.vue-pdf-viewer.dev/vue-3-ui-libraries-6-most-popular-picks-for-2025#:~:text=Vue%20PDF%20Viewer%3A%20Flexible%20and%20Powerful%20Vue.%20js%20PDF%20Component,-Just%20a%20quick%20background%20about
+                  - generic [ref=e514]: "Vue Pdf Viewer: Flexible And..."
+              - listitem [ref=e515]:
+                - link "2. Primevue" [ref=e516] [cursor=pointer]:
+                  - /url: https://blog.vue-pdf-viewer.dev/vue-3-ui-libraries-6-most-popular-picks-for-2025#:~:text=2.%20PrimeVue,-PrimeVue%20is%20a%20rich%20set
+                  - generic [ref=e519]: 2. Primevue
+            - generic [ref=e521]:
+              - text: "Missing: dashboard ‎| Show results with:"
+              - link "dashboard" [ref=e522] [cursor=pointer]:
+                - /url: /search?sca_esv=e7687de8d1b3fbf8&q=vue+3+%22dashboard%22+component+library+2025+vuetify+primevue+element+plus&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ5t4CegQIUBAB
+        - generic [ref=e524]:
+          - generic [ref=e529]:
+            - heading "People also search for" [level=2] [ref=e531]
+            - generic [ref=e533]:
+              - generic [ref=e534]:
+                - link "Vue 3 component library" [ref=e538] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Vue+3+component+library&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAg2EAE
+                  - generic [ref=e539]:
+                    - generic [ref=e544]: Vue 3 component library
+                    - img [ref=e548]
+                - link "Vue component library" [ref=e553] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Vue+component+library&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAhEEAE
+                  - generic [ref=e554]:
+                    - generic [ref=e559]: Vue component library
+                    - img [ref=e563]
+                - link "Vue UI library" [ref=e568] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Vue+UI+library&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAhDEAE
+                  - generic [ref=e569]:
+                    - generic [ref=e574]: Vue UI library
+                    - img [ref=e578]
+                - link "Vue component library 2025" [ref=e583] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Vue+component+library+2025&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAhBEAE
+                  - generic [ref=e584]:
+                    - generic [ref=e589]: Vue component library 2025
+                    - img [ref=e593]
+              - generic [ref=e595]:
+                - link "PrimeVue vs Vuetify" [ref=e599] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=PrimeVue+vs+Vuetify&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAg6EAE
+                  - generic [ref=e600]:
+                    - generic [ref=e605]: PrimeVue vs Vuetify
+                    - img [ref=e609]
+                - link "Vue UI components" [ref=e614] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Vue+UI+components&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAg5EAE
+                  - generic [ref=e615]:
+                    - generic [ref=e620]: Vue UI components
+                    - img [ref=e624]
+                - link "PrimeVue v3" [ref=e629] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=PrimeVue+v3&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAg4EAE
+                  - generic [ref=e630]:
+                    - generic [ref=e635]: PrimeVue v3
+                    - img [ref=e639]
+                - link "Best Vue component library" [ref=e644] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Best+Vue+component+library&sa=X&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ1QJ6BAg3EAE
+                  - generic [ref=e645]:
+                    - generic [ref=e650]: Best Vue component library
+                    - img [ref=e654]
+          - navigation [ref=e656]:
+            - heading "Page Navigation" [level=1] [ref=e657]
+            - text: "1"
+            - link "Page 2" [ref=e660] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=10&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAE
+              - text: "2"
+            - link "Page 3" [ref=e662] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=20&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAG
+              - text: "3"
+            - link "Page 4" [ref=e664] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=30&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAI
+              - text: "4"
+            - link "Page 5" [ref=e666] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=40&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAK
+              - text: "5"
+            - link "Page 6" [ref=e668] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=50&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAM
+              - text: "6"
+            - link "Page 7" [ref=e670] [cursor=pointer]:
+              - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=60&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8tMDegQIDBAO
+              - text: "7"
+            - heading "Next" [level=2] [ref=e672]:
+              - link "Next" [ref=e673] [cursor=pointer]:
+                - /url: /search?q=vue+3+dashboard+component+library+2025+vuetify+primevue+element+plus&sca_esv=e7687de8d1b3fbf8&ei=c0vLab_SG87O0PEP38X_wAc&start=10&sa=N&sstk=Af77f_eOJ4IYAGoRPO1MeR1Eg11SvJV6k8dO7by80EIucpinfckjKovu547C-tPmxs4Z4spkqJL7w621ITCrMkUv2IjnnlLbhzzGPg&ved=2ahUKEwj_16nApMmTAxVOJzQIHd_iH3gQ8NMDegQIDBAQ
+                - generic [ref=e675]: Next
+        - navigation
+    - contentinfo [ref=e676]:
+      - heading "Footer Links" [level=1] [ref=e677]
+      - generic [ref=e681]:
+        - generic [ref=e685]:
+          - button "Central District, Seattle, WA - From your IP address" [ref=e687] [cursor=pointer]:
+            - generic [ref=e688]: Central District, Seattle, WA
+            - generic [ref=e690]:
+              - text: "-"
+              - generic [ref=e691]: From your IP address
+          - text: "-"
+          - button "Update location" [ref=e693] [cursor=pointer]: Update location
+        - generic [ref=e696]:
+          - link "Help" [ref=e697] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+          - link "Send feedback" [ref=e698] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e699] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en&fg=1
+          - link "Terms" [ref=e700] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en&fg=1

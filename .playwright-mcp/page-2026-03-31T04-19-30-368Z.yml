@@ -1,0 +1,401 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: shadcn ui svelte 2025 components table charts shadcn ui svelte 2025 components table charts
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "Settings" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google apps" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "Sign in" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dshadcn%2Bui%2Bsvelte%2B2025%2Bcomponents%2Btable%2Bcharts&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e73]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "AI Mode" [ref=e78] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&aep=1&ntc=1&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ2J8OegQIERAE
+              - generic [ref=e81]: AI Mode
+          - listitem [ref=e82]:
+            - link "All" [disabled] [ref=e83]:
+              - generic [ref=e85]: All
+          - listitem [ref=e86]:
+            - link "Images" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&q=shadcn+ui+svelte+2025+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQtKgLegQIFhAB
+              - generic [ref=e89]: Images
+          - listitem [ref=e90]:
+            - link "Videos" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&q=shadcn+ui+svelte+2025+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQtKgLegQIFxAB
+              - generic [ref=e93]: Videos
+          - listitem [ref=e94]:
+            - link "Forums" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&q=shadcn+ui+svelte+2025+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQs6gLegQIExAB
+              - generic [ref=e97]: Forums
+          - listitem [ref=e98]:
+            - link "Shopping" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&q=shadcn+ui+svelte+2025+components+table+charts&ved=1t:220175&ictx=111
+              - generic [ref=e101]: Shopping
+          - listitem [ref=e102]:
+            - link "Short videos" [ref=e103] [cursor=pointer]:
+              - /url: /search?sca_esv=e7687de8d1b3fbf8&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3sbM0Xv-BZKE_VrZb6-djVgPsTSy5UjazDfPq8BLa8BriI08eYAyMPM-9LNl6snbW0RI8x10I65p7k_mDqeHGhUKV23Dir4Pkp0T0JvWRxKdf4xwyaODTnvMeDpXsKHAuA0v-_okiWUw5_1HLOOn1_ElTKJVZy-7W4uKGAjA4IfBIKFBaw&q=shadcn+ui+svelte+2025+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQs6gLegQIFBAB
+              - generic [ref=e105]: Short videos
+          - listitem [ref=e106]:
+            - button "More filters" [ref=e107] [cursor=pointer]:
+              - generic "More filters" [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: More
+                  - img [ref=e112]
+        - button "Tools" [ref=e115] [cursor=pointer]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Tools
+            - img [ref=e120]
+    - heading "Search Results" [level=1] [ref=e122]
+    - generic [ref=e127]:
+      - generic [ref=e146]:
+        - heading "Thinking" [level=2] [ref=e150]:
+          - generic [ref=e151]: Thinking
+        - progressbar [ref=e152]
+      - main [ref=e154]:
+        - generic [ref=e158]:
+          - generic [ref=e161]:
+            - heading "Web results" [level=2] [ref=e162]
+            - generic [ref=e163]:
+              - generic [ref=e166]:
+                - link "Beautiful Charts & Graphs - shadcn- ... shadcn-svelte https://www.shadcn-svelte.com › charts › area" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.shadcn-svelte.com/charts/area
+                  - heading "Beautiful Charts & Graphs - shadcn- ..." [level=3] [ref=e169]
+                  - generic [ref=e174]:
+                    - generic [ref=e176]: shadcn-svelte
+                    - generic [ref=e178]: https://www.shadcn-svelte.com › charts › area
+                - button "About this result" [ref=e179] [cursor=pointer]:
+                  - img [ref=e182]
+              - generic [ref=e186]:
+                - text: A collection of
+                - emphasis [ref=e187]: ready-to-use chart components
+                - text: built with LayerChart. From basic charts to rich data displays, copy and paste into your apps.
+              - generic [ref=e189]:
+                - text: "Missing: 2025 ‎| Show results with:"
+                - link "2025" [ref=e190] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=shadcn+ui+svelte+%222025%22+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ5t4CegQIHBAB
+          - generic [ref=e194]:
+            - generic [ref=e197]:
+              - link "Beautiful Charts & Graphs - shadcn/ui Shadcn https://ui.shadcn.com › charts › area" [ref=e199] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/charts/area
+                - heading "Beautiful Charts & Graphs - shadcn/ui" [level=3] [ref=e200]
+                - generic [ref=e205]:
+                  - generic [ref=e207]: Shadcn
+                  - generic [ref=e209]: https://ui.shadcn.com › charts › area
+              - button "About this result" [ref=e210] [cursor=pointer]:
+                - img [ref=e213]
+            - generic [ref=e217]:
+              - text: A collection of
+              - emphasis [ref=e218]: ready-to-use chart components
+              - text: built with Recharts. From basic charts to rich data displays, copy and paste into your apps.
+            - generic [ref=e220]: "Missing: svelte ‎2025"
+          - generic [ref=e224]:
+            - generic [ref=e227]:
+              - 'link "Does anyone know charts coming Svelte/Shadcn? : r/sveltejs Reddit · r/sveltejs 4 comments · 1 year ago" [ref=e229] [cursor=pointer]':
+                - /url: https://www.reddit.com/r/sveltejs/comments/1gksksg/does_anyone_know_charts_coming_svelteshadcn/
+                - 'heading "Does anyone know charts coming Svelte/Shadcn? : r/sveltejs" [level=3] [ref=e230]'
+                - generic [ref=e235]:
+                  - generic [ref=e237]: Reddit · r/sveltejs
+                  - generic [ref=e239]: 4 comments · 1 year ago
+              - button "About this result" [ref=e240] [cursor=pointer]:
+                - img [ref=e243]
+            - generic [ref=e247]:
+              - text: Few new
+              - emphasis [ref=e248]: components
+              - text: are added on
+              - emphasis [ref=e249]: shadcn
+              - text: including
+              - emphasis [ref=e250]: chart
+              - text: . Are those getting ported into
+              - emphasis [ref=e251]: Svelte
+              - text: version?
+            - generic [ref=e256]:
+              - link "4 answers" [ref=e257] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/sveltejs/comments/1gksksg/comment/lvo0c1g/
+              - generic [ref=e258]: ·
+              - generic [ref=e259]: "Top answer:"
+              - generic [ref=e260]: Hunter is working on them, you can track the progress on GitHub
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - link "I made Peasy, a simple and lightweight analytics ..." [ref=e267] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/sveltejs/comments/1j8u0ky/i_made_peasy_a_simple_and_lightweight_analytics/
+                - generic [ref=e269]: 19 answers
+                - generic [ref=e271]: Mar 11, 2025
+              - generic [ref=e272]:
+                - link "How to render custom Svelte components (buttons ..." [ref=e275] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/sveltejs/comments/1jllac8/how_to_render_custom_svelte_components/
+                  - generic [ref=e276]:
+                    - text: How to render custom
+                    - emphasis [ref=e277]: Svelte components
+                    - text: (buttons ...
+                - generic [ref=e279]: 6 answers
+                - generic [ref=e281]: Mar 28, 2025
+              - link "More results from www.reddit.com" [ref=e285] [cursor=pointer]:
+                - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts+site:www.reddit.com&sca_esv=e7687de8d1b3fbf8&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQrQIoAnoECB4QAw
+            - generic [ref=e287]:
+              - text: "Missing: table ‎| Show results with:"
+              - link "table" [ref=e288] [cursor=pointer]:
+                - /url: /search?sca_esv=e7687de8d1b3fbf8&q=shadcn+ui+svelte+2025+components+%22table%22+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ5t4CegQIJRAB
+          - generic [ref=e292]:
+            - generic [ref=e295]:
+              - link "Chart shadcn-svelte https://www.shadcn-svelte.com › docs › components" [ref=e297] [cursor=pointer]:
+                - /url: https://www.shadcn-svelte.com/docs/components/chart
+                - heading "Chart" [level=3] [ref=e298]
+                - generic [ref=e303]:
+                  - generic [ref=e305]: shadcn-svelte
+                  - generic [ref=e307]: https://www.shadcn-svelte.com › docs › components
+              - button "About this result" [ref=e308] [cursor=pointer]:
+                - img [ref=e311]
+            - generic [ref=e314]:
+              - generic [ref=e315]:
+                - text: You can now build your
+                - emphasis [ref=e316]: chart
+                - text: using LayerChart
+                - emphasis [ref=e317]: components
+                - text: . We're using the BarChart
+                - emphasis [ref=e318]: component
+                - text: in this example, which is one of LayerChart's "Simplified
+                - emphasis [ref=e319]: Charts
+                - text: "\"."
+              - link "Read more" [ref=e320] [cursor=pointer]:
+                - /url: https://www.shadcn-svelte.com/docs/components/chart#:~:text=You%20can%20now%20build%20your,one%20of%20LayerChart's%20%22Simplified%20Charts%22.
+            - generic [ref=e322]:
+              - text: "Missing: 2025 ‎| Show results with:"
+              - link "2025" [ref=e323] [cursor=pointer]:
+                - /url: /search?sca_esv=e7687de8d1b3fbf8&q=shadcn+ui+svelte+%222025%22+components+table+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ5t4CegQIUxAB
+          - generic [ref=e327]:
+            - generic [ref=e330]:
+              - link "Documentation for charts · huntabyte shadcn-svelte GitHub https://github.com › shadcn-svelte › discussions" [ref=e332] [cursor=pointer]:
+                - /url: https://github.com/huntabyte/shadcn-svelte/discussions/2244
+                - heading "Documentation for charts · huntabyte shadcn-svelte" [level=3] [ref=e333]
+                - generic [ref=e338]:
+                  - generic [ref=e340]: GitHub
+                  - generic [ref=e342]: https://github.com › shadcn-svelte › discussions
+              - button "About this result" [ref=e343] [cursor=pointer]:
+                - img [ref=e346]
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - text: Is it posible to add Axes to a Barchart? Tried to add the relevant
+                - emphasis [ref=e351]: parts
+                - text: from the AreaChart example but doesnt work or doing something wrong..
+              - link "Read more" [ref=e352] [cursor=pointer]:
+                - /url: https://github.com/huntabyte/shadcn-svelte/discussions/2244#:~:text=Is%20it%20posible%20to%20add,work%20or%20doing%20something%20wrong..
+          - generic [ref=e356]:
+            - generic [ref=e359]:
+              - link "Best 10+ Svelte UI Components & Libraries for Building ... Medium · Olga Tashlikovich 9 likes · 9 months ago" [ref=e361] [cursor=pointer]:
+                - /url: https://medium.com/@olgatashlikovich/best-10-svelte-ui-components-libraries-for-building-enterprise-apps-999444ad3477
+                - heading "Best 10+ Svelte UI Components & Libraries for Building ..." [level=3] [ref=e362]
+                - generic [ref=e367]:
+                  - generic [ref=e369]: Medium · Olga Tashlikovich
+                  - generic [ref=e371]: 9 likes · 9 months ago
+              - button "About this result" [ref=e372] [cursor=pointer]:
+                - img [ref=e375]
+            - generic [ref=e378]:
+              - generic [ref=e379]:
+                - text: SVAR offers a complete suite of open-source
+                - emphasis [ref=e380]: Svelte UI components
+                - text: "suitable for enterprise-grade apps: feature-rich data grid with virtual ..."
+              - link "Read more" [ref=e381] [cursor=pointer]:
+                - /url: https://medium.com/@olgatashlikovich/best-10-svelte-ui-components-libraries-for-building-enterprise-apps-999444ad3477#:~:text=SVAR%20offers%20a%20complete%20suite,Core%20UI%20library%2C%20and%20more.
+          - generic [ref=e385]:
+            - generic [ref=e388]:
+              - link "Changelog - shadcn-svelte Mintlify https://www.mintlify.com › huntabyte › changelog" [ref=e390] [cursor=pointer]:
+                - /url: https://www.mintlify.com/huntabyte/shadcn-svelte/changelog
+                - heading "Changelog - shadcn-svelte" [level=3] [ref=e391]
+                - generic [ref=e396]:
+                  - generic [ref=e398]: Mintlify
+                  - generic [ref=e400]: https://www.mintlify.com › huntabyte › changelog
+              - button "About this result" [ref=e401] [cursor=pointer]:
+                - img [ref=e404]
+            - generic [ref=e407]:
+              - generic [ref=e408]:
+                - emphasis [ref=e409]: October 2025 - New Components
+                - text: . For this round of components, I looked at what we build every day, the boring stuff we rebuild over and over, ...
+              - link "Read more" [ref=e410] [cursor=pointer]:
+                - /url: https://www.mintlify.com/huntabyte/shadcn-svelte/changelog#:~:text=October%202025%20%2D%20New%20Components,abstractions%20you%20can%20actually%20use.
+          - generic [ref=e417]:
+            - generic [ref=e420]:
+              - link "Build Tables with Shadcn/ui in 2025 YouTube · Prin Keerasuntonpong 13.2K+ views · 1 year ago" [ref=e422] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=ikjy7ijrmtQ
+                - heading "Build Tables with Shadcn/ui in 2025" [level=3] [ref=e423]
+                - generic [ref=e428]:
+                  - generic [ref=e430]: YouTube · Prin Keerasuntonpong
+                  - generic [ref=e432]: 13.2K+ views · 1 year ago
+              - button "About this result" [ref=e433] [cursor=pointer]:
+                - img [ref=e436]
+            - generic [ref=e438]:
+              - button "Build Tables with Shadcn/ui in 2025 by Prin Keerasuntonpong on YouTube. Play on Google. 15:11" [ref=e439] [cursor=pointer]:
+                - generic [ref=e441]:
+                  - img [ref=e447]
+                  - generic [ref=e450]:
+                    - generic [ref=e451]: 15:11
+                    - img [ref=e454]
+              - generic [ref=e457]: In this video I'll show you how I got up and running with Shad Cn UI data table with proper vertical and horizontal scrolling ability.
+            - button "7 key moments in this video" [ref=e462] [cursor=pointer]:
+              - generic [ref=e471]:
+                - generic [ref=e474]: 7 key moments in this video
+                - img [ref=e476]
+          - generic [ref=e481]:
+            - generic [ref=e484]:
+              - link "Shadcnblocks shadcn/ui blocks & components Shadcn Blocks https://www.shadcnblocks.com" [ref=e486] [cursor=pointer]:
+                - /url: https://www.shadcnblocks.com/
+                - heading "Shadcnblocks shadcn/ui blocks & components" [level=3] [ref=e487]
+                - generic [ref=e492]:
+                  - generic [ref=e494]: Shadcn Blocks
+                  - generic [ref=e496]: https://www.shadcnblocks.com
+              - button "About this result" [ref=e497] [cursor=pointer]:
+                - img [ref=e500]
+            - generic [ref=e503]:
+              - generic [ref=e504]:
+                - text: 1189 Shadcn UI Components. Browse our collection of
+                - emphasis [ref=e505]: Shadcn UI components
+                - text: . Each component is fully documented with installation instructions and usage examples.
+              - link "Read more" [ref=e506] [cursor=pointer]:
+                - /url: https://www.shadcnblocks.com/#:~:text=1189%20Shadcn%20UI%20Components,installation%20instructions%20and%20usage%20examples.
+          - generic [ref=e510]:
+            - generic [ref=e513]:
+              - link "Table - Shadcn UI Shadcn https://ui.shadcn.com › docs › components › radix › table" [ref=e515] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/components/radix/table
+                - heading "Table - Shadcn UI" [level=3] [ref=e516]
+                - generic [ref=e521]:
+                  - generic [ref=e523]: Shadcn
+                  - generic [ref=e525]: https://ui.shadcn.com › docs › components › radix › table
+              - button "About this result" [ref=e526] [cursor=pointer]:
+                - img [ref=e529]
+            - generic [ref=e532]:
+              - generic [ref=e533]:
+                - text: You can use the <
+                - emphasis [ref=e534]: Table
+                - text: />
+                - emphasis [ref=e535]: component
+                - text: to build more complex data
+                - emphasis [ref=e536]: tables
+                - text: . Combine it with @tanstack/react-
+                - emphasis [ref=e537]: table
+                - text: to create
+                - emphasis [ref=e538]: tables
+                - text: with sorting, filtering and ...
+              - link "Read more" [ref=e539] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/components/radix/table#:~:text=You%20can%20use%20the%20%3CTable,with%20sorting%2C%20filtering%20and%20pagination.
+        - generic [ref=e541]:
+          - generic [ref=e546]:
+            - heading "People also search for" [level=2] [ref=e548]
+            - generic [ref=e550]:
+              - generic [ref=e551]:
+                - link "Shadcn ui svelte 2025 components table charts download" [ref=e555] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn+ui+svelte+2025+components+table+charts+download&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg4EAE
+                  - generic [ref=e556]:
+                    - generic [ref=e561]: Shadcn ui svelte 2025 components table charts download
+                    - img [ref=e565]
+                - link "Shadcn/vue charts" [ref=e570] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn/vue+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAhDEAE
+                  - generic [ref=e571]:
+                    - generic [ref=e576]: Shadcn/vue charts
+                    - img [ref=e580]
+                - link "Shadcn charts" [ref=e585] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAhGEAE
+                  - generic [ref=e586]:
+                    - generic [ref=e591]: Shadcn charts
+                    - img [ref=e595]
+                - link "Svelte charts" [ref=e600] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Svelte+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg-EAE
+                  - generic [ref=e601]:
+                    - generic [ref=e606]: Svelte charts
+                    - img [ref=e610]
+              - generic [ref=e612]:
+                - link "Shadcn/ui charts" [ref=e616] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn/ui+charts&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg8EAE
+                  - generic [ref=e617]:
+                    - generic [ref=e622]: Shadcn/ui charts
+                    - img [ref=e626]
+                - link "Shadcn chart component" [ref=e631] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn+chart+component&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg7EAE
+                  - generic [ref=e632]:
+                    - generic [ref=e637]: Shadcn chart component
+                    - img [ref=e641]
+                - link "Chart UI library" [ref=e646] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Chart+UI+library&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg6EAE
+                  - generic [ref=e647]:
+                    - generic [ref=e652]: Chart UI library
+                    - img [ref=e656]
+                - link "Shadcn charts examples" [ref=e661] [cursor=pointer]:
+                  - /url: /search?sca_esv=e7687de8d1b3fbf8&q=Shadcn+charts+examples&sa=X&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ1QJ6BAg5EAE
+                  - generic [ref=e662]:
+                    - generic [ref=e667]: Shadcn charts examples
+                    - img [ref=e671]
+          - navigation [ref=e673]:
+            - heading "Page Navigation" [level=1] [ref=e674]
+            - text: "1"
+            - link "Page 2" [ref=e677] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=10&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAE
+              - text: "2"
+            - link "Page 3" [ref=e679] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=20&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAG
+              - text: "3"
+            - link "Page 4" [ref=e681] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=30&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAI
+              - text: "4"
+            - link "Page 5" [ref=e683] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=40&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAK
+              - text: "5"
+            - link "Page 6" [ref=e685] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=50&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAM
+              - text: "6"
+            - link "Page 7" [ref=e687] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=60&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAO
+              - text: "7"
+            - link "Page 8" [ref=e689] [cursor=pointer]:
+              - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=70&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8tMDegQICBAQ
+              - text: "8"
+            - heading "Next" [level=2] [ref=e691]:
+              - link "Next" [ref=e692] [cursor=pointer]:
+                - /url: /search?q=shadcn+ui+svelte+2025+components+table+charts&sca_esv=e7687de8d1b3fbf8&ei=TkvLaffSAtK80PEPttqngAU&start=10&sa=N&sstk=Af77f_elg5Z5tEezguMwmkvTHbr0Awr7T_sRSRN-Fcj5krhXa3Ln0BR7ujAzUSdGRheG1olARJM6GfAdxKaDVdNQXDMgW3bCKd_IYA&ved=2ahUKEwj3sb6upMmTAxVSHjQIHTbtCVAQ8NMDegQICBAS
+                - generic [ref=e694]: Next
+        - navigation
+    - contentinfo [ref=e695]:
+      - heading "Footer Links" [level=1] [ref=e696]
+      - generic [ref=e700]:
+        - generic [ref=e704]:
+          - button "Central District, Seattle, WA - From your IP address" [ref=e706] [cursor=pointer]:
+            - generic [ref=e707]: Central District, Seattle, WA
+            - generic [ref=e709]:
+              - text: "-"
+              - generic [ref=e710]: From your IP address
+          - text: "-"
+          - button "Update location" [ref=e712] [cursor=pointer]: Update location
+        - generic [ref=e715]:
+          - link "Help" [ref=e716] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+          - link "Send feedback" [ref=e717] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e718] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en&fg=1
+          - link "Terms" [ref=e719] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en&fg=1
