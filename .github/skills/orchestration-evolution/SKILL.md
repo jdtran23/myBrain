@@ -1,3 +1,7 @@
+---
+name: "orchestration-evolution"
+description: "Analyze brain state and recommend when and how to evolve toward multi-agent orchestration"
+---
 # orchestration-evolution — Multi-Agent Growth Advisor
 
 > Analyzes your brain's current state and recommends when and how to evolve toward multi-agent orchestration. This is your "am I ready?" command.
@@ -76,7 +80,7 @@ For the current phase, check each "signal to move on" and report:
 EVOLUTION SIGNALS:
   ✅ [signal that IS present]
   ❌ [signal that is NOT yet present]
-  
+
 READY TO EVOLVE: [yes/no]
 ```
 

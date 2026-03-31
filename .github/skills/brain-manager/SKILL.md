@@ -1,3 +1,7 @@
+---
+name: "brain-manager"
+description: "Update, create, and health-check brain directives (instructions, skills, agents, TSG)"
+---
 # brain-manager — Master Skill
 
 > The master skill for updating, creating, and health-checking brain directives.

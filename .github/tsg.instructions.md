@@ -13,6 +13,11 @@ description: "Troubleshooting guide, fixes, lessons learned, debugging tips, sol
 - **Fix:** Run `dotnet restore --force` then rebuild
 -->
 
+## 2026-03-31 — SKILL.md files require YAML frontmatter
+- **Problem:** VS Code flags "Skill must provide a name" and "Skill must provide a description" on SKILL.md files
+- **Root Cause:** SKILL.md files were created without YAML frontmatter. VS Code requires `name` and `description` fields, same as `.agent.md` files.
+- **Fix:** Add frontmatter block: `---\nname: "skill-name"\ndescription: "What the skill does"\n---`
+
 ## 2026-03-30 — shadcn/ui v4 uses @base-ui/react, not Radix
 - **Problem:** `SheetTrigger asChild` prop caused type errors and runtime failures
 - **Root Cause:** shadcn/ui v4 migrated from Radix to `@base-ui/react`. The `asChild` pattern doesn't exist in base-ui components.

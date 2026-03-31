@@ -1,3 +1,7 @@
+---
+name: "plan-management"
+description: "Create, manage, and track structured plans with AI validation guardrails (Plan-Generate-Verify-Iterate)"
+---
 # plan-management — AI Validation Guardrail (AI-DLC)
 
 > Enforces the most important rule in AI-assisted work: AI output is untrusted until validated.
