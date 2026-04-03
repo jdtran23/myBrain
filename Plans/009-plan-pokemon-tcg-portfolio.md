@@ -104,7 +104,7 @@ A user can log a card purchase, see it in a portfolio dashboard with live P&L, l
   - Create `Sale` row with calculated realized_gain_loss
   - Verify: Buy 5 units → sell 2 → position shows qty_remaining=3 → sell remaining 3 → position closed (qty_remaining=0). P&L math manually verified.
 
-- [ ] **Task 2.4:** Implement `GET /api/portfolio/history` endpoint  
+- [ ] **Task 2.4:** Implement `GET /api/portfolio/history` endpoint
   - Returns all closed positions (qty_remaining == 0) joined with their sales records
   - Response includes: card info, buy_date, sell dates, cost_basis, total_sale_proceeds, realized_pnl, realized_pnl_pct, days_held
   - For partial sells: a position with multiple sales shows each sale's contribution

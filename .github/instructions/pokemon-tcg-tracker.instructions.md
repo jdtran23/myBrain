@@ -112,6 +112,7 @@ Run two terminals side by side:
 | GET/PATCH | `/api/signal-rules` | View/update signal thresholds |
 | GET/POST/DELETE | `/api/signal-overrides` | Per-card signal overrides |
 | GET/POST/DELETE | `/api/alerts` | Manage user alerts |
+| GET | `/api/alerts/config` | All configured alerts with triggered status |
 | POST | `/api/refresh` | Trigger price fetch + signal recompute |
 
 ## Signal Engine
@@ -134,6 +135,4 @@ Two tables: `cards` (card metadata + latest signal) and `price_snapshots` (daily
 
 ## Known Issues
 - CORS is `allow_origins=["*"]`
-- Frontend build produces ~500KB JS chunk — needs code splitting (Phase 8)
-- `GET /api/alerts` only returns triggered alerts — Plan 005 Phase 6 needs `GET /api/alerts/config` endpoint
 - `compute_trends()` still queries per-card (3 queries per card) — potential future optimization
