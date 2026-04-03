@@ -133,10 +133,7 @@ Run two terminals side by side:
 Two tables: `cards` (card metadata + latest signal) and `price_snapshots` (daily price history per card/variant/source).
 
 ## Known Issues
-- No backend test suite — `tests/` directory needed
-- Unused deps in requirements.txt: `beautifulsoup4`, `selenium`, `pandas`
 - CORS is `allow_origins=["*"]`
-- JSON config writes have no file locking
-- N+1 query pattern in `get_cards()`
 - Frontend build produces ~500KB JS chunk — needs code splitting (Phase 8)
-- `GET /api/alerts` only returns triggered alerts — Phase 6 needs `GET /api/alerts/config` endpoint
+- `GET /api/alerts` only returns triggered alerts — Plan 005 Phase 6 needs `GET /api/alerts/config` endpoint
+- `compute_trends()` still queries per-card (3 queries per card) — potential future optimization

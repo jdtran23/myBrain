@@ -21,7 +21,7 @@ When creating or updating directives, always ask: "Would this apply to ANY repo,
 ## Directive Index
 - **Instructions:** `.github/instructions/` — coding standards, team identity, execution rules
 - **Skills:** `.github/skills/` — active workflows (brain-manager, plan-management, orchestration-evolution)
-- **Agents:** `.github/agents/` — specialist team: mewtwo, uxie, porygon, absol, metagross, cresselia
+- **Agents:** `.github/agents/` — specialist team: mewtwo, uxie, tapu-fini, porygon, absol, metagross, cresselia
 - **Prompts:** `.github/prompts/` — reusable /slash-command templates (e.g., /orchestrate)
 - **Plans:** `Plans/` — active task plans (archived when done)
 - **TSG:** `.github/tsg.instructions.md` — troubleshooting & lessons learned

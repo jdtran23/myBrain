@@ -108,19 +108,21 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 ### Phase 5: Code Quality Improvements 🔬
 > *Fix known issues and improve reliability*
 
-- [ ] **Task 5.1:** Fix N+1 query in `get_cards()` API endpoint (GitHub: #9)
+- [x] **Task 5.1:** Fix N+1 query in `get_cards()` API endpoint (GitHub: #9)
   - Scope: Audit `src/api.py` and `src/db.py` for the cards listing query. Use SQLAlchemy eager loading (`joinedload` / `selectinload`) or a single query with joins to eliminate N+1.
   - Verify: Add a test that checks query count (or log query count before/after). Confirm API response is identical.
   - AI Validation: @porygon implements fix → @absol reviews SQL pattern → run API tests → response unchanged, query count reduced
   - Dependencies: Phase 4 complete (tests protect against regressions)
 
-- [ ] **Task 5.2:** Add file locking / atomic writes for JSON config files (GitHub: #8)
+- [x] **Task 5.2:** Add file locking / atomic writes for JSON config files (GitHub: #8)
   - Scope: `config/watchlist.json`, `config/alerts.json`, `config/signal_rules.json` — ensure concurrent reads/writes don't corrupt data. Use `tempfile` + `os.replace()` for atomic writes, or `filelock` library.
   - Verify: Write a stress test or concurrent access test. Confirm JSON files are never left in a partial-write state.
   - AI Validation: @porygon implements → @absol reviews for race conditions → test with simulated concurrent writes
   - Dependencies: Phase 4 complete
 
-- [ ] **Task 5.3:** Evaluate Alembic for DB migrations
+- [x] **Task 5.3:** Evaluate Alembic for DB migrations
+  - **Decision: NOT now.** Schema is simple (2 tables), stable, and SQLite. Ad-hoc `ALTER TABLE` in `init_db()` works. Alembic overhead not justified.
+  - **Revisit when:** 2+ new tables added, or need to drop/rename columns.
   - Scope: Research whether Alembic adds value given the current simple schema. Document decision. If yes, scaffold initial migration. If no, document why and what would trigger revisiting.
   - Verify: Decision documented in plan or a brief ADR. If proceeding, `alembic upgrade head` runs without error.
   - AI Validation: @uxie researches Alembic fit → decision documented → if implemented, @porygon scaffolds → verify migration runs clean
@@ -133,19 +135,19 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 ### Phase 6: Extract Skills 📦
 > *Capture reusable patterns from this project into the brain*
 
-- [ ] **Task 6.1:** Create `pokemon-tcg-ops` skill
+- [x] **Task 6.1:** Create `pokemon-tcg-ops` skill
   - Scope: Extract operational patterns learned during Phases 2-5 — common commands, debugging steps, data flow, API usage patterns. Save to `.github/skills/pokemon-tcg-ops/SKILL.md` in myBrain workspace.
   - Verify: Skill file follows SKILL.md template, triggers are relevant, workflow steps are actionable
   - AI Validation: @porygon drafts → @absol reviews for completeness and adherence to skill template → test by invoking a trigger phrase
   - Dependencies: Phases 3-5 complete (need the experience to extract from)
 
-- [ ] **Task 6.2:** Create `fastapi.instructions.md` (if warranted)
+- [x] **Task 6.2:** Create `fastapi.instructions.md` (if warranted)
   - Scope: Evaluate whether patterns from this project (TestClient setup, async endpoints, SQLAlchemy integration) are generic enough to be reusable. If yes, create `.github/instructions/fastapi.instructions.md` in myBrain.
   - Verify: Instructions are generic (not pokemon-tcg-specific), cover common FastAPI patterns, have proper frontmatter with `applyTo: **/*.py`
   - AI Validation: @porygon drafts → @absol reviews for generality — would this help on a DIFFERENT FastAPI project?
   - Dependencies: Phase 4 complete (need test patterns to evaluate)
 
-- [ ] **Task 6.3:** Create `test-scaffolding` skill (if warranted)
+- [x] **Task 6.3:** Create `test-scaffolding` skill (if warranted)
   - Scope: Evaluate whether the pytest setup pattern (conftest.py structure, TestClient fixtures, DB fixtures) is reusable. If yes, create `.github/skills/test-scaffolding/SKILL.md`.
   - Verify: Skill is generic, not pokemon-specific, would accelerate test setup on future Python projects
   - AI Validation: @porygon drafts → @absol reviews for reusability
@@ -158,19 +160,20 @@ Take the pokemon-tcg-tracker project from initial prototype to a well-tested, cl
 ### Phase 7: v2 Planning 🚀
 > *Plan the next evolution of the tracker — portfolio management features*
 
-- [ ] **Task 7.1:** Review PRD
+- [x] **Task 7.1:** Review PRD
   - Scope: Read and analyze `outputs/PRD-PokéMarket-Buy-Sell-Execution.md` in the pokemon-tcg-tracker workspace. Summarize key features, identify technical dependencies, flag scope risks.
   - Verify: Summary captures all major feature areas, dependencies are identified, risks are explicit
   - AI Validation: @uxie reads and synthesizes → present summary to Joe for confirmation
   - Dependencies: Phase 5 complete (codebase is clean and tested)
 
-- [ ] **Task 7.2:** Create v2 implementation plan
-  - Scope: Decompose PRD into implementable tasks with acceptance criteria and AI validation. Create as `Plans/005-plan-pokemon-tcg-v2.md`.
+- [x] **Task 7.2:** Create v2 implementation plan
+  - Scope: Decompose PRD into implementable tasks with acceptance criteria and AI validation. Create as next available plan in `Plans/`.
   - Verify: Plan follows plan-management skill template, tasks are sized for single-agent execution, dependencies are explicit
   - AI Validation: @metagross creates plan → @cresselia validates plan completeness, task sizing, and risk coverage
+  - Note: Plan number will be auto-incremented (next available in `Plans/`)
   - Dependencies: Task 7.1
 
-- [ ] **Task 7.3:** Plan review
+- [x] **Task 7.3:** Plan review
   - Scope: @cresselia performs formal plan review — checks for missing validation steps, unrealistic task sizing, unaddressed risks, missing rollback strategies
   - Verify: Review feedback is actionable, all critical issues are addressed before execution begins
   - AI Validation: @cresselia reviews → feedback incorporated → @metagross updates plan → @cresselia confirms

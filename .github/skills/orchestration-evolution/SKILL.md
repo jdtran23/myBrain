@@ -46,6 +46,14 @@ The brain evolves through 4 phases. This skill identifies where you are and what
 
 **Action:** Add parallel fan-out patterns. Create coordination protocols. Implement validation at handoff boundaries.
 
+### Phase 3→4 Evolution Indicator: Maker/Reviewer Completeness
+All maker domains should have paired reviewers with independent verification:
+- Code: @porygon ↔ @absol
+- Plans: @metagross ↔ @cresselia
+- Research: @uxie ↔ @tapu-fini
+
+When all pairs are active with severity systems and iteration limits, you're ready for Phase 4.
+
 ### Phase 4: Multi-Agent Workflows (Hybrid)
 **You are here when:** Agents coordinate autonomously with validation at every boundary.
 **This is the target state.** Continue refining coordination patterns, failure handling, and observability.
@@ -137,3 +145,4 @@ When composing agents, maintain the separation principle:
 - ❌ **Missing contracts** — agents hand off work without structured input/output schemas
 - ❌ **No validation** — agent output accepted without verification
 - ❌ **Duplicate scope** — two agents covering the same domain (merge or clarify boundary)
+- ❌ **Unreviewed maker output** — maker agent produces artifacts that flow into decisions without independent review

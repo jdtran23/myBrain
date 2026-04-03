@@ -18,4 +18,10 @@ AI output is **untrusted until validated**. Every task follows:
 - "create a plan" → plan-management skill creates validated plan in `Plans/`
 - "work on plan [ID]" → execute tasks with verification at each step
 
-> For full plan management: see `.github/skills/plan-management/SKILL.md`
+## Plan Lifecycle
+Plans follow: `Draft → Active → Blocked → Complete → Archived`
+- Plans are reviewed by @cresselia before execution (plan-review gate)
+- Plans declare non-goals, risks, and per-phase gates
+- System guardrails (code review, research review) are always-on — plans only add context-specific guardrails
+
+> For full plan management and v2 template: see `.github/skills/plan-management/SKILL.md`

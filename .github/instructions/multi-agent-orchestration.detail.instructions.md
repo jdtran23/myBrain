@@ -1,173 +1,244 @@
 ---
-description: "Multi-agent orchestration deep reference, failure modes, error handling, recovery patterns, Anthropic research system, Microsoft reference architecture, frameworks, LangGraph, CrewAI, AutoGen, OpenAI agents SDK, Google ADK, MCP, A2A protocol, agent coordination, state synchronization, observability, human-in-the-loop, circuit breaker, checkpointing"
+description: "Multi-agent orchestration v2 deep reference — research findings, workflow state protocol, gate specifications, HITL policy, failure modes, framework landscape"
 ---
-# Multi-Agent Orchestration — Detailed Reference
+# Multi-Agent Orchestration — Detailed Reference (v2)
 
-## Architecture Patterns (Deep Dive)
+## Research Foundation
 
-### Supervisor (Orchestrator-Worker)
-- Central orchestrator delegates tasks, aggregates results
+Architecture decisions grounded in T3 deep research (April 2026), validated by @tapu-fini (19.5/25).
+
+**Key sources:** Anthropic "Building Effective Agents" (Dec 2024), Anthropic multi-agent research system (Jun 2025), OpenAI Agents SDK (2025-2026), Google ADK (2026), MAST paper arXiv:2503.13657 (Mar 2025), Andrew Ng agentic design patterns (2024), Microsoft multi-agent reference architecture (2025).
+
+### Validated Findings
+
+1. **Simple, composable patterns outperform complex frameworks.** Anthropic's #1 finding: "The most successful implementations weren't using complex frameworks. They were building with simple, composable patterns." Note: this is Anthropic's philosophy — AutoGen and LangGraph argue for structured complexity in certain domains.
+
+2. **The Evaluator-Optimizer pattern (maker/reviewer) has strong cross-vendor validation.** Anthropic codifies it as a first-class workflow. Google ADK ships Review/Critique and Iterative Refinement patterns. Andrew Ng identifies Reflection as a core agentic design pattern that dramatically improves output quality.
+
+3. **Define agents positively — capabilities, not exclusions.** Every major framework (OpenAI Agents SDK, Google ADK, Anthropic) defines agents through instructions, tools, description, and handoff_conditions. No framework has a "don't do" field. Tools provide implicit negative scope. Note: implicit constraints can be encoded through tool restrictions and routing logic.
+
+4. **"Agents as Tools" is the dominant composition mechanism.** OpenAI (Agent.as_tool()), Google ADK (AgentTool), and Anthropic (subagent spawning) all converge on treating agents as callable tools. The orchestrator maintains control while letting specialists execute bounded subtasks.
+
+5. **Most multi-agent failures relate to coordination, system design, and task verification** — not technical bugs. The MAST paper (arXiv:2503.13657) identified 14 failure modes across 3 categories: system design issues, inter-agent misalignment, and task verification failures.
+
+6. **Two orchestration modes: LLM-driven (flexible) vs code-driven (predictable).** OpenAI Agents SDK makes this the central architectural decision. Production systems blend both.
+
+### Research Departure
+
+Our architecture departs from raw research in one area: the research recommended including `handoff_triggers` in agent capability manifests. We chose to keep ALL routing logic in the orchestrator for cleaner composability. This was a deliberate architectural decision.
+
+---
+
+## Architecture Patterns Reference
+
+### Orchestrator-Workers (our primary pattern)
+- Central orchestrator decomposes tasks, delegates to specialists, aggregates results
 - Workers focus on single capabilities, don't communicate with each other
-- **Pros:** Easy to debug, predictable, good error tracing
-- **Cons:** Bottleneck at supervisor, limited parallelism
-- **Best for:** Enterprise workflows with many specialized subtasks
+- **Pros:** Easy to debug, predictable, good error tracing, full visibility
+- **Cons:** Bottleneck at orchestrator for high-parallelism tasks
+- **Our implementation:** @mewtwo as orchestrator, specialist agents as workers
 
-### Router
-- Deterministic dispatcher examines tasks, routes to best-fit agent
-- Often uses lightweight classifiers before escalating to LLM
-- **Pros:** Low coordination overhead, high throughput, easy to scale horizontally
-- **Cons:** Needs well-understood task types
-- **Best for:** High-volume triage, customer support, API routing
+### Evaluator-Optimizer / Maker-Reviewer (our review pattern)
+- Generator produces output, critic evaluates against rubric, loop until quality bar met
+- Anthropic: first-class workflow. Google ADK: LoopAgent + SequentialAgent
+- Andrew Ng: "GPT-3.5 wrapped in an agent loop achieves up to 95.1% on HumanEval, versus 48.1% zero-shot"
+- **Our implementation:** maker/reviewer pairs with max 2 iterations, human escalation
 
-### Hierarchical
-- Tree structure: top-level manager → mid-level supervisors → leaf workers
-- Each level handles abstraction and coordination for its scope
-- **Pros:** Modular, mirrors org hierarchies, good fault isolation
-- **Cons:** Dev overhead, latency propagation, cascade risk at higher levels
-- **Best for:** Multi-stage pipelines, industrial automation, complex business workflows
+### Router (embedded in orchestrator)
+- Classify task → route to best-fit agent based on capabilities
+- Our approach: capability-based matching from task decomposition, not upfront tier classification
+- **Our implementation:** @mewtwo decomposes task, matches subtask needs to agent capabilities
 
-### Swarm/Peer-to-Peer
-- No central coordinator — agents coordinate peer-to-peer
-- Follow simple local rules, global behavior emerges
-- **Pros:** Highly scalable, fault-tolerant, excellent for parallel discovery
-- **Cons:** Hard to debug, needs strong communication protocols
-- **Best for:** Brainstorming, exploration, document review, distributed tasks
-
-### Pipeline
-- Linear chain: Agent A → B → C
-- Each agent processes and passes to the next
-- **Pros:** Simple, predictable flow
-- **Cons:** Latency compounds, single point of failure at each stage
-- **Best for:** Sequential dependent processing (ETL, document pipelines)
-
-### Hybrid (Production Standard)
-Production systems in 2025-2026 almost always blend patterns:
-- Hierarchical + swarm for research tasks
-- Supervisor + router for enterprise workflows
-- Pipeline + parallel fan-out for data processing
+### Other Patterns (reference)
+- **Hierarchical** — tree of managers → supervisors → workers. Good for multi-stage pipelines.
+- **Swarm/Peer** — peer-to-peer coordination, emergent behavior. Good for parallel exploration.
+- **Pipeline** — linear chain A → B → C. Good for sequential dependent steps.
+- **Parallel fan-out** — spawn multiple agents concurrently, aggregate results.
 
 ---
 
-## Anthropic's Multi-Agent Research System (Case Study)
+## Workflow State Protocol Specification
 
-The most detailed public case study on production multi-agent systems (June 2025).
+### Purpose
+Provide full transparency on multi-step workflow progress. The user always knows: what phase we're in, who's working, what gates are pending, and what's been done.
 
-### Architecture
-- **Lead agent** decomposes query → spawns **parallel subagents**
-- Each subagent explores independently with its own context window
-- Lead agent **aggregates and synthesizes** all findings
-- Lead can **rewrite its plan on the fly** if subagents hit dead ends
+### Ownership
+@mewtwo owns all state updates. Agents report completion through their output; @mewtwo interprets and updates the state block. No agent file needs awareness of the state format.
 
-### Key Results
-- **90% performance gain** over best single-agent on complex tasks
-- Each subagent gets its own context window (overcomes single-agent limits)
-- **15× token cost** vs single chat — justified for high-value tasks only
+### Format
+```
+═══════════════════════════════════════════════════════════════
+WORKFLOW: [task name]
+PLAN: [Plans/NNN-plan-xxx.md if applicable]
+STATUS: [🔄 In Progress | ⏸️ Blocked | ✅ Complete]
+═══════════════════════════════════════════════════════════════
+Phase N: [name]             [✅ Complete | 🔄 Active | ⬜ Pending]
+  └─ @[agent] ([action])    [✅ Done | 🔄 Working... | ⬜]
+  └─ @[agent] ([action])    [✅ Verdict (summary) | 🔄 Reviewing... | ⬜]
+  └─ 🚦 GATE: [gate name]  [✅ Passed | ❌ Failed | ⏳ Pending]
+═══════════════════════════════════════════════════════════════
+```
 
-### Engineering Lessons
-1. **Prompt engineering was the #1 factor** — role-specific prompts encoding coordination behavior
-2. **Dynamic planning** — lead agent rewrites plan when subagents report dead ends
-3. **Explicit source attribution** — every subagent tracks sources for its assigned task
-4. **Checkpointing + retry logic** — production reliability with "rainbow deploys"
-5. **Parallelized tool use** — subagents independently query APIs, search, access integrations
-6. **Custom evaluation metrics** — breadth of coverage and research completeness, not just accuracy
+### Update Rules
+- Update when any agent starts or finishes work
+- Include review verdicts and finding counts in history
+- Show gate status clearly — blocked progress should be visible at a glance
+- For simple tasks (1-2 steps): use lightweight inline status, not full block
 
-> Source: https://www.anthropic.com/engineering/multi-agent-research-system
+### Examples
+
+**Simple task — "Fix the typo in README"**
+```
+@porygon (fix) ✅ → @absol (review) ✅ PASS → 🚦 commit ✅
+```
+
+**Standard task — "Research GraphQL and update brain"**
+```
+═══════════════════════════════════════════════════
+WORKFLOW: Research GraphQL
+STATUS: 🔄 In Progress
+═══════════════════════════════════════════════════
+Phase 1: Research              🔄 Active
+  └─ @uxie (research)          ✅ Done
+  └─ @tapu-fini (review)       🔄 Reviewing...
+  └─ 🚦 GATE: research-review  ⏳ Pending
+
+Phase 2: Brain Update          ⬜ Pending
+  └─ brain-manager skill       ⬜
+═══════════════════════════════════════════════════
+```
+
+**Full pipeline — "Add Redis caching"**
+```
+═══════════════════════════════════════════════════════════════
+WORKFLOW: Add Redis Caching
+PLAN: Plans/010-plan-redis-caching.md
+STATUS: 🔄 In Progress
+═══════════════════════════════════════════════════════════════
+Phase 1: Planning              ✅ Complete
+  └─ @metagross (plan)          ✅ Done (Plans/010-plan-redis-caching.md)
+  └─ @cresselia (review)        ✅ APPROVED (0🔴, 2🟡 fixed)
+  └─ 🚦 GATE: plan-review       ✅ Passed
+
+Phase 2: Research              ✅ Complete
+  └─ @uxie (Redis patterns)     ✅ Done
+  └─ @tapu-fini (review)        ✅ PASS (22/25)
+  └─ 🚦 GATE: research-review   ✅ Passed
+
+Phase 3: Implementation        🔄 Active
+  └─ @porygon (implement)       🔄 Task 3/5
+  └─ @absol (review)            ⬜
+  └─ 🚦 GATE: code-review       ⬜
+  └─ 🚦 GATE: commit            ⬜
+═══════════════════════════════════════════════════════════════
+```
 
 ---
 
-## Microsoft's Reference Architecture
+## Gate Specifications
 
-Open-sourced patterns for enterprise multi-agent systems.
+### Plan Review Gate
+- **Trigger:** @metagross creates a plan, before any execution begins
+- **Agent:** @cresselia
+- **Pass criteria:** Verdict is APPROVED or APPROVED WITH CHANGES (after changes applied)
+- **Fail action:** Enter review loop — send findings to @metagross for revision, re-review
+- **Max iterations:** 2 before human escalation
 
-### Key Patterns
-1. **Semantic Router with LLM Fallback** — lightweight classifiers (NLU/SLM) first, LLM only when confidence is low. Optimizes cost without sacrificing accuracy.
-2. **Dynamic Agent Registry** — central registry for discovery and runtime resolution of agent capabilities. Supports plug-and-play extensibility.
-3. **Semantic Kernel Orchestration** — agents encapsulate modular "skills." Orchestrator manages chaining, context, and planning.
-4. **Local & Remote Agent Execution** — federated models allow routing to remote or local agents.
+### Research Review Gate
+- **Trigger:** @uxie produces research findings, before findings feed into planning or implementation
+- **Agent:** @tapu-fini
+- **Pass criteria:** Verdict is PASS or PASS WITH REVISIONS (after revisions applied)
+- **Fail action:** Enter review loop — send findings to @uxie for revision, re-review
+- **Max iterations:** 2 before human escalation
 
-### Architecture Layers
-- **Orchestrator Layer** — built on Semantic Kernel, coordinates skills and agents
-- **Classifier Pipeline** — NLU → SLM → LLM (progressively sophisticated)
-- **Agent Registry** — lifecycle, descriptors, security posture, dynamic discovery
-- **Memory & State** — persistent stores and embeddings for shared context
-- **Integration Adapters** — MCP for interoperable tool/model integration
-- **Security & Governance** — boundaries, lifecycle management, validation, observability
+### Code Review Gate
+- **Trigger:** @porygon writes or modifies code, before code is considered done
+- **Agent:** @absol
+- **Pass criteria:** Zero 🔴 Critical and zero 🟡 Warning findings remaining
+- **Fail action:** Enter review loop — send findings to @porygon for fix, re-review
+- **Max iterations:** 2 before human escalation
 
-### Collaboration Patterns
-- Sequential, Concurrent, Group Chat, Handoff, and Magnet patterns
-- Each suited to different coordination needs
+### Commit Gate
+- **Trigger:** After code review gate passes, before reporting implementation complete
+- **Required sequence:** Build passes → Tests pass → Code review gate passed
+- **Pass criteria:** All three green
+- **Fail action:** Fix the failing step, re-run from that step
+- **Hard rule:** Never skip code review. "Build + tests pass" alone is NOT sufficient.
 
-> Source: https://github.com/microsoft/multi-agent-reference-architecture
-> Source: https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
+---
+
+## HITL Policy
+
+### Trigger Definitions
+
+| # | Trigger | Condition | Escalation Action |
+|---|---------|-----------|-------------------|
+| 1 | **Destructive action** | File deletion, git force ops, production changes, external comms | Pause and request explicit approval before proceeding |
+| 2 | **Iteration limit** | Review loop hits max (2) without resolution | Present the disagreement, both perspectives, and ask for judgment |
+| 3 | **Agent disagreement** | Reviewer and maker cannot converge on approach | Present both approaches with trade-offs, ask human to decide |
+| 4 | **Novel situation** | Task type not previously encountered, no matching pattern | Describe situation, propose approach, ask for approval |
+| 5 | **Scope ambiguity** | Task intent unclear after decomposition attempt | Ask clarifying questions before proceeding |
+
+### Escalation Format
+```
+⚠️ ESCALATION NEEDED
+Trigger: [which trigger — e.g., "Iteration limit reached"]
+Context: [what happened — brief summary]
+Options: [A, B, or C — with trade-offs for each]
+```
 
 ---
 
 ## Failure Modes & Recovery
 
-### Common Failure Modes
+### Common Failure Modes (MAST paper + cross-vendor)
+
 | Failure | Description | Mitigation |
 |---------|-------------|------------|
-| State sync failures | Agents act on stale data, duplicate work | Checkpointing, version-stamped state |
-| Coordination breakdown | Ambiguous roles, unclear task definitions | Contract-driven specs, explicit roles |
-| Cascading errors | One agent's empty response silently propagates | Input/output validation at every step |
-| Non-determinism | Same input → different outputs across runs | Schema validation, correction prompts |
-| Infinite loops | Agents retry forever or loop between each other | Max retries, timeouts, circuit breakers |
-
-**Key insight:** Most failures come from coordination gaps, not technical bugs (arXiv 2503.13657).
+| Coordination breakdown | Ambiguous roles, unclear task definitions | Capability manifests, output contracts, explicit routing |
+| Cascading errors | Empty/bad output silently propagates | Output validation at every agent boundary |
+| Infinite loops | Agents retry or loop between each other forever | Max iterations (2), human escalation |
+| State staleness | Agents act on outdated information | Orchestrator owns state, updates at every step |
+| Over-spawning | Too many agents for simple tasks | Decomposition-driven depth, not classification |
+| Scope leakage | Agent attempts work outside its capability | Tools provide implicit scope; orchestrator validates output |
 
 ### Recovery Patterns
-- **Layered validation** — validate inputs/outputs at every agent boundary
-- **Exponential backoff + jitter** — for transient errors
-- **Circuit breakers** — suspend agent after N failures
-- **Checkpointing** — persist workflow state for partial recovery
+- **Layered validation** — validate at every agent boundary, not just endpoints
+- **Circuit breakers** — suspend workflow after repeated failures in same phase
 - **Escalation** — human-in-the-loop for irrecoverable failures
-- **Correction prompts** — feed error back to LLM to fix output
-- **Trace IDs** — propagate through agent chains for observability
+- **Retry with feedback** — send specific error context back to the failing agent
+- **Agent substitution** — if one agent can't solve it, try a different agent
 
 ---
 
-## Best Practices (Cross-Vendor Consensus 2025-2026)
+## Framework Landscape (2026 reference)
 
-1. **Start simple, scale up** — single agent first, multi-agent only for specialization/parallelism
-2. **Narrow agent scope** — one composable responsibility per agent
-3. **Shared state/memory** — central store or distributed memory for context
-4. **Fault isolation** — one agent's failure must not crash the system
-5. **Observability** — trace IDs, structured logging, evaluation harnesses
-6. **Human-in-the-loop** — escalation when confidence is low
-7. **Contract-driven interfaces** — JSON schemas, explicit role declarations, clear handoffs
-8. **Validate everything** — independent verification layers for cross-agent outputs
-
----
-
-## Frameworks Landscape (2026)
-
-| Framework | Strength | Source |
-|-----------|----------|--------|
-| LangGraph | Stateful graphs, complex branching | langchain |
-| CrewAI | Role-based teams, rapid deployment | crewai |
-| AutoGen (Microsoft) | Conversational multi-agent teams | microsoft |
-| OpenAI Agents SDK / AgentKit | Agent-as-tool, handoff, lifecycle | openai |
-| Google ADK | Model-agnostic, workflow agents, MCP | google |
-| Semantic Kernel | Enterprise orchestration, modular skills | microsoft |
-
----
+| Framework | Primary Pattern | Strength |
+|-----------|----------------|----------|
+| **Anthropic** | Orchestrator-workers | Best documented production case study; simple composable workflows |
+| **OpenAI Agents SDK** | Handoffs + Agent-as-tool | Production-ready; built-in tracing and guardrails |
+| **Google ADK** | Hierarchical workflows | Most comprehensive taxonomy; model-agnostic; A2A support |
+| **Microsoft AutoGen** | Conversational groups | Enterprise integration; Semantic Kernel |
+| **LangGraph** | Stateful graphs | Fine-grained control; complex branching |
+| **CrewAI** | Role-based teams | Fast prototyping; intuitive role metaphor |
 
 ## Interoperability Protocols
 
-- **MCP (Model Context Protocol)** — context and tool sharing across agents. Essential for scale.
-- **A2A (Agent-to-Agent)** — peer-to-peer communication standard for cross-agent coordination.
-- Both considered required for scaling beyond pilot projects.
+- **MCP (Model Context Protocol)** — Tool and context sharing across agent boundaries. Essential for scale.
+- **A2A (Agent-to-Agent)** — Google's peer-to-peer agent communication standard.
 
 ---
 
 ## Sources
 
-- Anthropic: How we built our multi-agent research system — https://www.anthropic.com/engineering/multi-agent-research-system
-- Microsoft Multi-Agent Reference Architecture — https://github.com/microsoft/multi-agent-reference-architecture
-- Azure AI Agent Orchestration Patterns — https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
-- Google: Choose a design pattern for agentic AI — https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system
-- arXiv: Why Do Multi-Agent LLM Systems Fail? — https://arxiv.org/abs/2503.13657
-- arXiv: Multi-Agent Collaboration Mechanisms Survey — https://arxiv.org/abs/2501.06322
-- Microsoft Patterns Reference — https://microsoft.github.io/multi-agent-reference-architecture/docs/reference-architecture/Patterns.html
-- AgentNet: Decentralized Evolutionary Coordination — https://openreview.net/forum?id=tXqLxHlb8Z
-- IEEE SMC: MAS × LLM Architectural Synergies — https://www.ieeesmc.org/wp-content/uploads/2025/06/eNewsletter_FeatureArticle_June2025.pdf
+- Anthropic: "Building Effective Agents" (Dec 2024) — https://www.anthropic.com/engineering/building-effective-agents
+- Anthropic: Multi-agent research system (Jun 2025) — https://www.anthropic.com/engineering/multi-agent-research-system
+- OpenAI Agents SDK (2025-2026) — https://openai.github.io/openai-agents-python/
+- Google ADK: Multi-Agent Systems (2026) — https://adk.dev/agents/multi-agents/
+- MAST paper: "Why Do Multi-Agent LLM Systems Fail?" (Mar 2025) — https://arxiv.org/abs/2503.13657
+- Andrew Ng: Agentic Design Patterns (2024) — https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/
+- Microsoft Multi-Agent Reference Architecture (2025) — https://github.com/microsoft/multi-agent-reference-architecture
+- Azure AI Agent Design Patterns (2025) — https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
+- Google: Choose a design pattern for agentic AI (2025) — https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system
+- Multi-Agent Collaboration Mechanisms Survey (Jan 2025) — https://arxiv.org/abs/2501.06322
+- IEEE SMC: MAS × LLM Architectural Synergies (Jun 2025) — https://www.ieeesmc.org/wp-content/uploads/2025/06/eNewsletter_FeatureArticle_June2025.pdf
