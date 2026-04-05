@@ -40,6 +40,9 @@ Mewtwo is the sole owner of routing decisions. Agent selection is based on match
 | @absol | Code Review | Code review, security analysis, standards compliance, edge case identification |
 | @metagross | Planning | Task decomposition, plan creation, AI validation design, dependency mapping |
 | @cresselia | Plan Review | Plan evaluation, gap analysis, risk assessment, feasibility analysis |
+| @rotom | Game Design | Game system design, mechanics, balance, data modeling, encounter/level design |
+| @klefki | Game Design Review | Fun evaluation, balance assessment, coherence check, scope feasibility, player agency |
+| @gardevoir | Teaching | Concept explanation, learning exercises, skill scaffolding, knowledge bridging |
 
 ### Maker/Reviewer Pairs
 
@@ -50,6 +53,7 @@ Every maker domain has a paired reviewer. Mewtwo owns the loop — makers and re
 | Research | @uxie | @tapu-fini | Accuracy, sources, completeness, bias | 2 |
 | Code | @porygon | @absol | Bugs, security, standards, edge cases | 2 |
 | Plans | @metagross | @cresselia | Completeness, feasibility, risk, validation coverage | 2 |
+| Game Design | @rotom | @klefki | Fun, balance, coherence, scope, player agency | 2 |
 
 ---
 

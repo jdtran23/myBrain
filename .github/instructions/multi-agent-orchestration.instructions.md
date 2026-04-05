@@ -44,6 +44,13 @@ Every maker domain has an independent reviewer. The orchestrator manages all rev
 | Research | @uxie | @tapu-fini | Accuracy, sources, completeness, bias | 2 |
 | Code | @porygon | @absol | Bugs, security, standards, edge cases | 2 |
 | Plans | @metagross | @cresselia | Completeness, feasibility, risk, validation | 2 |
+| Game Design | @rotom | @klefki | Fun, balance, coherence, scope, player agency | 2 |
+
+**Standalone specialists** (no reviewer pair):
+
+| Agent | Domain | Scope |
+|-------|--------|-------|
+| @gardevoir | Teaching | Concept explanations, learning exercises, skill scaffolding |
 
 **Review loop:** Orchestrator calls maker → calls reviewer → on PASS, proceed. On REVISIONS/FAIL, send findings back to maker (iteration +1). After max iterations without resolution → escalate to human.
 
@@ -56,6 +63,7 @@ Every maker domain has an independent reviewer. The orchestrator manages all rev
 | **Plan Review** | After plan creation, before execution | @cresselia | APPROVED or changes applied | Review loop with @metagross |
 | **Research Review** | After research, before consumption | @tapu-fini | PASS or revisions applied | Review loop with @uxie |
 | **Code Review** | After code changes, before done | @absol | Zero 🔴 and 🟡 findings | Review loop with @porygon |
+| **Design Review** | After game design, before implementation | @klefki | Zero 🔴 and 🟡 findings | Review loop with @rotom |
 | **Commit** | After code review passes | (verification) | Build + tests + review all pass | Fix and re-run from failure |
 
 **Commit gate is mandatory.** "Build passes + tests pass" alone is NOT sufficient. @absol review must pass.
