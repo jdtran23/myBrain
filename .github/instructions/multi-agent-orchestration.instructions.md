@@ -62,11 +62,14 @@ Every maker domain has an independent reviewer. The orchestrator manages all rev
 |------|---------|-------|--------------|-------------|
 | **Plan Review** | After plan creation, before execution | @cresselia | APPROVED or changes applied | Review loop with @metagross |
 | **Research Review** | After research, before consumption | @tapu-fini | PASS or revisions applied | Review loop with @uxie |
+| **Rubber-Duck** | After research-review or plan-review gate passes | rubber-duck (built-in) | Zero 🔴 findings; 🟡 findings resolved or explicitly accepted | Revision loop with original maker, then re-review |
 | **Code Review** | After code changes, before done | @absol | Zero 🔴 and 🟡 findings | Review loop with @porygon |
 | **Design Review** | After game design, before implementation | @klefki | Zero 🔴 and 🟡 findings | Review loop with @rotom |
 | **Commit** | After code review passes | (verification) | Build + tests + review all pass | Fix and re-run from failure |
 
 **Commit gate is mandatory.** "Build passes + tests pass" alone is NOT sufficient. @absol review must pass.
+
+**Rubber-Duck gate is mandatory for research and plans** — research and plans are high-leverage artifacts that drive downstream work, so they get a second independent critique pass on top of their domain reviewer. Not currently required for code (@absol already provides bug-focused critique) or game design (@klefki provides design critique).
 
 ## Human-in-the-Loop
 

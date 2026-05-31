@@ -119,11 +119,15 @@ Phase 1: Planning              ✅ Complete
   └─ @metagross (plan)          ✅ Done (Plans/010-plan-redis-caching.md)
   └─ @cresselia (review)        ✅ APPROVED (0🔴, 2🟡 fixed)
   └─ 🚦 GATE: plan-review       ✅ Passed
+  └─ 🦆 rubber-duck (plan)      ✅ PASS (0🔴, 1🟡 accepted)
+  └─ 🚦 GATE: rubber-duck       ✅ Passed
 
 Phase 2: Research              ✅ Complete
   └─ @uxie (Redis patterns)     ✅ Done
   └─ @tapu-fini (review)        ✅ PASS (22/25)
   └─ 🚦 GATE: research-review   ✅ Passed
+  └─ 🦆 rubber-duck (research)  ✅ PASS (no blind spots)
+  └─ 🚦 GATE: rubber-duck       ✅ Passed
 
 Phase 3: Implementation        🔄 Active
   └─ @porygon (implement)       🔄 Task 3/5
@@ -150,6 +154,15 @@ Phase 3: Implementation        🔄 Active
 - **Pass criteria:** Verdict is PASS or PASS WITH REVISIONS (after revisions applied)
 - **Fail action:** Enter review loop — send findings to @uxie for revision, re-review
 - **Max iterations:** 2 before human escalation
+
+### Rubber-Duck Gate
+- **Trigger:** Immediately after the Research Review Gate or Plan Review Gate passes — adds a second independent critique layer on the two highest-leverage artifacts (research, plans) before they drive downstream work
+- **Agent:** rubber-duck (built-in critique agent, distinct from domain reviewers)
+- **Pass criteria:** Zero 🔴 Critical findings remaining; 🟡 Warning findings either resolved by the maker or explicitly accepted with rationale documented
+- **Fail action:** Send findings back to the original maker (@uxie for research, @metagross for plans). Maker revises. Domain reviewer (@tapu-fini / @cresselia) re-reviews. Rubber-duck re-runs.
+- **Max iterations:** 1 rubber-duck round after the first pass. If blind spots persist after revision, escalate to human.
+- **Rationale:** The domain reviewer is a specialist focused on that artifact's quality criteria. Rubber-duck is a generalist focused on blind spots, hidden assumptions, missing edge cases, and design flaws. Specialist + generalist = stronger validation.
+- **Scope:** Currently mandatory for research and plans only. Not currently applied to code (@absol already provides bug-focused critique) or game design (@klefki provides design critique).
 
 ### Code Review Gate
 - **Trigger:** @porygon writes or modifies code, before code is considered done
