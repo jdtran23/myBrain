@@ -360,6 +360,18 @@ Alternatives: **(b)** plain functional names (`data-analyst.agent.md`, `bull.age
 
 That executes the full 6-agent pipeline + guards + publishes the memo. Repeat 3× for Task 1.5; on ≥2/3 passes, tag `v0.1.0`.
 
+### 2026-05-30 — Defect found and patched
+
+**F9 was wrong.** `.github/prompts/*.prompt.md` files are a VS Code Copilot Chat feature, not Copilot CLI. The original spike (Task 0.0) verified F9 via file inspection (`myBrain/.github/prompts/orchestrate.prompt.md` exists with `${input:...}` syntax) instead of execution — a methodological failure that exactly matches the spike-bypass the duck warned about during plan review.
+
+**Fix:** `analyze.prompt.md` converted to `.github/skills/analyze/SKILL.md`. Skills are documented in the Copilot CLI `/help` output, run in the main agent context (no nested-orchestration uncertainty), and are invoked as `/analyze <Ticker> <AsOfDate>`.
+
+**Adjacent bugs caught by the rubber-duck during the fix proposal:**
+1. **Parallel deadlock** — original pipeline ran Bull, Bear, AND Risk in parallel, but Risk waited for `bull.json` and `bear.json` to exist on disk; those files were only written after the parallel dispatch returned. Fixed: serialize as Bull+Bear parallel → write both files → then dispatch Risk.
+2. **Fragile shell heredocs for capture writes** — sub-agent output containing backticks/quotes/`$` could break heredoc-style file writes. Fixed: skill specifies the `create`/`edit` tool for persisting captured output.
+
+**Process lesson recorded:** every "✅" in a spike findings doc must cite *execution* evidence, not file-shape inspection. F9 has been annotated with a CORRECTION block in `docs/dispatch-surface-findings.md` (preserved, not rewritten, so the failure stays visible to future readers).
+
 ---
 
 ## Phase 2 — Polish + ship
