@@ -10,6 +10,8 @@
 
 ## Changelog
 
+**Rev 3.1** — Added "Post-v0 Future Directions" section to capture the OpenClaw integration intent (chat with the committee from phone via Telegram/Discord/etc.) as explicitly-deferred-but-acknowledged future work. No changes to Phases 0–2. Direct edit, not gated — section is a roadmap note, not an execution plan.
+
 **Rev 3** — 3 duck execution-trap fixes + 2 Cresselia cosmetic nits. No new tasks, no new phases.
 
 - **D1 (`pytest-socket` missing):** added to Task 0.1 dev deps.
@@ -336,6 +338,44 @@ Every task above ends with a **Verify** step. The pattern is **Plan → Generate
 - **Hard-rule verification** (does the `NO_ACTION` rule fire): explicit positive + negative test in Task 1.3.
 
 A phase is **not** complete until its exit-gate command runs clean from a fresh shell with sockets disabled.
+
+---
+
+## Post-v0 Future Directions (deferred, NOT part of this plan)
+
+The following is named here so it doesn't get lost as scope drift, but **explicitly out of scope** for v0. When v0.1.0 ships, write a separate plan for whichever of these (if any) is next.
+
+### OpenClaw integration — chat with the committee from phone (likely v0.1)
+
+[OpenClaw](https://docs.openclaw.ai/) is a self-hosted gateway that bridges messaging apps (Discord, Telegram, WhatsApp, Slack, Signal, iMessage, Matrix, etc.) to AI agents. A small OpenClaw tool plugin would let Joe chat with the stonk-sage committee from his phone via any of those channels.
+
+**Why this composes well with the v0 plan as-is:**
+- The CLI Phase 2 produces (`stonk-sage analyze TICKER --as-of DATE`) is directly callable from an OpenClaw tool plugin via subprocess
+- Output is already structured (YAML) — easy to return from a plugin's `execute()`
+- Cassettes make integration testing free
+- No changes needed to Phases 0–2 to keep this path open
+
+**Rough shape of the future v0.1 plan (a sketch, not a commitment):**
+- ~100 lines of TypeScript using OpenClaw's `defineToolPlugin` SDK
+- Exposes one tool: `stonk_sage_analyze(ticker, as_of)`
+- Bridges to stonk-sage via subprocess (simplest) or an HTTP wrapper (better for long-running calls)
+- Setup: Node.js toolchain, `openclaw plugins init`, configure a channel (Telegram is the docs' "fastest" option)
+- Estimated effort: one weekend after v0 ships
+
+**Why deferred (not in v0):**
+- v0's goal is "build the engine." OpenClaw integration is a delivery surface for the engine. Ship the engine first.
+- Adds a TypeScript toolchain on top of Python — manageable but real overhead
+- Easier to wire after the CLI is stable and the YAML schema is settled (i.e., after Phase 2 lands)
+
+### Other directions worth tracking (less specific, less committed)
+
+- **MCP server wrapper** for Claude Desktop / Cursor / Cline (~50 lines Python). Skip if OpenClaw is the only "ask from anywhere" surface needed.
+- **Multi-turn conversation** — current committee produces a complete memo per call. Conversational follow-ups ("what about TSLA?", "explore the risk angle?") would need a different shape.
+- **Multiple tickers / screening** — current committee analyzes one ticker per invocation.
+- **Sector-specialist agents** (banks/REITs/biotech) — the brain has the knowledge; agents using that knowledge are future work.
+- **Live data fetching** beyond a single frozen fixture — v0 explicitly avoids PIT replay infrastructure.
+
+When v0 ships, **write a new plan based on what was learned**. Do not pre-design v0.1 here.
 
 ---
 
