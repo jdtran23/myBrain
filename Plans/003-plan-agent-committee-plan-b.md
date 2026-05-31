@@ -3,8 +3,8 @@
 **Owner:** Joe
 **Repo (code):** `github.com/jdtran23/stonk-sage` (private)
 **Repo (this plan):** `myBrain/Plans/`
-**Status:** Rev 4 — pending re-review (🦆 PASS W/ REVISIONS on Rev 3; @cresselia rev 3 still verifying)
-**Estimated effort:** 3 weekends of hobby time
+**Status:** Rev 4 — **PHASE 0+1 EXECUTED** in stonk-sage commit `aad94f5`. Tasks 0.0–0.4, 1.1–1.4, 2.1–2.2 done; reviewed by @absol twice (zero red/yellow at commit). Tasks 0.5, 1.5, 2.3 require Joe to run `/analyze` from a Copilot CLI session in `C:\Users\jdtra\Projects\stonk-sage`.
+**Estimated effort:** 3 weekends of hobby time (build came in ~1 day with AI execution)
 **Supersedes:** Plan 002 (architecture pivot to Copilot CLI agent files)
 
 ---
@@ -324,6 +324,41 @@ Alternatives: **(b)** plain functional names (`data-analyst.agent.md`, `bull.age
 - **Verify:** ≥2/3 memos pass the 6-item checklist. Record per-memo checklist results as a footer in each `_<uuid>.md`.
 
 **Exit gate:** ≥2/3 `/analyze AAPL 2024-06-01` runs produce memos passing the 6-item checklist; post-CIO guard active and tested; CIO hard-rule positive+negative test documented in `examples/cio-hard-rule-test.md`.
+
+---
+
+## Execution Log
+
+**2026-05-30 — Phase 0 + Phase 1 build complete** (stonk-sage commit `aad94f5`).
+
+| Task | Status | Notes |
+|---|---|---|
+| 0.0 — Dispatch-surface spike | ✅ Done | Probed in-session. Findings in `stonk-sage/docs/dispatch-surface-findings.md`. Key deltas: Standards References is advisory only (agents `view` brain explicitly); agent.md frontmatter has only `name`+`description` (model set per dispatch). |
+| 0.1 — Repo cleanup | ✅ Done | pyproject trimmed 10→4 runtime deps; `.env.example` reduced to `EDGAR_IDENTITY` + auto-loaded via `python-dotenv`. |
+| 0.2 — `data.py` | ✅ Done | No-look-ahead invariant at 3 layers + Saturday-rollback semantics; 17 unit tests + 1 live test gated behind `-m live`. |
+| 0.3 — `data-analyst.agent.md` | ✅ Done | |
+| 0.4 — `bull.agent.md` + `bear.agent.md` | ✅ Done | Cross-family preserved (Claude vs GPT). |
+| **0.5 — Phase 0 smoke + quota canary** | ⏸️ Blocked on Joe | Requires Copilot CLI session in stonk-sage to run `/analyze` once + apply Plan 002 §0.5 disagreement checklist + record quota burn. |
+| 1.1 — `risk-officer.agent.md` | ✅ Done | |
+| 1.2 — `devils-advocate.agent.md` | ✅ Done | |
+| 1.3 — `cio.agent.md` | ✅ Done | |
+| 1.4 — `/analyze` slash command + `guards.py` | ✅ Done | All 11 guard cases from §1.4 covered + 8 helper tests. `_QUANT_ANCHOR` regex tightened after @absol review (units required). |
+| **1.5 — Memo acceptance (2-of-3)** | ⏸️ Blocked on Joe | Requires Joe to run `/analyze AAPL 2024-06-01` three times + checklist each memo. |
+| 2.1 — README + Expected First Run | ✅ Done | |
+| 2.2 — Dep trim verification | ✅ Done | Final runtime deps: `pydantic`, `yfinance`, `edgartools`, `python-dotenv`. Dev: `ruff`, `pyright`, `pytest`, `pytest-socket`. |
+| **2.3 — Commit, push, tag v0.1.0** | ⏸️ Partial | Commit + push done (`aad94f5`). Tag held until 0.5 + 1.5 acceptance gates pass. |
+
+**@absol code-review:** Two rounds. Round 1 surfaced 2🔴 + 2🟡 (publish flow bug, missing dotenv load, deprecated `utcfromtimestamp`, redundant veto failures) + 1🔵 (loose quant-anchor regex). All addressed in the same commit. Round 2: zero remaining 🔴/🟡 — ship verdict.
+
+**Test status at commit:** `57 passed, 1 deselected` (live network test gated behind `-m live`).
+
+**Next step for Joe:** Open Copilot CLI in `C:\Users\jdtra\Projects\stonk-sage` and run:
+
+```
+/analyze Ticker=AAPL AsOfDate=2024-06-01
+```
+
+That executes the full 6-agent pipeline + guards + publishes the memo. Repeat 3× for Task 1.5; on ≥2/3 passes, tag `v0.1.0`.
 
 ---
 
